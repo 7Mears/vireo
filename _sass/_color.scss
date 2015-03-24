@@ -1,0 +1,17 @@
+$white: lighten(#FFF8E1, 5%);
+$black: darken(#4D4D52, 10%);
+$yellow: #FFEB3B;
+$grey: #828282;
+
+
+$text-color: $white;
+$background-color: $black;
+
+$text-color-alt: $black;
+$background-color-alt: $white;
+
+$brand-color: $yellow;
+
+$grey-color: $grey;
+$grey-color-light: lighten($grey-color, 40%);
+$grey-color-dark:  darken($grey-color, 25%);

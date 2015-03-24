@@ -1,0 +1,28 @@
+.hero,
+.portfolio {
+  padding: $spacing-unit 0;
+}
+
+//hero
+.hero {
+  background: url("/vireo/img/hero-background.jpg");
+  background-size: cover;
+  color: $text-color;
+  text-align: center;
+
+  .wrapper {
+    padding: 150px 0 200px 0;
+  }
+
+  h1 {
+    margin: 0;
+    text-shadow: 1px 1px 2px $text-color-alt;
+  }
+
+  h3 {
+    margin-top: -10px;
+    span {
+      background-color: rgba($text-color-alt, 0.7);
+    }
+  }
+}

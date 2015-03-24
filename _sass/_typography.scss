@@ -1,0 +1,36 @@
+@font-face {
+    font-family: "Avenir";
+    src: url(/fonts/Avenir.otf);
+}
+
+$alt-font-family: 'Merriweather', serif;
+$base-font-family: 'Avenir', Helvetica, Arial, sans-serif;
+$base-font-size:   18px;
+$small-font-size:  $base-font-size * 0.875;
+$base-line-height: 1.5;
+
+
+/* This is the percentage each heading will be reduced by. */
+$step-size-heading: 0.33333;
+/* The mixin */
+@mixin heading-size($size) {
+    font-size: $size * $step-size-heading + em;
+}
+h1 {
+  @include heading-size(6);
+}
+h2 {
+  @include heading-size(5);
+}
+h3 {
+  @include heading-size(4);
+}
+h4 {
+  @include heading-size(3);
+}
+h5 {
+  @include heading-size(2);
+}
+h6 {
+  @include heading-size(1);
+}

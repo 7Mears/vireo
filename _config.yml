@@ -1,0 +1,13 @@
+# Site settings
+title: Vireo Productions
+email: info@vireoproductions.com
+description: Vireo Productions. Web design agency based in Saskatoon Saskatchewan.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://vireoproductions.com" # the base hostname & protocol for your site
+twitter_username: vireoproductions
+github_username:  vireoproductions
+
+# Build settings
+markdown: kramdown
+
+baseurl: "/vireo/"
