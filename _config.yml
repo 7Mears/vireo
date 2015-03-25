@@ -10,4 +10,4 @@ github_username:  vireoproductions
 # Build settings
 markdown: kramdown
 
-baseurl: "/vireo/"
+baseurl: "/vireo"
