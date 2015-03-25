@@ -1,3 +1,13 @@
+button {
+  color: $text-color;
+  font-family: $alt-font-family;
+  font-size: 0.8em;
+  background: rgba(0,0,0,0);
+  border: 2px solid $brand-color;
+  border-radius: 2em;
+  padding: 0.7em 1.5em;
+}
+
 //Dividers
 .angled-divider,
 .angled-divider:before {
