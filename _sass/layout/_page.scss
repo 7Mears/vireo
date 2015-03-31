@@ -1,30 +1,22 @@
 /**
  * Page content
  */
+.page {
+  overflow: hidden;
+}
+
 .page-content {
-    background-color: $background-color-alt;
-    color: $text-color-alt;
+  background-color: $background-color-alt;
+  color: $text-color-alt;
+  position: relative;
+  z-index: 1;
 }
 
-.page-heading {
-    font-size: 20px;
+.page-header {
+  background-color: $background-color;
+  color: $text-color;
 }
-
-.post-list {
-    margin-left: 0;
-    list-style: none;
-
-    > li {
-        margin-bottom: $spacing-unit;
-    }
-}
-
-.post-meta {
-    font-size: $small-font-size;
-    color: $grey-color;
-}
-
-.post-link {
-    display: block;
-    font-size: 24px;
+.page-title {
+  text-align: center;
+  padding: 100px 0;
 }
