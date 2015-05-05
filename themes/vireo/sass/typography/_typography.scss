@@ -1,0 +1,43 @@
+@font-face {
+  font-family: 'Avenir';
+  src: url('./fonts/AvenirRegular.otf');
+	font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Avenir';
+  src: url('./fonts/AvenirBold.otf');
+	font-weight: 700;
+}
+
+$font__primary: 'Avenir', sans-serif;
+
+// Merriweather: 300, 700
+$font__secondary: 'Merriweather', serif;
+
+$font__fancy: $font__secondary;
+
+$font__line-height-body: 1.7;
+$font__line-height-pre: 1.7;
+$font__body-weight: 400;
+$font__header-weight: 100;
+
+body,
+button,
+input,
+select,
+textarea {
+	color: $color__text-main-light;
+	font-family: $font__primary;
+	@include font-size(1);
+	line-height: $font__line-height-body;
+	font-weight: $font__body-weight;
+  letter-spacing: 0.7px;
+
+	-webkit-font-smoothing: antialiased;
+	text-shadow: rgba(0,0,0,.01) 0 0 1px;
+}
+
+@import "headings";
+
+@import "copy";

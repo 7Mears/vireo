@@ -1,0 +1,8 @@
+.container {
+  width: $L;
+  margin: 0 auto;
+
+  @include bp-large {
+    width: 90%;
+  }
+}

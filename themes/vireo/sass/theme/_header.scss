@@ -1,0 +1,55 @@
+.site-header {
+  background-color: rgba($color2, 0.7);
+  position: absolute;
+  width: 100%;
+  height: 50px;
+  z-index: 3;
+}
+
+.site-branding {
+  float: left;
+  background: $color4;
+  margin-bottom: -100px;
+
+  h1 {
+    margin: 0;
+    padding: 50px 12.5px 0 12.5px;
+  }
+
+  a {
+    color: $color3;
+    text-decoration: none;
+  }
+}
+
+.site-title {
+  font-family: $font__primary;
+  font-weight: 700;
+  @include font-size(1.6);
+}
+
+// navigation
+.main-navigation {
+  float: right;
+
+	ul {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+
+  li {
+    display: inline-block;
+    padding-left: 1.5em;
+    padding-top: 15px;
+  }
+
+  a {
+    text-decoration: none;
+    color: $color__text-main;
+
+    &:hover {
+      color: $color__link;
+    }
+  }
+}
