@@ -12,6 +12,7 @@
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">
+		<div class="container">
 		<?php the_content(); ?>
 		<?php
 			wp_link_pages( array(
@@ -19,6 +20,7 @@
 				'after'  => '</div>',
 			) );
 		?>
+		</div><!-- /container -->
 	</div><!-- .entry-content -->
 
 	<footer class="entry-footer">

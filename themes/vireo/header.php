@@ -25,10 +25,11 @@
 
 			<nav id="site-navigation" class="main-navigation" role="navigation">
 				<ul id="primary-menu" class="menu nav-menu">
-					<li><a href="#0">Who we are</a></li>
-					<li><a href="#0">What we do</a></li>
-					<li><a href="#0">Portfolio</a></li>
-					<li><a href="#0">Contact us</a></li>
+					<li><a href="<?php echo esc_url( home_url( '/' ) ); ?>about/">About</a></li>
+					<li><a href="<?php echo esc_url( home_url( '/' ) ); ?>services/">Services</a></li>
+					<li><a href="<?php echo esc_url( home_url( '/' ) ); ?>portfolio/">Portfolio</a></li>
+					<li><a href="<?php echo esc_url( home_url( '/' ) ); ?>blog/">Blog</a></li>
+					<li><a href="<?php echo esc_url( home_url( '/' ) ); ?>contact/">Contact</a></li>
 				</ul>
 			</nav><!-- /site-navigation -->
 

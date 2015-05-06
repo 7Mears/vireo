@@ -116,7 +116,7 @@
 }
 
 .home-post {
-  padding: $padding-main;
+  padding: 0 $padding-main;
   margin-top: ($padding-main * 2);
   background-color: $color2;
 
@@ -126,7 +126,7 @@
 }
 
 .home-post--content {
-  width: 70%;
+  width: 75%;
   float: right;
   margin: 2%;
   @include font-size(1.1);
@@ -134,7 +134,7 @@
 
 .home-post--image {
   margin: 2%;
-  width: 20%;
+  width: 15%;
   border-radius: 50%;
   border: $border-size solid $color5;
   float: left;

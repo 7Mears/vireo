@@ -82,7 +82,7 @@ function vireo_scripts() {
 	// Google Fonts
 	wp_register_style('googleFonts', 'http://fonts.googleapis.com/css?family=Merriweather:300,700');
 	wp_enqueue_style( 'googleFonts');
-	wp_enqueue_style( 'font-awesome', '//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css', array(), '4.0.3' );
+	wp_enqueue_style( 'font-awesome', '//netdna.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css', array(), '4.0.3' );
 
 	// Comments
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {

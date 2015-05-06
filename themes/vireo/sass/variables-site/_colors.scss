@@ -48,3 +48,13 @@ $color__border-button-hover: $color4;
 $color__border-button-focus: $color__border-button-hover;
 
 $color__background-hr: $color2;
+
+
+$process__box: rgba($color2 ,0.4);
+$process__box-alt: rgba($color2 ,0.8);
+$process__line: $color5;
+$process__text: lighten($color1, 20%);
+$process__header: $color1;
+$process__date: $color1;
+$process__icon-bg: $color2;
+$process__icon: $color1;

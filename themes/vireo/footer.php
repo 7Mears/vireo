@@ -10,10 +10,11 @@
 
 				<ul class="footer-nav">
 					<li class="list-title">Navigation</li>
-					<li><a href="#0">About</a></li>
-					<li><a href="#0">Services</a></li>
-					<li><a href="#0">Portfolio</a></li>
-					<li><a href="#0">Contact</a></li>
+					<li><a href="<?php echo esc_url( home_url( '/' ) ); ?>about/">About</a></li>
+					<li><a href="<?php echo esc_url( home_url( '/' ) ); ?>services/">Services</a></li>
+					<li><a href="<?php echo esc_url( home_url( '/' ) ); ?>portfolio/">Portfolio</a></li>
+					<li><a href="<?php echo esc_url( home_url( '/' ) ); ?>blog/">Blog</a></li>
+					<li><a href="<?php echo esc_url( home_url( '/' ) ); ?>contact/">Contact</a></li>
 				</ul>
 
 			</div>

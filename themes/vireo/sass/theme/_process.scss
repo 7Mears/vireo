@@ -1,0 +1,176 @@
+.process-page-content{
+  background: $color3;
+}
+
+.process-intro {
+  @include font-size(1.2);
+  padding: $padding-main 0;
+  margin: 0 auto;
+  width: 80%;
+  color: $color1;
+}
+
+.your-job {
+  display: block;
+  font-style: italic;
+  padding-top: 1em;
+  color: $color1;
+}
+//
+//
+
+
+.timeline {
+	margin: 30px 0 0 0;
+	padding: 0;
+	list-style: none;
+	position: relative;
+
+  li {
+  	position: relative;
+
+    /* The phase */
+    .phase {
+      font-family: $font__secondary;
+    	display: block;
+    	width: 25%;
+    	padding-right: 100px;
+    	position: absolute;
+      text-align: right;
+      @include font-size(1.8);
+      color: $process__date;
+    }
+
+    /* Right content */
+    .tmlabel {
+    	margin: 0 0 15px 25%;
+    	background: $process__box;
+    	color: $process__text;
+    	padding: 2em;
+    	font-size: 1.2em;
+    	font-weight: 300;
+    	line-height: 1.4;
+    	position: relative;
+
+        h3 {
+        color: $process__header;
+      	margin: 0;
+      	padding: 0;
+      	border-bottom: $border-size solid rgba(0,0,0,0.2);
+        }
+    }
+  }
+}
+
+/* The line */
+.timeline:before {
+	content: '';
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	width: 10px;
+	background: $process__line;
+	left: 20%;
+	margin-left: -10px;
+}
+
+.timeline > li:nth-child(odd) .tmlabel {
+	background: $process__box-alt;
+}
+
+
+
+/* The triangle */
+.timeline > li .tmlabel:after {
+	right: 100%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-right-color: $process__box;
+	border-width: 10px;
+	top: 10px;
+}
+
+.timeline > li:nth-child(odd) .tmlabel:after {
+	border-right-color: $process__box-alt;
+}
+
+/* The icons */
+.timeline > li .tmicon {
+	width: 40px;
+	height: 40px;
+	font-family: 'ecoico';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	font-size: 1.4em;
+	line-height: 40px;
+	-webkit-font-smoothing: antialiased;
+	position: absolute;
+	color: $process__icon;
+	background: $process__icon-bg;
+	border-radius: 50%;
+	box-shadow: 0 0 0 8px $process__line;
+	text-align: center;
+	left: 20%;
+	top: 0;
+	margin: 0 0 0 -25px;
+}
+
+/* Example Media Queries */
+@media screen and (max-width: 65.375em) {
+
+	.timeline > li .tmtime span:last-child {
+		font-size: 1.5em;
+	}
+}
+
+@media screen and (max-width: 47.2em) {
+  .timeline {
+    li {
+
+      .tmicon {
+    		position: relative;
+    		float: right;
+    		left: auto;
+    		margin: -55px 5px 0 0px;
+    	}
+
+      .tmlabel {
+    		margin: 0 0 30px 0;
+    		padding: 1em;
+    		font-weight: 400;
+    		font-size: 95%;
+
+        &:after {
+          right: auto;
+          left: 20px;
+          border-right-color: transparent;
+          border-bottom-color: $process__box;
+          top: -20px;
+        }
+    	}
+
+      .phase {
+    		width: 100%;
+    		position: relative;
+    		padding: 30px 0 10px 0;
+        text-align: left;
+    	}
+    }
+
+    &:before {
+      display: none;
+    }
+  }
+
+	.timeline > li:nth-child(odd) .tmlabel:after {
+		border-right-color: transparent;
+		border-bottom-color: $process__box-alt;
+	}
+}

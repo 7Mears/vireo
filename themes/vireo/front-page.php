@@ -32,7 +32,7 @@ get_header(); ?>
       <p>Everything your business puts out into the world is part of its brand. Whether you need a website, social media management, email marketing, or a press kit, we’ll make sure it strengthens and enhances your business’s unique image.</p>
     </div>
 
-    <h4>Websites are a dance between design, content, and marketing; <a href="#0">take a look at our process</a> for building a website. For a full list of the services we provide, <a href="#0">see our services page.</a></h4>
+    <h4>Websites are a dance between design, content, and marketing; <a href="<?php echo esc_url( home_url( '/' ) ); ?>process/">take a look at our process</a> for building a website. For a full list of the services we provide, <a href="<?php echo esc_url( home_url( '/' ) ); ?>services/">see our services page.</a></h4>
   </div><!-- /container -->
 </section><!-- /services -->
 
@@ -40,13 +40,13 @@ get_header(); ?>
   <div class="container">
 
     <h2 class="home-blog-section--title">The think tank blog</h2>
-    <?php query_posts('posts_per_page=2') ?>
+    <?php query_posts('posts_per_page=3') ?>
     <?php while (have_posts()) : the_post(); ?>
 
     		<div class="home-post">
           <!-- featured image -->
           <?php if ( has_post_thumbnail() ) {
-            the_post_thumbnail( 'full', array( 'class' => 'post home-post--image' ) ); }
+            the_post_thumbnail( 'thumbnail', array( 'class' => 'post home-post--image' ) ); }
           ?>
           <div class="home-post--content">
             <!-- title -->

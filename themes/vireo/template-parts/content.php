@@ -16,6 +16,7 @@
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">
+		<div class="container">
 		<?php
 			/* translators: %s: Name of current post */
 			the_content( sprintf(
@@ -30,6 +31,7 @@
 				'after'  => '</div>',
 			) );
 		?>
+		</div><!-- /container -->
 	</div><!-- .entry-content -->
 
 	<footer class="entry-footer">

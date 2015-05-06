@@ -6,3 +6,13 @@
     width: 90%;
   }
 }
+
+.container-sm {
+  width: 800px;
+  margin: 0 auto;
+  @include font-size(1.2);
+
+  @include bp-medium {
+    width: 90%;
+  }
+}
