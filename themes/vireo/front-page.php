@@ -43,12 +43,11 @@ get_header(); ?>
     </div>
 
     <div class="home-portfolio-section">
-      <img src="http://localhost/vireo/wp-content/uploads/2015/05/home-portfolio.png" alt="Portfolio mobile screenshots">
+      <img src="http://localhost/vireo/wp-content/uploads/2015/05/home-works.png" alt="Portfolio mobile screenshots">
     </div>
 
-</div><!-- /container -->
-
-<div class="clear"></div>
+  </div><!-- /container -->
+  <div class="clear"></div>
 </section><!-- /services -->
 
 <section class="home-blog">

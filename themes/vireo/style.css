@@ -1158,3 +1158,21 @@ object {
 .about-section {
   width: 50%;
 }
+
+.services-list {
+  float: left;
+  width: 50%;
+  list-style-type: none;
+  margin: 0 0 2em 0;
+  padding: 0;
+}
+.services-list .title {
+  font-family: "Merriweather", serif;
+  font-size: 32px;
+  font-size: 2rem;
+}
+
+.services-content {
+  content: "";
+  display: table;
+}
