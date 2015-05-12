@@ -1,8 +1,16 @@
+//global
+.section-title {
+  color: rgba(255,255,255,0.6);
+  text-align: center;
+  margin-bottom: 0;
+  @include font-size(1.6);
+}
+
 // hero
 
 .home-hero {
   background-color: $color__background-body;
-  background: url('./images/bg2.jpg') no-repeat center center;
+  background: url('./images/hero.jpg') no-repeat center center;
   background-size: cover;
   padding: 150px 0 100px 0;
   position: relative;
@@ -21,9 +29,7 @@
 .home-services {
   background: $color__background-dark;
   color: $color__text-alt;
-  position: relative;
   padding: $padding-main 0;
-  z-index: 2;
 
   h4 {
     color: $color__text-alt;
@@ -112,6 +118,7 @@
 
 .home-blog {
   background-color: lighten($color1 , 10%);
+/* background: url('./images/wood.png') repeat; */
   margin: 0;
   padding: $padding-main 0 ($padding-main * 2) 0;
 }
@@ -124,6 +131,16 @@
   border-radius: $border-radius;
 
   a {
+    color: $color1;
+
+    &:hover,
+    &:active,
+    &:focus {
+      color: $color3;
+    }
+  }
+
+  a:first-child {
     text-decoration: none;
   }
 }
@@ -141,22 +158,13 @@
   border-radius: 50%;
   border: $border-size solid $color5;
   float: left;
-
-  -webkit-filter: grayscale(100%);
-  filter: grayscale(100%);
-  @include transition(1s ease);
 }
 
-.home-post:hover .home-post--image {
-  -webkit-filter: grayscale(0);
-  filter: grayscale(0);
-}
-
-.home-post:nth-child(2) .home-post--image {
+.home-post:nth-child(3) .home-post--image {
   float: right;
 }
 
-.home-post:nth-child(2) .home-post--content {
+.home-post:nth-child(3) .home-post--content {
   float: left;
 }
 

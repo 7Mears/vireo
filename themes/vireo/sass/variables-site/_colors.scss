@@ -32,7 +32,7 @@ $color__background-body: $color3;
 $color__background-dark: $color1;
 
 $color__text-main: $color1;
-$color__text-main-light: lighten($color__text-main, 20%);
+$color__text-main-light: lighten($color__text-main, 10%);
 
 $color__text-alt: $color3;
 $color__text-alt-dark: darken($color__text-alt, 30%);

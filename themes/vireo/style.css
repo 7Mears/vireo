@@ -272,7 +272,7 @@ button,
 input,
 select,
 textarea {
-  color: #54656b;
+  color: #3d4a4f;
   font-family: "Avenir", sans-serif;
   font-size: 16px;
   font-size: 1rem;
@@ -475,7 +475,7 @@ input[type="url"],
 input[type="password"],
 input[type="search"],
 textarea {
-  color: #54656b;
+  color: #3d4a4f;
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 3px;
 }
@@ -804,9 +804,17 @@ object {
   color: #FF3D2E;
 }
 
+.section-title {
+  color: rgba(255, 255, 255, 0.6);
+  text-align: center;
+  margin-bottom: 0;
+  font-size: 25.6px;
+  font-size: 1.6rem;
+}
+
 .home-hero {
   background-color: #FFFFFF;
-  background: url("./images/bg2.jpg") no-repeat center center;
+  background: url("./images/hero.jpg") no-repeat center center;
   background-size: cover;
   padding: 150px 0 100px 0;
   position: relative;
@@ -824,9 +832,7 @@ object {
 .home-services {
   background: #272F32;
   color: #FFFFFF;
-  position: relative;
   padding: 2em 0;
-  z-index: 2;
 }
 .home-services h4 {
   color: #FFFFFF;
@@ -898,6 +904,7 @@ object {
 
 .home-blog {
   background-color: #3d4a4f;
+  /* background: url('./images/wood.png') repeat; */
   margin: 0;
   padding: 2em 0 4em 0;
 }
@@ -909,6 +916,12 @@ object {
   border-radius: 5px;
 }
 .home-post a {
+  color: #272F32;
+}
+.home-post a:hover, .home-post a:active, .home-post a:focus {
+  color: #FFFFFF;
+}
+.home-post a:first-child {
   text-decoration: none;
 }
 
@@ -926,25 +939,13 @@ object {
   border-radius: 50%;
   border: 3px solid #DAEAEF;
   float: left;
-  -webkit-filter: grayscale(100%);
-  filter: grayscale(100%);
-  -webkit-transition: 1s ease;
-  -moz-transition: 1s ease;
-  -ms-transition: 1s ease;
-  -o-transition: 1s ease;
-  transition: 1s ease;
 }
 
-.home-post:hover .home-post--image {
-  -webkit-filter: grayscale(0);
-  filter: grayscale(0);
-}
-
-.home-post:nth-child(2) .home-post--image {
+.home-post:nth-child(3) .home-post--image {
   float: right;
 }
 
-.home-post:nth-child(2) .home-post--content {
+.home-post:nth-child(3) .home-post--content {
   float: left;
 }
 
@@ -1153,4 +1154,7 @@ object {
     border-right-color: transparent;
     border-bottom-color: rgba(157, 189, 198, 0.8);
   }
+}
+.about-section {
+  width: 50%;
 }

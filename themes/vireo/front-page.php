@@ -38,12 +38,12 @@ get_header(); ?>
 
     <div class="home-portfolio-section">
       <h3>Our work</h3>
-      <p class="bar">Phosfluorescently incubate customer directed expertise and seamless platforms. Dynamically iterate adaptive supply chains whereas value-added data.</p>
+      <p class="bar">Phosfluorescently incubate customer directed expertise and seamless platforms.</p>
       <button>Check it out</button>
     </div>
 
     <div class="home-portfolio-section">
-      <img src="http://localhost/vireo/wp-content/uploads/2015/05/home-portfolio.png">
+      <img src="http://localhost/vireo/wp-content/uploads/2015/05/home-portfolio.png" alt="Portfolio mobile screenshots">
     </div>
 
 </div><!-- /container -->
@@ -53,7 +53,7 @@ get_header(); ?>
 
 <section class="home-blog">
   <div class="container">
-
+      <h2 class="section-title">The think tank blog</h2>
     <?php query_posts('posts_per_page=3') ?>
     <?php while (have_posts()) : the_post(); ?>
 
