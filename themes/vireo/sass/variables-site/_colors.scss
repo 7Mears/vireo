@@ -41,11 +41,11 @@ $color__link: $color4;
 $color__link-hover: $color6;
 $color__link-visited: $color__link;
 
-$color__border-button: $color1;
-$color__button-text: $color1;
+$color__border-button: $color2;
+$color__button-text: $color3;
 $color__background-button: $color2;
-$color__border-button-hover: $color4;
-$color__border-button-focus: $color__border-button-hover;
+$color__button-hover: rgba(0,0,0,0);
+$color__button-focus: $color__button-hover;
 
 $color__background-hr: $color2;
 

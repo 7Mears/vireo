@@ -6,25 +6,25 @@
 
 	<footer class="site-footer">
 		<div class="container">
-			<div class="left">
-
-				<ul class="footer-nav">
-					<li class="list-title">Navigation</li>
-					<li><a href="<?php echo esc_url( home_url( '/' ) ); ?>about/">About</a></li>
-					<li><a href="<?php echo esc_url( home_url( '/' ) ); ?>services/">Services</a></li>
-					<li><a href="<?php echo esc_url( home_url( '/' ) ); ?>portfolio/">Portfolio</a></li>
-					<li><a href="<?php echo esc_url( home_url( '/' ) ); ?>blog/">Blog</a></li>
-					<li><a href="<?php echo esc_url( home_url( '/' ) ); ?>contact/">Contact</a></li>
-				</ul>
-
+			<div class="footer-card">
+				<i class="fa fa-phone"></i>
+				<p>Phone us anytime
+					<a href="#0">(306) 292-1819</a>
+				</p>
 			</div>
 
-			<div class="right">
-				<ul>
-					<li class="list-title">Vireo Productions</li>
-					<li>Phone: (306) 292-1819</li>
-					<li>Email: contact@vireoproductions.com</li>
-				</ul>
+			<div class="footer-card">
+				<i class="fa fa-paper-plane"></i>
+				<p>Email us at
+					<a href="#0">info@vireoproductions.com</a>
+				</p>
+			</div>
+
+			<div class="footer-card">
+				<i class="fa fa-map-marker"></i>
+				<p>We are based in
+					<a href="#0">Saskatoon, Saskatchewan</a>
+				</p>
 			</div>
 
 		</div><!-- /container -->

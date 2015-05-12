@@ -2,45 +2,19 @@
 
 .home-hero {
   background-color: $color__background-body;
-  background: url('./images/bg.jpg') no-repeat center center;
+  background: url('./images/bg2.jpg') no-repeat center center;
   background-size: cover;
   padding: 150px 0 100px 0;
   position: relative;
-
-  .container {
-    z-index: 2;
-    position: relative;
-  }
-}
-
-.company-name {
-  font-family: $font__primary;
-  font-weight: 700;
-  margin: 0;
-}
-
-.company-slogan {
-  @include font-size(2);
-  margin: 0 0 25px 0;
+  height: 100vh;
 }
 
 .hero-info {
-  @include font-size(1.1);
-  color: $color__text-main;
-  width: 650px;
+  color: $color__text-alt;
+  @include font-size(1.4);
+  padding-top: 100px;
+  width: 400px;
 }
-
-.hero-circle {
-  position: absolute;
-  top: -400px;
-  left: -400px;
-  width: 1400px;
-  height: 1400px;
-  background-color: rgba($color2, 0.6);
-  border-radius: 50%;
-  z-index: 1;
-}
-
 
 // services
 
@@ -55,7 +29,6 @@
     color: $color__text-alt;
     @include font-size(1.4);
     text-align: center;
-    font-style: italic;
     padding: 0 $padding-main;
 
     a {
@@ -70,7 +43,7 @@
   }
 
   a {
-    font-style: normal;
+    font-style: italic;
   }
 }
 
@@ -97,28 +70,58 @@
   }
 }
 
+// portfolio
+
+.home-portfolio {
+  background: $color__background-dark;
+  color: $color__text-alt;
+  position: relative;
+  padding-bottom: $padding-main;
+
+  h3 {
+    color: $color__text-alt;
+    margin-top: 0;
+  }
+}
+
+.home-portfolio-section {
+  float: left;
+  padding: $padding-main;
+
+  p {
+    color: $color__text-alt-dark;
+    padding-right: ($padding-main * 2);
+  }
+
+  .bar {
+    border-right: $border-size solid rgba(0,0,0,0.2);
+  }
+
+  &:first-child {
+    width: 33.3333%;
+    padding-left: 0;
+  }
+
+  &:nth-child(2) {
+    width: 65%;
+  }
+}
+
+
 // blog
 
 .home-blog {
-  background-color: $color__background-body;
-  background: url('./images/bg.jpg') no-repeat center center;
-  background-size: cover;
+  background-color: lighten($color1 , 10%);
   margin: 0;
-  padding: 0 0 ($padding-main * 2) 0;
+  padding: $padding-main 0 ($padding-main * 2) 0;
 }
 
-.home-blog-section--title {
-  @include font-size(1.2);
-  background-color: $color2;
-  display: inline-block;
-  padding: 0.5em 1em;
-  margin: 0;
-}
 
 .home-post {
   padding: 0 $padding-main;
   margin-top: ($padding-main * 2);
-  background-color: $color2;
+  background-color: rgba($color2, 0.7);
+  border-radius: $border-radius;
 
   a {
     text-decoration: none;
@@ -149,11 +152,11 @@
   filter: grayscale(0);
 }
 
-.home-post:nth-child(3) .home-post--image {
+.home-post:nth-child(2) .home-post--image {
   float: right;
 }
 
-.home-post:nth-child(3) .home-post--content {
+.home-post:nth-child(2) .home-post--content {
   float: left;
 }
 

@@ -439,14 +439,11 @@ button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-  border: 0;
-  border-bottom: 3px solid;
-  border-color: #272F32;
+  border: 3px solid;
+  border-radius: 5px;
+  border-color: #9DBDC6;
   background: #9DBDC6;
   color: #272F32;
-  font-family: "Merriweather", serif;
-  font-size: 17.6px;
-  font-size: 1.1rem;
   padding: 0.5em 1em;
   -webkit-transition: 0.3s ease;
   -moz-transition: 0.3s ease;
@@ -458,7 +455,8 @@ button:hover,
 input[type="button"]:hover,
 input[type="reset"]:hover,
 input[type="submit"]:hover {
-  border-color: #FF3D2E;
+  background-color: transparent;
+  color: #FFFFFF;
 }
 button:active, button:focus,
 input[type="button"]:active,
@@ -467,7 +465,8 @@ input[type="reset"]:active,
 input[type="reset"]:focus,
 input[type="submit"]:active,
 input[type="submit"]:focus {
-  border-color: #FF3D2E;
+  background-color: transparent;
+  color: #FFFFFF;
 }
 
 input[type="text"],
@@ -756,7 +755,7 @@ object {
 }
 
 .site-header {
-  background-color: rgba(157, 189, 198, 0.7);
+  background-color: rgba(157, 189, 198, 0);
   position: absolute;
   width: 100%;
   height: 50px;
@@ -799,7 +798,7 @@ object {
 }
 .main-navigation a {
   text-decoration: none;
-  color: #272F32;
+  color: #FFFFFF;
 }
 .main-navigation a:hover {
   color: #FF3D2E;
@@ -807,44 +806,19 @@ object {
 
 .home-hero {
   background-color: #FFFFFF;
-  background: url("./images/bg.jpg") no-repeat center center;
+  background: url("./images/bg2.jpg") no-repeat center center;
   background-size: cover;
   padding: 150px 0 100px 0;
   position: relative;
-}
-.home-hero .container {
-  z-index: 2;
-  position: relative;
-}
-
-.company-name {
-  font-family: "Avenir", sans-serif;
-  font-weight: 700;
-  margin: 0;
-}
-
-.company-slogan {
-  font-size: 32px;
-  font-size: 2rem;
-  margin: 0 0 25px 0;
+  height: 100vh;
 }
 
 .hero-info {
-  font-size: 17.6px;
-  font-size: 1.1rem;
-  color: #272F32;
-  width: 650px;
-}
-
-.hero-circle {
-  position: absolute;
-  top: -400px;
-  left: -400px;
-  width: 1400px;
-  height: 1400px;
-  background-color: rgba(157, 189, 198, 0.6);
-  border-radius: 50%;
-  z-index: 1;
+  color: #FFFFFF;
+  font-size: 22.4px;
+  font-size: 1.4rem;
+  padding-top: 100px;
+  width: 400px;
 }
 
 .home-services {
@@ -859,7 +833,6 @@ object {
   font-size: 22.4px;
   font-size: 1.4rem;
   text-align: center;
-  font-style: italic;
   padding: 0 2em;
 }
 .home-services h4 a {
@@ -871,7 +844,7 @@ object {
   margin-top: 0;
 }
 .home-services a {
-  font-style: normal;
+  font-style: italic;
 }
 
 .home-services-section {
@@ -893,27 +866,47 @@ object {
   border-right: 3px solid rgba(0, 0, 0, 0.2);
 }
 
-.home-blog {
-  background-color: #FFFFFF;
-  background: url("./images/bg.jpg") no-repeat center center;
-  background-size: cover;
-  margin: 0;
-  padding: 0 0 4em 0;
+.home-portfolio {
+  background: #272F32;
+  color: #FFFFFF;
+  position: relative;
+  padding-bottom: 2em;
+}
+.home-portfolio h3 {
+  color: #FFFFFF;
+  margin-top: 0;
 }
 
-.home-blog-section--title {
-  font-size: 19.2px;
-  font-size: 1.2rem;
-  background-color: #9DBDC6;
-  display: inline-block;
-  padding: 0.5em 1em;
+.home-portfolio-section {
+  float: left;
+  padding: 2em;
+}
+.home-portfolio-section p {
+  color: #b3b3b3;
+  padding-right: 4em;
+}
+.home-portfolio-section .bar {
+  border-right: 3px solid rgba(0, 0, 0, 0.2);
+}
+.home-portfolio-section:first-child {
+  width: 33.3333%;
+  padding-left: 0;
+}
+.home-portfolio-section:nth-child(2) {
+  width: 65%;
+}
+
+.home-blog {
+  background-color: #3d4a4f;
   margin: 0;
+  padding: 2em 0 4em 0;
 }
 
 .home-post {
   padding: 0 2em;
   margin-top: 4em;
-  background-color: #9DBDC6;
+  background-color: rgba(157, 189, 198, 0.7);
+  border-radius: 5px;
 }
 .home-post a {
   text-decoration: none;
@@ -947,11 +940,11 @@ object {
   filter: grayscale(0);
 }
 
-.home-post:nth-child(3) .home-post--image {
+.home-post:nth-child(2) .home-post--image {
   float: right;
 }
 
-.home-post:nth-child(3) .home-post--content {
+.home-post:nth-child(2) .home-post--content {
   float: left;
 }
 
@@ -983,28 +976,24 @@ object {
 }
 
 .site-footer {
-  padding: 2em 0;
+  padding: 4em 0 2em 0;
   background-color: #272F32;
   color: #FFFFFF;
 }
-.site-footer ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-.site-footer ul a {
-  text-decoration: none;
-}
-.site-footer .left {
+
+.footer-card {
+  width: 33.3333%;
   float: left;
+  text-align: center;
 }
-.site-footer .right {
-  float: right;
-  text-align: right;
+.footer-card .fa {
+  font-size: 25.6px;
+  font-size: 1.6rem;
+  display: block;
 }
-.site-footer .list-title {
-  font-family: "Merriweather", serif;
-  font-weight: 700;
+.footer-card a {
+  text-decoration: none;
+  display: block;
 }
 
 .process-page-content {

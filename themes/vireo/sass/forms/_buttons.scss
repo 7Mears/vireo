@@ -2,22 +2,22 @@ button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-	border: 0;
-	border-bottom: $border-size solid;
+	border: $border-size solid;
+	border-radius: $border-radius;
 	border-color: $color__border-button;
 	background: $color__background-button;
-	color: $color__button-text;
-	font-family: $font__secondary;
-	@include font-size(1.1);
+	color: $color1;
 	padding: 0.5em 1em;
 	@include transition(0.3s ease);
 
 	&:hover {
-		border-color: $color__border-button-hover;
+		background-color: $color__button-hover;
+		color: $color__button-text;
 	}
 
 	&:active,
 	&:focus {
-		border-color: $color__border-button-focus;
+		background-color: $color__button-focus;
+		color: $color__button-text;
 	}
 }

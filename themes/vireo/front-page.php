@@ -5,12 +5,9 @@
 
 get_header(); ?>
 <section class="home-hero">
-  <span class="hero-circle"></span><!-- /Circle background effect -->
   <div class="container">
-    <h1 class="company-name">Vireo Productions</h1>
-    <h2 class="company-slogan">We make websites</h2>
-    <p class="hero-info">And we fill those sites with professional, engaging content. Websites are made to share information and ideas through an online medium, and the best websites feature both great content and beautiful design.</p>
-    <button type="button" name="button" class="hero-button">See our work</button>
+    <p class="hero-info"><strong>We make websites</strong> and we fill those sites with professional, engaging content. Websites are made to share information and ideas through an online medium, and the best websites feature both great content and beautiful design.</p>
+    <button type="button" name="button" class="hero-button">Start a project</button>
   </div><!-- /container -->
 </section><!-- /hero -->
 
@@ -36,10 +33,27 @@ get_header(); ?>
   </div><!-- /container -->
 </section><!-- /services -->
 
+<section class="home-portfolio">
+  <div class="container">
+
+    <div class="home-portfolio-section">
+      <h3>Our work</h3>
+      <p class="bar">Phosfluorescently incubate customer directed expertise and seamless platforms. Dynamically iterate adaptive supply chains whereas value-added data.</p>
+      <button>Check it out</button>
+    </div>
+
+    <div class="home-portfolio-section">
+      <img src="http://localhost/vireo/wp-content/uploads/2015/05/home-portfolio.png">
+    </div>
+
+</div><!-- /container -->
+
+<div class="clear"></div>
+</section><!-- /services -->
+
 <section class="home-blog">
   <div class="container">
 
-    <h2 class="home-blog-section--title">The think tank blog</h2>
     <?php query_posts('posts_per_page=3') ?>
     <?php while (have_posts()) : the_post(); ?>
 
