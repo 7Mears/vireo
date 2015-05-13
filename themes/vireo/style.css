@@ -904,7 +904,8 @@ object {
 
 .home-blog {
   background-color: #3d4a4f;
-  /* background: url('./images/wood.png') repeat; */
+  /* background: url('./images/wood.png') repeat;
+  background-attachment: fixed; */
   margin: 0;
   padding: 2em 0 4em 0;
 }
@@ -1162,7 +1163,6 @@ object {
 .services-list {
   float: left;
   width: 50%;
-  list-style-type: none;
   margin: 0 0 2em 0;
   padding: 0;
 }
@@ -1170,6 +1170,7 @@ object {
   font-family: "Merriweather", serif;
   font-size: 32px;
   font-size: 2rem;
+  list-style-type: none;
 }
 
 .services-content {

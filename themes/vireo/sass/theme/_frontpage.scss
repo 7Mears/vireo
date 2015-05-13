@@ -118,7 +118,8 @@
 
 .home-blog {
   background-color: lighten($color1 , 10%);
-/* background: url('./images/wood.png') repeat; */
+/* background: url('./images/wood.png') repeat;
+background-attachment: fixed; */
   margin: 0;
   padding: $padding-main 0 ($padding-main * 2) 0;
 }

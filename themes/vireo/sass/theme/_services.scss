@@ -2,13 +2,13 @@
   float: left;
   width: 50%;
 
-  list-style-type: none;
   margin: 0 0 $padding-main 0;
   padding: 0;
 
   .title {
     font-family: $font__secondary;
     @include font-size(2);
+    list-style-type: none;
   }
 }
 
