@@ -8,10 +8,10 @@
 get_header(); ?>
 
 
-		<main id="main" class="site-main" role="main">
+		<main id="main" class="site-main process-page" role="main">
 
       	<header class="entry-header">
-          <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+          <h1 class="entry-title">Building a website with Vireo</h1>
       	</header><!-- .entry-header -->
 
       	<div class="process-page-content">

@@ -264,6 +264,11 @@ th {
 }
 @font-face {
   font-family: 'Avenir';
+  src: url("./fonts/AvenirLight.otf");
+  font-weight: 100;
+}
+@font-face {
+  font-family: 'Avenir';
   src: url("./fonts/AvenirBold.otf");
   font-weight: 700;
 }
@@ -755,7 +760,7 @@ object {
 }
 
 .site-header {
-  background-color: rgba(157, 189, 198, 0);
+  background-color: rgba(39, 47, 50, 0.6);
   position: absolute;
   width: 100%;
   height: 50px;
@@ -793,12 +798,13 @@ object {
 }
 .main-navigation li {
   display: inline-block;
-  padding-left: 1.5em;
+  padding-left: 2em;
   padding-top: 15px;
 }
 .main-navigation a {
   text-decoration: none;
   color: #FFFFFF;
+  font-weight: 700;
 }
 .main-navigation a:hover {
   color: #FF3D2E;
@@ -807,7 +813,6 @@ object {
 .section-title {
   color: rgba(255, 255, 255, 0.6);
   text-align: center;
-  margin-bottom: 0;
   font-size: 25.6px;
   font-size: 1.6rem;
 }
@@ -821,11 +826,26 @@ object {
   height: 100vh;
 }
 
+.hero-title,
 .hero-info {
   color: #FFFFFF;
+  text-shadow: 0 2px 0 black;
+}
+
+.hero-title {
+  font-family: "Avenir", sans-serif;
+  font-weight: 700;
+  padding-top: 100px;
+  margin: 0;
+}
+.hero-title span {
+  font-weight: 100;
+}
+
+.hero-info {
   font-size: 22.4px;
   font-size: 1.4rem;
-  padding-top: 100px;
+  font-weight: 100;
   width: 400px;
 }
 
@@ -869,7 +889,7 @@ object {
   padding-right: 4em;
 }
 .home-services-section .bar {
-  border-right: 3px solid rgba(0, 0, 0, 0.2);
+  border-right: 3px dotted rgba(0, 0, 0, 0.2);
 }
 
 .home-portfolio {
@@ -882,30 +902,81 @@ object {
   color: #FFFFFF;
   margin-top: 0;
 }
-
-.home-portfolio-section {
-  float: left;
-  padding: 2em;
-}
-.home-portfolio-section p {
-  color: #b3b3b3;
-  padding-right: 4em;
-}
-.home-portfolio-section .bar {
-  border-right: 3px solid rgba(0, 0, 0, 0.2);
-}
-.home-portfolio-section:first-child {
-  width: 33.3333%;
+.home-portfolio .card-first {
   padding-left: 0;
 }
-.home-portfolio-section:nth-child(2) {
-  width: 65%;
+.home-portfolio .card-third {
+  padding-right: 0;
+}
+
+.home-portfolio-card {
+  float: left;
+  width: 33.3333%;
+  padding: 2em;
+  color: #b3b3b3;
+  position: relative;
+}
+.home-portfolio-card p {
+  padding-right: 4em;
+}
+
+/* --- The figure boxes --- */
+figure {
+  position: relative;
+  float: left;
+  width: 100%;
+  overflow: hidden;
+  display: block;
+  text-align: center;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+figcaption {
+  cursor: pointer;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: block;
+  z-index: 100;
+  font-weight: 100;
+}
+
+/* --- Setting up the elements that will change --- */
+.im-gonna-change p, .im-gonna-change h3 {
+  transition: opacity 0.35s, transform 0.35s;
+}
+
+.im-gonna-change figcaption {
+  transition: 0.35s ease-in;
+}
+
+.im-gonna-change h3 {
+  poition: absolute;
+  opacity: 0;
+}
+
+/* --- All the changes on hover --- */
+.im-gonna-change:hover figcaption {
+  transform: translate3d(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.im-gonna-change:hover h3 {
+  color: #fff;
+  opacity: 1;
+  transform: translate3d(0, 10px, 0);
 }
 
 .home-blog {
   background-color: #3d4a4f;
-  /* background: url('./images/wood.png') repeat;
-  background-attachment: fixed; */
+  background: url("./images/wood.png") repeat;
   margin: 0;
   padding: 2em 0 4em 0;
 }
@@ -915,6 +986,9 @@ object {
   margin-top: 4em;
   background-color: rgba(157, 189, 198, 0.7);
   border-radius: 5px;
+}
+.home-post:nth-child(2) {
+  margin-top: 0;
 }
 .home-post a {
   color: #272F32;
@@ -969,7 +1043,7 @@ object {
 
 .entry-title {
   color: #FFFFFF;
-  padding: 50px 2em 2em 2em;
+  padding: 150px 2em;
   margin: 0;
 }
 
@@ -996,6 +1070,11 @@ object {
 .footer-card a {
   text-decoration: none;
   display: block;
+}
+
+.process-page .entry-header {
+  background: url("./images/process.jpg") no-repeat center center;
+  background-size: cover;
 }
 
 .process-page-content {
@@ -1156,24 +1235,101 @@ object {
     border-bottom-color: rgba(157, 189, 198, 0.8);
   }
 }
-.about-section {
-  width: 50%;
+.about-header {
+  background: #272F32;
+  padding: 150px 2em;
+  text-align: center;
+}
+.about-header h1,
+.about-header h2 {
+  color: #FFFFFF;
+  margin: 0;
+  padding: 0;
+}
+.about-header h1 {
+  font-family: "Avenir", sans-serif;
+  font-weight: 700;
+}
+.about-header h1 span {
+  font-weight: 100;
+}
+.about-header h2 {
+  font-size: 32px;
+  font-size: 2rem;
+}
+
+.about-intro {
+  font-size: 19.2px;
+  font-size: 1.2rem;
+  padding: 2em 0;
+  -webkit-column-count: 2;
+  -moz-column-count: 2;
+  column-count: 2;
 }
 
 .services-list {
   float: left;
-  width: 50%;
-  margin: 0 0 2em 0;
-  padding: 0;
+  width: 25%;
+  margin: 2em 0;
+  padding: 0 0 2em 0;
+  list-style-type: none;
+  font-size: 14.4px;
+  font-size: 0.9rem;
 }
 .services-list .title {
   font-family: "Merriweather", serif;
-  font-size: 32px;
-  font-size: 2rem;
-  list-style-type: none;
+  font-size: 19.2px;
+  font-size: 1.2rem;
+  font-weight: 700;
 }
 
-.services-content {
-  content: "";
-  display: table;
+.about-services {
+  margin-bottom: 2em;
+}
+
+.website-process {
+  background-color: rgba(39, 47, 50, 0.1);
+  background: url("./images/about-process.jpg") no-repeat center center;
+  padding: 4em 0;
+}
+.website-process h4 {
+  margin: 0;
+}
+.website-process p {
+  text-shadow: 3px 3px 5px white;
+}
+
+.person {
+  width: 50%;
+  float: left;
+  margin: 2em 0;
+}
+.person:first-child {
+  padding-right: 4em;
+  border-right: 3px dotted rgba(0, 0, 0, 0.1);
+}
+.person:nth-child(2) {
+  padding-left: 4em;
+}
+.person .name,
+.person .role {
+  margin: 0;
+  padding: 0;
+}
+.person .name {
+  font-family: "Avenir", sans-serif;
+  font-weight: 100;
+}
+.person .role {
+  font-size: 16px;
+  font-size: 1rem;
+  padding-bottom: 2em;
+}
+.person .mug {
+  float: left;
+  border: 3px solid #DAEAEF;
+  border-radius: 50%;
+  width: 175px;
+  margin: 1em 2em 1em 0;
+  shape-outside: circle();
 }

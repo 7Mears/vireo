@@ -6,6 +6,7 @@
 get_header(); ?>
 <section class="home-hero">
   <div class="container">
+    <h1 class="hero-title">Vireo <span>Productions</span></h1>
     <p class="hero-info"><strong>We make websites</strong> and we fill those sites with professional, engaging content. Websites are made to share information and ideas through an online medium, and the best websites feature both great content and beautiful design.</p>
     <button type="button" name="button" class="hero-button">Start a project</button>
   </div><!-- /container -->
@@ -29,21 +30,35 @@ get_header(); ?>
       <p>Everything your business puts out into the world is part of its brand. Whether you need a website, social media management, email marketing, or a press kit, we’ll make sure it strengthens and enhances your business’s unique image.</p>
     </div>
 
-    <h4>Websites are a dance between design, content, and marketing; <a href="<?php echo esc_url( home_url( '/' ) ); ?>process/">take a look at our process</a> for building a website. For a full list of the services we provide, <a href="<?php echo esc_url( home_url( '/' ) ); ?>services/">see our services page.</a></h4>
+    <h4>Websites are a dance between design, content, and marketing; <a href="<?php echo esc_url( home_url( '/' ) ); ?>process/">take a look at our process</a> for building a website. For a full list of the services we provide, <a href="<?php echo esc_url( home_url( '/' ) ); ?>about/">see our services page.</a></h4>
   </div><!-- /container -->
 </section><!-- /services -->
 
 <section class="home-portfolio">
   <div class="container">
 
-    <div class="home-portfolio-section">
+    <div class="home-portfolio-card card-first">
       <h3>Our work</h3>
       <p class="bar">Phosfluorescently incubate customer directed expertise and seamless platforms.</p>
-      <button>Check it out</button>
+      <button>Show me more</button>
     </div>
 
-    <div class="home-portfolio-section">
-      <img src="http://localhost/vireo/wp-content/uploads/2015/05/home-works.png" alt="Portfolio mobile screenshots">
+    <div class="home-portfolio-card card-second">
+      <figure class="im-gonna-change">
+        <img src="http://i.imgur.com/WtHEiWH.png" alt="truck" />
+        <figcaption>
+          <h3>Advanced Auto Care and Tire</h3>
+        </figcaption>
+      </figure>
+    </div>
+
+    <div class="home-portfolio-card card-third">
+      <figure class="im-gonna-change">
+        <img src="http://i.imgur.com/WtHEiWH.png" alt="truck" />
+        <figcaption>
+          <h3>Global Exteriors</h3>
+        </figcaption>
+      </figure>
     </div>
 
   </div><!-- /container -->

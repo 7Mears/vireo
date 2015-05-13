@@ -2,7 +2,6 @@
 .section-title {
   color: rgba(255,255,255,0.6);
   text-align: center;
-  margin-bottom: 0;
   @include font-size(1.6);
 }
 
@@ -17,10 +16,26 @@
   height: 100vh;
 }
 
+.hero-title,
 .hero-info {
   color: $color__text-alt;
-  @include font-size(1.4);
+  text-shadow: 0 2px 0 black;
+}
+
+.hero-title {
+  font-family: $font__primary;
+  font-weight: 700;
   padding-top: 100px;
+  margin: 0;
+
+  span {
+    font-weight: 100;
+  }
+}
+
+.hero-info {
+  @include font-size(1.4);
+  font-weight: 100;
   width: 400px;
 }
 
@@ -72,7 +87,7 @@
   }
 
   .bar {
-    border-right: $border-size solid rgba(0,0,0,0.2);
+    border-right: $border-size dotted rgba(0,0,0,0.2);
   }
 }
 
@@ -88,38 +103,89 @@
     color: $color__text-alt;
     margin-top: 0;
   }
-}
 
-.home-portfolio-section {
-  float: left;
-  padding: $padding-main;
-
-  p {
-    color: $color__text-alt-dark;
-    padding-right: ($padding-main * 2);
-  }
-
-  .bar {
-    border-right: $border-size solid rgba(0,0,0,0.2);
-  }
-
-  &:first-child {
-    width: 33.3333%;
+  .card-first {
     padding-left: 0;
   }
 
-  &:nth-child(2) {
-    width: 65%;
+  .card-third {
+    padding-right: 0;
   }
 }
 
+.home-portfolio-card {
+  float: left;
+  width: 33.3333%;
+  padding: $padding-main;
+  color: $color__text-alt-dark;
+  position: relative;
+
+  p {
+    padding-right: ($padding-main * 2);
+  }
+}
+
+// portfolio pieces
+/* --- The figure boxes --- */
+figure {
+  position: relative;
+  float: left;
+  width: 100%;
+  overflow: hidden;
+  display: block;
+  text-align: center;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+figcaption {
+  cursor: pointer;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: block;
+  z-index: 100;
+  font-weight: 100;
+}
+
+/* --- Setting up the elements that will change --- */
+.im-gonna-change p, .im-gonna-change h3 {
+	transition: opacity 0.35s, transform 0.35s;
+}
+
+.im-gonna-change figcaption{
+  transition:0.35s ease-in;
+}
+
+.im-gonna-change h3 {
+  poition: absolute;
+  opacity: 0;
+}
+
+
+/* --- All the changes on hover --- */
+.im-gonna-change:hover figcaption {
+  transform: translate3d(0,0,0);
+  background-color: rgba(0,0,0,0.6);
+}
+
+.im-gonna-change:hover h3 {
+	color: #fff;
+  opacity: 1;
+	transform: translate3d(0,10px,0);
+}
 
 // blog
 
 .home-blog {
   background-color: lighten($color1 , 10%);
-/* background: url('./images/wood.png') repeat;
-background-attachment: fixed; */
+  background: url('./images/wood.png') repeat;
   margin: 0;
   padding: $padding-main 0 ($padding-main * 2) 0;
 }
@@ -130,6 +196,10 @@ background-attachment: fixed; */
   margin-top: ($padding-main * 2);
   background-color: rgba($color2, 0.7);
   border-radius: $border-radius;
+
+  &:nth-child(2) {
+    margin-top: 0;
+  }
 
   a {
     color: $color1;
