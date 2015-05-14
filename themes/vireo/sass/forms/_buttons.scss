@@ -21,3 +21,21 @@ input[type="submit"] {
 		color: $color__button-text;
 	}
 }
+
+
+.button-alt {
+	margin-left: 1em;
+	background-color: $color__button-hover;
+	color: $color__button-text;
+
+	&:hover {
+		background: $color__background-button;
+		color: $color1;
+	}
+
+	&:active,
+	&:focus {
+		background: $color__background-button;
+		color: $color1;
+	}
+}

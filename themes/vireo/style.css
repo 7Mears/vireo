@@ -474,6 +474,20 @@ input[type="submit"]:focus {
   color: #FFFFFF;
 }
 
+.button-alt {
+  margin-left: 1em;
+  background-color: transparent;
+  color: #FFFFFF;
+}
+.button-alt:hover {
+  background: #9DBDC6;
+  color: #272F32;
+}
+.button-alt:active, .button-alt:focus {
+  background: #9DBDC6;
+  color: #272F32;
+}
+
 input[type="text"],
 input[type="email"],
 input[type="url"],
@@ -859,7 +873,6 @@ object {
   font-size: 22.4px;
   font-size: 1.4rem;
   text-align: center;
-  padding: 0 2em;
 }
 .home-services h4 a {
   text-decoration: none;
@@ -892,91 +905,8 @@ object {
   border-right: 3px dotted rgba(0, 0, 0, 0.2);
 }
 
-.home-portfolio {
-  background: #272F32;
-  color: #FFFFFF;
-  position: relative;
-  padding-bottom: 2em;
-}
-.home-portfolio h3 {
-  color: #FFFFFF;
-  margin-top: 0;
-}
-.home-portfolio .card-first {
-  padding-left: 0;
-}
-.home-portfolio .card-third {
-  padding-right: 0;
-}
-
-.home-portfolio-card {
-  float: left;
-  width: 33.3333%;
-  padding: 2em;
-  color: #b3b3b3;
-  position: relative;
-}
-.home-portfolio-card p {
-  padding-right: 4em;
-}
-
-/* --- The figure boxes --- */
-figure {
-  position: relative;
-  float: left;
-  width: 100%;
-  overflow: hidden;
-  display: block;
-  text-align: center;
-}
-
-img {
-  width: 100%;
-  height: 100%;
-  display: block;
-}
-
-figcaption {
-  cursor: pointer;
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  display: block;
-  z-index: 100;
-  font-weight: 100;
-}
-
-/* --- Setting up the elements that will change --- */
-.im-gonna-change p, .im-gonna-change h3 {
-  transition: opacity 0.35s, transform 0.35s;
-}
-
-.im-gonna-change figcaption {
-  transition: 0.35s ease-in;
-}
-
-.im-gonna-change h3 {
-  poition: absolute;
-  opacity: 0;
-}
-
-/* --- All the changes on hover --- */
-.im-gonna-change:hover figcaption {
-  transform: translate3d(0, 0, 0);
-  background-color: rgba(0, 0, 0, 0.6);
-}
-
-.im-gonna-change:hover h3 {
-  color: #fff;
-  opacity: 1;
-  transform: translate3d(0, 10px, 0);
-}
-
 .home-blog {
   background-color: #3d4a4f;
-  background: url("./images/wood.png") repeat;
   margin: 0;
   padding: 2em 0 4em 0;
 }
@@ -984,13 +914,14 @@ figcaption {
 .home-post {
   padding: 0 2em;
   margin-top: 4em;
-  background-color: rgba(157, 189, 198, 0.7);
+  background-color: #272f32;
+  color: #b3b3b3;
 }
 .home-post:nth-child(2) {
   margin-top: 0;
 }
 .home-post a {
-  color: #272F32;
+  color: #9DBDC6;
 }
 .home-post a:hover, .home-post a:active, .home-post a:focus {
   color: #FFFFFF;
@@ -1013,6 +944,7 @@ figcaption {
   border-radius: 50%;
   border: 3px solid #DAEAEF;
   float: left;
+  shape-outside: circle();
 }
 
 .home-post:nth-child(3) .home-post--image {
@@ -1024,6 +956,7 @@ figcaption {
 }
 
 .home-post--title {
+  color: #FFFFFF;
   margin: 0;
 }
 

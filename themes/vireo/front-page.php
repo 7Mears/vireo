@@ -8,7 +8,7 @@ get_header(); ?>
   <div class="container">
     <h1 class="hero-title">Vireo <span>Productions</span></h1>
     <p class="hero-info"><strong>We make websites</strong> and we fill those sites with professional, engaging content. Websites are made to share information and ideas through an online medium, and the best websites feature both great content and beautiful design.</p>
-    <button type="button" name="button" class="hero-button">Start a project</button>
+    <button type="button" name="button" class="hero-button">Start a project</button><button type="button" name="button" class="button-alt">Check out the portfolio</button>
   </div><!-- /container -->
 </section><!-- /hero -->
 
@@ -34,36 +34,6 @@ get_header(); ?>
   </div><!-- /container -->
 </section><!-- /services -->
 
-<section class="home-portfolio">
-  <div class="container">
-
-    <div class="home-portfolio-card card-first">
-      <h3>Our work</h3>
-      <p class="bar">Phosfluorescently incubate customer directed expertise and seamless platforms.</p>
-      <button>Show me more</button>
-    </div>
-
-    <div class="home-portfolio-card card-second">
-      <figure class="im-gonna-change">
-        <img src="http://i.imgur.com/WtHEiWH.png" alt="truck" />
-        <figcaption>
-          <h3>Advanced Auto Care and Tire</h3>
-        </figcaption>
-      </figure>
-    </div>
-
-    <div class="home-portfolio-card card-third">
-      <figure class="im-gonna-change">
-        <img src="http://i.imgur.com/WtHEiWH.png" alt="truck" />
-        <figcaption>
-          <h3>Global Exteriors</h3>
-        </figcaption>
-      </figure>
-    </div>
-
-  </div><!-- /container -->
-  <div class="clear"></div>
-</section><!-- /services -->
 
 <section class="home-blog">
   <div class="container">
