@@ -1251,6 +1251,7 @@ object {
   width: 50%;
   float: left;
   margin: 2em 0;
+  padding: 2em 0;
 }
 .person:first-child {
   padding-right: 4em;

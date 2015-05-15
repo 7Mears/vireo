@@ -91,6 +91,7 @@
   width: 50%;
   float: left;
   margin: $padding-main 0;
+  padding: $padding-main 0;
 
   &:first-child {
     padding-right: ($padding-main * 2);
