@@ -16,7 +16,7 @@
 <body <?php body_class(); ?>>
 <div id="page" class="page">
 
-	<header class="site-header" role="banner">
+	<header id="site-header" class="site-header" role="banner">
 		<div class="container">
 
 			<div class="site-branding">
