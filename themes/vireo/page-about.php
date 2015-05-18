@@ -10,7 +10,7 @@ get_header(); ?>
 
 <main id="main" class="site-main" role="main">
 
-	<header class="about-header">
+	<header class="page-header">
 		<h1>Vireo <span>Productions</span></h1>
 		<h2>Web design and content creation</h2>
 	</header><!-- .entry-header -->

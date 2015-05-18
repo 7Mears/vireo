@@ -973,6 +973,29 @@ object {
   margin-top: 0;
 }
 
+.page-header {
+  background: #272F32;
+  padding: 150px 2em;
+  text-align: center;
+}
+.page-header h1,
+.page-header h2 {
+  color: #FFFFFF;
+  margin: 0;
+  padding: 0;
+}
+.page-header h1 {
+  font-family: "Avenir", sans-serif;
+  font-weight: 700;
+}
+.page-header h1 span {
+  font-weight: 100;
+}
+.page-header h2 {
+  font-size: 32px;
+  font-size: 2rem;
+}
+
 .entry-header {
   background: #272F32;
   color: #FFFFFF;
@@ -1173,29 +1196,6 @@ object {
     border-bottom-color: rgba(157, 189, 198, 0.8);
   }
 }
-.about-header {
-  background: #272F32;
-  padding: 150px 2em;
-  text-align: center;
-}
-.about-header h1,
-.about-header h2 {
-  color: #FFFFFF;
-  margin: 0;
-  padding: 0;
-}
-.about-header h1 {
-  font-family: "Avenir", sans-serif;
-  font-weight: 700;
-}
-.about-header h1 span {
-  font-weight: 100;
-}
-.about-header h2 {
-  font-size: 32px;
-  font-size: 2rem;
-}
-
 .about-intro {
   font-size: 19.2px;
   font-size: 1.2rem;
@@ -1358,4 +1358,52 @@ object {
   position: absolute;
   bottom: 2em;
   left: 2em;
+}
+
+.page-portfolio {
+  background-color: #3d4a4f;
+  margin: 0;
+  padding: 2em 0 4em 0;
+}
+
+.portfolio-post {
+  padding: 2em;
+  background-color: #272f32;
+  color: #b3b3b3;
+  width: 45%;
+  float: left;
+  margin: 5% 2.5%;
+  min-height: 500px;
+}
+.portfolio-post a {
+  color: #9DBDC6;
+}
+.portfolio-post a:hover, .portfolio-post a:active, .portfolio-post a:focus {
+  color: #FFFFFF;
+}
+.portfolio-post a:first-child {
+  text-decoration: none;
+}
+
+.portfolio-post--content {
+  float: right;
+  margin: 2%;
+  font-size: 17.6px;
+  font-size: 1.1rem;
+}
+
+.portfolio-post--image {
+  display: block;
+  width: 100%;
+}
+
+.portfolio-post--title {
+  text-align: center;
+  color: #FFFFFF;
+  padding-top: 1em;
+  margin: 0;
+}
+
+.portfolio-post-more {
+  bottom: 2em;
 }

@@ -1,0 +1,54 @@
+
+.page-portfolio {
+  background-color: lighten($color1 , 10%);
+  margin: 0;
+  padding: $padding-main 0 ($padding-main * 2) 0;
+}
+
+
+.portfolio-post {
+  padding: $padding-main;
+  background-color: rgba($color1, 1);
+  color: $color__text-alt-dark;
+  width: 45%;
+  float: left;
+  margin: 5% 2.5%;
+  min-height: 500px;
+
+  a {
+    color: $color2;
+
+    &:hover,
+    &:active,
+    &:focus {
+      color: $color3;
+    }
+  }
+
+  a:first-child {
+    text-decoration: none;
+  }
+}
+
+.portfolio-post--content {
+  float: right;
+  margin: 2%;
+  @include font-size(1.1);
+}
+
+.portfolio-post--image {
+  display: block;
+  width: 100%;
+}
+
+.portfolio-post--title {
+  text-align: center;
+  color: $color__text-alt;
+  padding-top: 1em;
+  margin: 0;
+}
+
+
+.portfolio-post-more {
+  bottom: $padding-main;
+}
