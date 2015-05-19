@@ -9,17 +9,23 @@
 
 <?php while ( have_posts() ) : the_post(); ?>
 
+<?php
+  $background_image = get_field('header_background_image');
+
+  if( !empty($background_image) ):
+?>
 <style>
 .portfolio-post-header {
-  background: url('http://localhost/vireo/wp-content/uploads/2015/05/advancedauto.jpg') no-repeat center center;
+  background: url('<?php echo $background_image['url']; ?>') no-repeat center center;
   background-size: cover;
 }
 </style>
+<?php endif; ?>
 
  <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
  	<header class="portfolio-post-header">
  		<?php the_title( sprintf( '<h1 class="entry-title">', esc_url( get_permalink() ) ), '</h1>' ); ?>
-     <button>Visit the site</button>
+     <a href="<?php the_field('website_link'); ?>"><button>Visit the site</button></a>
  	</header><!-- .entry-header -->
 
 <div class="container">
@@ -44,12 +50,37 @@
       </div>
 
       <div class="portfolio-post-right">
-        <img src="http://localhost/vireo/wp-content/uploads/2015/05/advancedauto.jpg">
+        <?php
+        $image1 = get_field('portfolio_image_1');
+        $image2 = get_field('portfolio_image_2');
+        $image3 = get_field('portfolio_image_3');
+        $image4 = get_field('portfolio_image_4');
+        $image5 = get_field('portfolio_image_5');
 
-        <img src="http://localhost/vireo/wp-content/uploads/2015/05/advancedauto.jpg">
+        if( !empty($image1) ): ?>
+          <img src="<?php echo $image1['url']; ?>" alt="<?php echo $image1['alt']; ?>" />
+        <!-- /website-image1 -->
+        <?php endif; ?>
 
-        <img src="http://localhost/vireo/wp-content/uploads/2015/05/advancedauto.jpg">
+        <?php if( !empty($image2) ): ?>
+          <img src="<?php echo $image2['url']; ?>" alt="<?php echo $image2['alt']; ?>" />
+        <!-- /website-image2 -->
+        <?php endif; ?>
 
+        <?php if( !empty($image3) ): ?>
+          <img src="<?php echo $image3['url']; ?>" alt="<?php echo $image3['alt']; ?>" />
+        <!-- /website-image3 -->
+        <?php endif; ?>
+
+        <?php if( !empty($image4) ): ?>
+          <img src="<?php echo $image4['url']; ?>" alt="<?php echo $image4['alt']; ?>" />
+        <!-- /website-image4 -->
+        <?php endif; ?>
+
+        <?php if( !empty($image5) ): ?>
+          <img src="<?php echo $image5['url']; ?>" alt="<?php echo $image5['alt']; ?>" />
+        <!-- /website-image5 -->
+        <?php endif; ?>
       </div>
 
       <div class="clear"></div>
