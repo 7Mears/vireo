@@ -16,3 +16,28 @@
     width: 90%;
   }
 }
+
+// Post navigation text
+.posts-navigation h2 {
+  display: none;
+}
+
+
+// Wordpress admin bar to bottom
+body {
+    margin-top: -28px;
+    padding-bottom: 28px;
+    }
+    body.admin-bar #wphead {
+       padding-top: 0;
+    }
+    body.admin-bar #footer {
+       padding-bottom: 28px;
+    }
+    #wpadminbar {
+        top: auto !important;
+        bottom: 0;
+    }
+    #wpadminbar .quicklinks .menupop ul {
+        bottom: 28px;
+    }

@@ -8,7 +8,7 @@ get_header(); ?>
 		<main id="main" class="site-main page-blog" role="main">
 
       <header class="page-header">
-        <h2>The think tank</h2>
+				<h1 class="entry-title">Blog</h1>
       </header><!-- .entry-header -->
 
       <div class="container">

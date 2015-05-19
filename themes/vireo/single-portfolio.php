@@ -4,34 +4,60 @@
  */
 
  get_header(); ?>
- 	<div class="container">
- 		<main id="main" class="site-main" role="main">
 
- 		<?php if ( have_posts() ) : ?>
+<main id="main" class="site-main" role="main">
 
- 			<?php /* Start the Loop */ ?>
- 			<?php while ( have_posts() ) : the_post(); ?>
+<?php while ( have_posts() ) : the_post(); ?>
 
- 				<?php
- 					/* Include the Post-Format-specific template for the content.
- 					 * If you want to override this in a child theme, then include a file
- 					 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
- 					 */
- 					get_template_part( 'template-parts/content', get_post_format() );
- 				?>
+<style>
+.portfolio-post-header {
+  background: url('http://localhost/vireo/wp-content/uploads/2015/05/advancedauto.jpg') no-repeat center center;
+  background-size: cover;
+}
+</style>
 
- 			<?php endwhile; ?>
+ <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+ 	<header class="portfolio-post-header">
+ 		<?php the_title( sprintf( '<h1 class="entry-title">', esc_url( get_permalink() ) ), '</h1>' ); ?>
+     <button>Visit the site</button>
+ 	</header><!-- .entry-header -->
 
- 			<?php the_posts_navigation(); ?>
+<div class="container">
+  <div class="portfolio-post-excerpt">
+   <?php the_excerpt(); ?>
+  </div>
+</div>
 
- 		<?php else : ?>
+ <div class="clear"></div>
+</div>
 
- 			<?php get_template_part( 'template-parts/content', 'none' ); ?>
+ 	<div class="portfolio-post-content">
+ 		<div class="container">
+       <div class="portfolio-post-left">
+     		<?php
+     			/* translators: %s: Name of current post */
+     			the_content( sprintf(
+     				wp_kses( __( 'Continue reading %s <span class="meta-nav">&rarr;</span>', 'vireo' ), array( 'span' => array() ) ),
+     				the_title( '<span class="screen-reader-text">"', '"</span>', false )
+     			) );
+     		?>
+      </div>
 
- 		<?php endif; ?>
+      <div class="portfolio-post-right">
+        <img src="http://localhost/vireo/wp-content/uploads/2015/05/advancedauto.jpg">
 
- 	</main><!-- /main -->
- 	</div><!-- /container -->
+        <img src="http://localhost/vireo/wp-content/uploads/2015/05/advancedauto.jpg">
 
- <?php get_sidebar(); ?>
+        <img src="http://localhost/vireo/wp-content/uploads/2015/05/advancedauto.jpg">
+
+      </div>
+
+      <div class="clear"></div>
+ 		</div><!-- /container -->
+ 	</div><!-- .entry-content -->
+
+ </article><!-- #post-## -->
+<?php endwhile; // end of the loop. ?>
+</main><!-- #main -->
+
  <?php get_footer(); ?>

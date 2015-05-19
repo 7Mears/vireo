@@ -8,7 +8,7 @@
 get_header(); ?>
 
 
-<main id="main" class="site-main" role="main">
+<main id="main" class="site-main about-page" role="main">
 
 	<header class="page-header">
 		<h1>Vireo <span>Productions</span></h1>
