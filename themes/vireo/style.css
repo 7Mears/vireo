@@ -875,7 +875,7 @@ body.admin-bar #footer {
 .hero-title,
 .hero-info {
   color: #FFFFFF;
-  text-shadow: 0 2px 10px black;
+  text-shadow: 3px 3px 10px black;
 }
 
 .hero-title {
@@ -1409,6 +1409,7 @@ body.admin-bar #footer {
 .portfolio-post-header h1 {
   color: #FFFFFF;
   padding: 0;
+  text-shadow: 3px 3px 10px black;
 }
 .portfolio-post-header button {
   margin-bottom: 50px;
