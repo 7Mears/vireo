@@ -16,7 +16,7 @@ get_header(); ?>
 	</header><!-- .entry-header -->
 
 	<div class="container">
-    <p class="about-intro">At Vireo, we believe in beautifying the Internet, and that top-notch writing, images, and videos are just as important to a website’s success as the design itself. We believe partnering with clients is the best way to serve your needs, and that the best partnerships are open and transparent. Named for the vireo, a type of bird that summers in Saskatchewan, we’re proud of our prairie roots.</p>
+    <p class="about-intro">At Vireo, we believe in beautifying the Internet, and that top-notch writing, images, and videos are just as important to a website's success as the design itself. We believe in building you a unique space to showcase your business, one that seamlessly echos your existing branding. We believe working in partnership with you is the best way to serve your needs, and that the best partnerships are open and transparent.</p>
 
 		<ul class="services-list">
 			<li class="number">.01</li>
@@ -57,8 +57,8 @@ get_header(); ?>
 
 <div class="about-services">
 		<h3>We design custom websites and create professional content.</h3>
-		<p>At Vireo Productions, we believe in building our clients a unique space to showcase their business. We’re not plugging slapdash content into a prefabricated theme — we work hard to build you a website from scratch, and fill it with original, high-quality content. To learn more about how we do this, see our process.</p>
-		<p>To do this, we draw upon a wide variety of skills and services, provided by Vireo staff and our network of freelancers. Building a website that fits into your marketing plan often takes all of the skills listed below, but you can also contract us to help you with any service we provide, even if you’re not building a website.</p>
+		<p>At Vireo Productions, we work hard to build you a website from scratch, and fill it with original content provided by Vireo staff and our network of freelancers. Building a website takes all of the skills listed above, and we can use those skills to help you in a variety of ways, even if you're not building a website.</p>
+		<p>Named after a type of bird that summers in Saskatchewan, Vireo Productions is based in Saskatoon. Thanks to our prairie roots, we have a get-'er-done attitude and a spirit of co-operation that we come by honestly. Serving you well is our top priority; we're always transparent about our pricing and our process, and we always give you full access to your website.</p>
 </div>
 	</div><!-- /container -->
 
@@ -66,14 +66,14 @@ get_header(); ?>
 		<div class="container">
 
 		<div class="call-to-action--left">
-			<h4>A typical website process</h4>
-			<p>Let's walk through your typical website creation process.</p>
+			<h4>Our website creation process</h4>
+			<p>A walk-through of the typical steps we take to build a site.</p>
 			<a href="<?php echo esc_url( home_url( '/' ) ); ?>process/"><button>Website process</button></a>
 		</div>
 
 		<div class="call-to-action--right">
-			<h4>The think tank blog</h4>
-			<p>Check out what we are up to and what's new</p>
+			<h4>Our Blog: Bird's Eye Review</h4>
+			<p>Ideas and inspiration about design, content, and marketing.</p>
 			<a href="<?php echo esc_url( home_url( '/' ) ); ?>blog/"><button>Think tank</button></a>
 		</div>
 		</div><!-- /container -->
