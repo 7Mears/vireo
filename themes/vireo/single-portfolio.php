@@ -95,6 +95,7 @@
 
  </article><!-- #post-## -->
 <?php endwhile; // end of the loop. ?>
+
 </main><!-- #main -->
 
  <?php get_footer(); ?>

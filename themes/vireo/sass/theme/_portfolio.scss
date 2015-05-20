@@ -7,18 +7,31 @@
   color: $color__text-alt-dark;
 
   &:nth-child(2n + 2) {
-    background-color: rgba(0,0,0,0.1);
+    background-color: rgba(0,0,0,0.2);
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  h4 {
+    margin-bottom: 0;
   }
 }
 
+.portfolio-archive-post--content,
+.portfolio-archive-post--image {
+  width: 50%;
+  padding: $padding-main;
+}
+
 .portfolio-archive-post--content {
-  width:50%;
   float: right;
 }
 
 .portfolio-archive-post--image {
-  width: 40%;
   float: left;
+  padding-left: 0;
 }
 
 .portfolio-archive-post--title {
@@ -35,7 +48,7 @@
   h1 {
     color: $color__text-alt;
     padding: 0;
-    text-shadow: 3px 3px 10px black;
+    text-shadow: 3px 3px 10px #000, -3px -3px 10px #000;
   }
 
   button {
@@ -61,11 +74,11 @@
 // post excerpt
 
 .portfolio-post-excerpt {
-  @include font-size(1.2);
+  @include font-size(1.4);
   font-weight: 100;
   background: $color3;
   border-radius: $border-radius;
-  padding: $padding-main;
+  padding: $padding-main $padding-main 0 $padding-main;
   margin-top: -50px;
 
   p {

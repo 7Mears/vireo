@@ -875,7 +875,7 @@ body.admin-bar #footer {
 .hero-title,
 .hero-info {
   color: #FFFFFF;
-  text-shadow: 3px 3px 10px black;
+  text-shadow: 3px 3px 10px #000, -3px -3px 10px #000;
 }
 
 .hero-title {
@@ -1384,17 +1384,28 @@ body.admin-bar #footer {
   color: #b3b3b3;
 }
 .portfolio-archive-post:nth-child(2n + 2) {
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.portfolio-archive-post a {
+  text-decoration: none;
+}
+.portfolio-archive-post h4 {
+  margin-bottom: 0;
+}
+
+.portfolio-archive-post--content,
+.portfolio-archive-post--image {
+  width: 50%;
+  padding: 2em;
 }
 
 .portfolio-archive-post--content {
-  width: 50%;
   float: right;
 }
 
 .portfolio-archive-post--image {
-  width: 40%;
   float: left;
+  padding-left: 0;
 }
 
 .portfolio-archive-post--title {
@@ -1409,7 +1420,7 @@ body.admin-bar #footer {
 .portfolio-post-header h1 {
   color: #FFFFFF;
   padding: 0;
-  text-shadow: 3px 3px 10px black;
+  text-shadow: 3px 3px 10px #000, -3px -3px 10px #000;
 }
 .portfolio-post-header button {
   margin-bottom: 50px;
@@ -1431,12 +1442,12 @@ body.admin-bar #footer {
 }
 
 .portfolio-post-excerpt {
-  font-size: 19.2px;
-  font-size: 1.2rem;
+  font-size: 22.4px;
+  font-size: 1.4rem;
   font-weight: 100;
   background: #FFFFFF;
   border-radius: 5px;
-  padding: 2em;
+  padding: 2em 2em 0 2em;
   margin-top: -50px;
 }
 .portfolio-post-excerpt p {

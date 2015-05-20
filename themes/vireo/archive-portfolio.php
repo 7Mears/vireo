@@ -24,7 +24,7 @@ get_header(); ?>
         <!-- excerpt -->
         <?php the_excerpt(); ?>
 
-        <a href="<?php the_permalink() ?>" title="<?php the_title(); ?>" class="portfolio-archive-post-more"><button>Show me more</button></a>
+        <a href="<?php the_permalink() ?>" title="<?php the_title(); ?>" class="portfolio-archive-post-more"><button>Show me</button></a>
       </div><!-- /post content -->
       <span class="clear"></span>
     </div><!-- /container -->
