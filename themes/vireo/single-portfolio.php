@@ -56,6 +56,7 @@
         $image3 = get_field('portfolio_image_3');
         $image4 = get_field('portfolio_image_4');
         $image5 = get_field('portfolio_image_5');
+        $image6 = get_field('portfolio_image_6');
 
         if( !empty($image1) ): ?>
           <img src="<?php echo $image1['url']; ?>" alt="<?php echo $image1['alt']; ?>" />
@@ -80,6 +81,11 @@
         <?php if( !empty($image5) ): ?>
           <img src="<?php echo $image5['url']; ?>" alt="<?php echo $image5['alt']; ?>" />
         <!-- /website-image5 -->
+        <?php endif; ?>
+
+        <?php if( !empty($image6) ): ?>
+          <img src="<?php echo $image6['url']; ?>" alt="<?php echo $image6['alt']; ?>" />
+        <!-- /website-image6 -->
         <?php endif; ?>
       </div>
 
