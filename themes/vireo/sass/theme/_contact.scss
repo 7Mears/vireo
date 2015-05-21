@@ -1,0 +1,36 @@
+.contact-form {
+  width: 600px;
+  margin: $padding-main auto;
+
+  input[type="submit"] {
+    &:hover,
+    &:active,
+    &:hover {
+      color: $color1;
+    }
+  }
+}
+
+.contact-links {
+  ul {
+    list-style-type: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    display: inline-block;
+    padding: $padding-main;
+  }
+
+  a {
+    color: $color1;
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+      color: $color4;
+    }
+  }
+}

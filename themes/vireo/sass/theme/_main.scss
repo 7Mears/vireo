@@ -17,6 +17,46 @@
   }
 }
 
+//
+// call-to-action
+.call-to-action {
+  background-color: rgba($color1, 0.1);
+  background: url('./images/wood.png') repeat;
+  padding: ($padding-main * 2) 0;
+
+  h4,
+  p {
+    color: $color3;
+  }
+
+  h4 {
+    margin: 0;
+  }
+
+}
+
+.call-to-portfolio {
+  text-align: center;
+
+  button {
+    margin: 5px;
+  }
+}
+
+.call-to-action--left,
+.call-to-action--right {
+  width: 40%;
+}
+
+.call-to-action--left {
+  float: left;
+}
+
+.call-to-action--right {
+  float: right;
+  text-align: right;
+}
+
 // Post navigation text
 .posts-navigation h2 {
   display: none;

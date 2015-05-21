@@ -58,28 +58,28 @@
 
 .portfolio-post-left,
 .portfolio-post-right {
-  padding: $padding-main;
+
 }
 
 .portfolio-post-left {
   width: 30%;
   float: left;
+  padding-right: $padding-main;
 }
 
 .portfolio-post-right {
   width: 70%;
   float: right;
+  padding-left: $padding-main;
 }
 
 // post excerpt
 
 .portfolio-post-excerpt {
-  @include font-size(1.4);
-  font-weight: 100;
+  @include font-size(1.3);
   background: $color3;
   border-radius: $border-radius;
-  padding: $padding-main $padding-main 0 $padding-main;
-  margin-top: -50px;
+  padding: $padding-main 0;
 
   p {
     margin: 0;

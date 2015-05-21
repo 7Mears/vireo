@@ -73,6 +73,19 @@
         <!-- /website-image3 -->
         <?php endif; ?>
 
+
+        <?php
+          $second_text = get_field('portfolio_second_text');
+          if( !empty($second_text) ):
+        ?>
+        </div>
+        <div class="clear"></div>
+          <div class="portfolio-post-left">
+            <p><?php echo $second_text ?> </p>
+          </div>
+        <div class="portfolio-post-right">
+        <?php endif; ?>
+
         <?php if( !empty($image4) ): ?>
           <img src="<?php echo $image4['url']; ?>" alt="<?php echo $image4['alt']; ?>" />
         <!-- /website-image4 -->
@@ -97,5 +110,16 @@
 <?php endwhile; // end of the loop. ?>
 
 </main><!-- #main -->
+
+
+<div class="call-to-action">
+  <div class="container">
+    <div class="call-to-portfolio">
+      <a href="<?php the_field('website_link'); ?>"><button class="button-alt">Check out the site</button></a>
+      <a href="<?php echo esc_url( home_url( '/' ) ); ?>portfolio/"><button class="button-alt">Back to the portfolio</button></a>
+    </div>
+  </div><!-- /container -->
+  <div class="clear"></div>
+</div>
 
  <?php get_footer(); ?>

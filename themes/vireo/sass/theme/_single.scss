@@ -1,3 +1,9 @@
 .entry-header {
-  padding-top: 100px;
+  padding: 250px $padding-main 200px $padding-main;
+  text-shadow: 3px 3px 10px #000, -3px -3px 10px #000;
+
+}
+
+.entry-meta {
+  color: white;
 }

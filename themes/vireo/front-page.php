@@ -8,7 +8,7 @@ get_header(); ?>
   <div class="container">
     <h1 class="hero-title">Vireo <span>Productions</span></h1>
     <p class="hero-info"><strong>We make websites</strong>, and we fill those sites with professional, engaging content. Websites are made to share information and ideas online, and the best websites feature both great content and beautiful design.</p>
-    <button type="button" name="button" class="hero-button">Start a project</button><button type="button" name="button" class="button-alt">Check out the portfolio</button>
+    <a href="<?php echo esc_url( home_url( '/' ) ); ?>portfolio/"><button type="button" name="button" class="button-alt">Check out our portfolio</button></a>
   </div><!-- /container -->
 </section><!-- /hero -->
 
@@ -17,17 +17,17 @@ get_header(); ?>
 
     <div class="home-services-section">
       <h3>Design</h3>
-      <p class="bar">Websites are an applied art; they require both <strong>practical function and pleasing aesthetics</strong>. The same principles apply to all types of graphic design. We know how to create a <strong>coherent, appealing design</strong> for any visual product.</p>
+      <p class="bar">Websites are an applied art; they require both practical function and pleasing aesthetics. The same principles apply to all types of graphic design. We know how to create a coherent, appealing design for any visual product.</p>
     </div>
 
     <div class="home-services-section">
       <h3>Content</h3>
-      <p class="bar">When done well, words and images can be <strong>inspiring, exciting, and motivating</strong>. At Vireo Productions, we produce writing, photos, and videos that deliver a <strong>clear message</strong>: Your business cares about the quality of the content it delivers.</p>
+      <p class="bar">When done well, words and images can be inspiring, exciting, and motivating. At Vireo Productions, we produce writing, photos, and videos that deliver a clear message: Your business cares about the quality of the content it delivers.</p>
     </div>
 
     <div class="home-services-section">
       <h3>Marketing</h3>
-      <p>Everything your business puts out into the world is part of its <strong>brand</strong>. Whether you need a website, social media management, email marketing, or a press kit, we'll make sure it <strong>strengthens and enhances</strong> your business's unique image.</p>
+      <p>Everything your business puts out into the world is part of its brand. Whether you need a website, social media management, email marketing, or a press kit, we'll make sure it strengthens and enhances your business's unique image.</p>
     </div>
 
     <h4>Websites are a dance between design, content, and marketing; <a href="<?php echo esc_url( home_url( '/' ) ); ?>process/">take a look at our process</a> for building a website. <a href="<?php echo esc_url( home_url( '/' ) ); ?>about/">Learn more about us</a> to see a full list of the services we provide.</h4>
@@ -37,7 +37,7 @@ get_header(); ?>
 
 <section class="home-blog">
   <div class="container">
-      <h2 class="section-title">Our Blog: Bird's Eye Review</h2>
+      <h2 class="section-title">Blog</h2>
     <?php query_posts('posts_per_page=3') ?>
     <?php while (have_posts()) : the_post(); ?>
 

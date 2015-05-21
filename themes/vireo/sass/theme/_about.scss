@@ -45,43 +45,12 @@
   padding-bottom: ($padding-main * 2);
 }
 
-// call-to-action
-.call-to-action {
-  background-color: rgba($color1, 0.1);
-  background: url('./images/wood.png') repeat;
-/*   background-attachment: fixed; */
-  padding: ($padding-main * 2) 0;
-
-  h4,
-  p {
-    color: $color3;
-  }
-
-  h4 {
-    margin: 0;
-  }
-}
-
-.call-to-action--left,
-.call-to-action--right {
-  width: 40%;
-}
-
-.call-to-action--left {
-  float: left;
-}
-
-.call-to-action--right {
-  float: right;
-  text-align: right;
-}
-
 // employees
 .person {
   width: 50%;
   float: left;
-  margin: $padding-main 0;
-  padding: $padding-main 0;
+  margin: ($padding-main * 2) 0;
+  padding: 0;
 
   &:first-child {
     padding-right: ($padding-main * 2);

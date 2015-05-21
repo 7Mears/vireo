@@ -475,7 +475,6 @@ input[type="submit"]:focus {
 }
 
 .button-alt {
-  margin-left: 1em;
   background-color: transparent;
   color: #FFFFFF;
 }
@@ -496,7 +495,8 @@ input[type="search"],
 textarea {
   color: #3d4a4f;
   border: 1px solid rgba(0, 0, 0, 0.2);
-  border-radius: 3px;
+  border-radius: 5px;
+  width: 100%;
 }
 input[type="text"]:focus,
 input[type="email"]:focus,
@@ -512,11 +512,11 @@ input[type="email"],
 input[type="url"],
 input[type="password"],
 input[type="search"] {
-  padding: 3px;
+  padding: 5px;
 }
 
 textarea {
-  padding-left: 3px;
+  padding-left: 5px;
   width: 100%;
 }
 
@@ -773,6 +773,40 @@ object {
   }
 }
 
+.call-to-action {
+  background-color: rgba(39, 47, 50, 0.1);
+  background: url("./images/wood.png") repeat;
+  padding: 4em 0;
+}
+.call-to-action h4,
+.call-to-action p {
+  color: #FFFFFF;
+}
+.call-to-action h4 {
+  margin: 0;
+}
+
+.call-to-portfolio {
+  text-align: center;
+}
+.call-to-portfolio button {
+  margin: 5px;
+}
+
+.call-to-action--left,
+.call-to-action--right {
+  width: 40%;
+}
+
+.call-to-action--left {
+  float: left;
+}
+
+.call-to-action--right {
+  float: right;
+  text-align: right;
+}
+
 .posts-navigation h2 {
   display: none;
 }
@@ -800,7 +834,7 @@ body.admin-bar #footer {
 }
 
 .site-header {
-  background-color: rgba(39, 47, 50, 0.6);
+  background-color: rgba(39, 47, 50, 0.8);
   position: fixed;
   top: 0;
   transition: top 0.2s ease-in-out;
@@ -930,7 +964,7 @@ body.admin-bar #footer {
   padding-right: 0;
 }
 .home-services-section p {
-  color: #b3b3b3;
+  color: #cccccc;
   padding-right: 4em;
 }
 .home-services-section .bar {
@@ -947,7 +981,7 @@ body.admin-bar #footer {
   padding: 0 2em;
   margin-top: 4em;
   background-color: #272f32;
-  color: #b3b3b3;
+  color: #cccccc;
 }
 .home-post:nth-child(2) {
   margin-top: 0;
@@ -1015,7 +1049,12 @@ body.admin-bar #footer {
 }
 
 .entry-header {
-  padding-top: 100px;
+  padding: 250px 2em 200px 2em;
+  text-shadow: 3px 3px 10px #000, -3px -3px 10px #000;
+}
+
+.entry-meta {
+  color: white;
 }
 
 .site-footer {
@@ -1243,39 +1282,11 @@ body.admin-bar #footer {
   padding-bottom: 4em;
 }
 
-.call-to-action {
-  background-color: rgba(39, 47, 50, 0.1);
-  background: url("./images/wood.png") repeat;
-  /*   background-attachment: fixed; */
-  padding: 4em 0;
-}
-.call-to-action h4,
-.call-to-action p {
-  color: #FFFFFF;
-}
-.call-to-action h4 {
-  margin: 0;
-}
-
-.call-to-action--left,
-.call-to-action--right {
-  width: 40%;
-}
-
-.call-to-action--left {
-  float: left;
-}
-
-.call-to-action--right {
-  float: right;
-  text-align: right;
-}
-
 .person {
   width: 50%;
   float: left;
-  margin: 2em 0;
-  padding: 2em 0;
+  margin: 4em 0;
+  padding: 0;
 }
 .person:first-child {
   padding-right: 4em;
@@ -1321,7 +1332,7 @@ body.admin-bar #footer {
 .blog-post {
   padding: 2em;
   background-color: #272f32;
-  color: #b3b3b3;
+  color: #cccccc;
   width: 45%;
   float: left;
   margin: 5% 2.5%;
@@ -1381,7 +1392,7 @@ body.admin-bar #footer {
 }
 
 .portfolio-archive-post {
-  color: #b3b3b3;
+  color: #cccccc;
 }
 .portfolio-archive-post:nth-child(2n + 2) {
   background-color: rgba(0, 0, 0, 0.2);
@@ -1426,30 +1437,51 @@ body.admin-bar #footer {
   margin-bottom: 50px;
 }
 
-.portfolio-post-left,
-.portfolio-post-right {
-  padding: 2em;
-}
-
 .portfolio-post-left {
   width: 30%;
   float: left;
+  padding-right: 2em;
 }
 
 .portfolio-post-right {
   width: 70%;
   float: right;
+  padding-left: 2em;
 }
 
 .portfolio-post-excerpt {
-  font-size: 22.4px;
-  font-size: 1.4rem;
-  font-weight: 100;
+  font-size: 20.8px;
+  font-size: 1.3rem;
   background: #FFFFFF;
   border-radius: 5px;
-  padding: 2em 2em 0 2em;
-  margin-top: -50px;
+  padding: 2em 0;
 }
 .portfolio-post-excerpt p {
   margin: 0;
+}
+
+.contact-form {
+  width: 600px;
+  margin: 2em auto;
+}
+.contact-form input[type="submit"]:hover, .contact-form input[type="submit"]:active, .contact-form input[type="submit"]:hover {
+  color: #272F32;
+}
+
+.contact-links ul {
+  list-style-type: none;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+.contact-links li {
+  display: inline-block;
+  padding: 2em;
+}
+.contact-links a {
+  color: #272F32;
+  text-decoration: none;
+}
+.contact-links a:hover, .contact-links a:focus {
+  color: #FF3D2E;
 }

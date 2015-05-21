@@ -74,7 +74,7 @@ get_header(); ?>
 		<div class="call-to-action--right">
 			<h4>Our Blog: Bird's Eye Review</h4>
 			<p>Ideas and inspiration about design, content, and marketing.</p>
-			<a href="<?php echo esc_url( home_url( '/' ) ); ?>blog/"><button>Think tank</button></a>
+			<a href="<?php echo esc_url( home_url( '/' ) ); ?>blog/"><button>Read the blog</button></a>
 		</div>
 		</div><!-- /container -->
 		<div class="clear"></div>

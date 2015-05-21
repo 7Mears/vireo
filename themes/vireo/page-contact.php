@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Process page
+ * Template Name: Contact page
  * @package vireo
  */
 
@@ -12,28 +12,43 @@ get_header(); ?>
 
 
         <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-        	<header class="entry-header">
+        	<header class="page-header">
         		<?php the_title( sprintf( '<h1 class="entry-title">', esc_url( get_permalink() ) ), '</h1>' ); ?>
         	</header><!-- .entry-header -->
 
-        	<div class="entry-content">
-        		<div class="container-sm">
-        		<?php
-        			/* translators: %s: Name of current post */
-        			the_content( sprintf(
-        				wp_kses( __( 'Continue reading %s <span class="meta-nav">&rarr;</span>', 'vireo' ), array( 'span' => array() ) ),
-        				the_title( '<span class="screen-reader-text">"', '"</span>', false )
-        			) );
-        		?>
+        		<div class="container">
 
-        		<?php
-        			wp_link_pages( array(
-        				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'vireo' ),
-        				'after'  => '</div>',
-        			) );
-        		?>
+
+							<div class="contact-links">
+								<ul>
+									<li><a href="#0"><i class="fa fa-facebook-official"></i> Facebook</a></li>
+									<li><a href="#0"><i class="fa fa-twitter"></i> Twitter</a></li>
+									<li><a href="#0"><i class="fa fa-google-plus-square"></i> Google+</a></li>
+									<li><a href="#0"><i class="fa fa-instagram"></i> Instagram</a></li>
+								</ul>
+							</div>
+
+
+							<div class="contact-form">
+	        		<?php
+	        			/* translators: %s: Name of current post */
+	        			the_content( sprintf(
+	        				wp_kses( __( 'Continue reading %s <span class="meta-nav">&rarr;</span>', 'vireo' ), array( 'span' => array() ) ),
+	        				the_title( '<span class="screen-reader-text">"', '"</span>', false )
+	        			) );
+	        		?>
+
+	        		<?php
+	        			wp_link_pages( array(
+	        				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'vireo' ),
+	        				'after'  => '</div>',
+	        			) );
+	        		?>
+							</div><!-- /contact form -->
+
+
+
         		</div><!-- /container -->
-        	</div><!-- .entry-content -->
 
         	<footer class="entry-footer">
         		<?php vireo_entry_footer(); ?>
