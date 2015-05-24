@@ -14,6 +14,10 @@
   padding: 150px 0 100px 0;
   position: relative;
   height: 100vh;
+
+  @include bp-medium {
+    height: 100%;
+  }
 }
 
 .hero-title,
@@ -31,12 +35,20 @@
   span {
     font-weight: 100;
   }
+
+  @include bp-medium {
+    padding-top: 0;
+  }
 }
 
 .hero-info {
   @include font-size(1.4);
   font-weight: 100;
   width: 400px;
+
+  @include bp-medium {
+    width: 100%;
+  }
 }
 
 // services
@@ -88,6 +100,13 @@
 
   .bar {
     border-right: $border-size dotted rgba(0,0,0,0.2);
+
+    @include bp-medium { border: 0; }
+  }
+
+  @include bp-medium {
+    width: 100%;
+    padding: $padding-main 0;
   }
 }
 

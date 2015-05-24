@@ -811,28 +811,23 @@ object {
   display: none;
 }
 
-body {
-  margin-top: -28px;
-  padding-bottom: 28px;
-}
-
-body.admin-bar #wphead {
-  padding-top: 0;
-}
-
-body.admin-bar #footer {
-  padding-bottom: 28px;
-}
-
-#wpadminbar {
-  top: auto !important;
-  bottom: 0;
-}
-
-#wpadminbar .quicklinks .menupop ul {
-  bottom: 28px;
-}
-
+/* body {
+    margin-top: -28px;
+    padding-bottom: 28px;
+    }
+    body.admin-bar #wphead {
+       padding-top: 0;
+    }
+    body.admin-bar #footer {
+       padding-bottom: 28px;
+    }
+    #wpadminbar {
+        top: auto !important;
+        bottom: 0;
+    }
+    #wpadminbar .quicklinks .menupop ul {
+        bottom: 28px;
+    } */
 .site-header {
   background-color: rgba(39, 47, 50, 0.8);
   position: fixed;
@@ -905,6 +900,11 @@ body.admin-bar #footer {
   position: relative;
   height: 100vh;
 }
+@media only screen and (max-width: 50em) {
+  .home-hero {
+    height: 100%;
+  }
+}
 
 .hero-title,
 .hero-info {
@@ -921,12 +921,22 @@ body.admin-bar #footer {
 .hero-title span {
   font-weight: 100;
 }
+@media only screen and (max-width: 50em) {
+  .hero-title {
+    padding-top: 0;
+  }
+}
 
 .hero-info {
   font-size: 22.4px;
   font-size: 1.4rem;
   font-weight: 100;
   width: 400px;
+}
+@media only screen and (max-width: 50em) {
+  .hero-info {
+    width: 100%;
+  }
 }
 
 .home-services {
@@ -969,6 +979,17 @@ body.admin-bar #footer {
 }
 .home-services-section .bar {
   border-right: 3px dotted rgba(0, 0, 0, 0.2);
+}
+@media only screen and (max-width: 50em) {
+  .home-services-section .bar {
+    border: 0;
+  }
+}
+@media only screen and (max-width: 50em) {
+  .home-services-section {
+    width: 100%;
+    padding: 2em 0;
+  }
 }
 
 .home-blog {
@@ -1407,7 +1428,7 @@ body.admin-bar #footer {
   text-decoration: none;
 }
 .portfolio-archive-post h4 {
-  margin-bottom: 0;
+  margin: 0;
 }
 
 .portfolio-archive-post--content,
