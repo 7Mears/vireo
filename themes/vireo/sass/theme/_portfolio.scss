@@ -63,11 +63,6 @@
   }
 }
 
-.portfolio-post-left,
-.portfolio-post-right {
-
-}
-
 .portfolio-post-left {
   width: 30%;
   float: left;
@@ -78,6 +73,15 @@
   width: 70%;
   float: right;
   padding-left: $padding-main;
+}
+
+.portfolio-post-left,
+.portfolio-post-right {
+  @include bp-medium {
+    width: 100%;
+    float: none;
+    padding: $padding-main 0;
+  }
 }
 
 // post excerpt
