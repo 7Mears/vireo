@@ -22,6 +22,12 @@
   -webkit-column-count: 2;
   -moz-column-count:    2;
   column-count:         2;
+
+  @include bp-medium {
+    -webkit-column-count: 1;
+    -moz-column-count:    1;
+    column-count:         1;
+  }
 }
 
 // list of services
@@ -37,6 +43,14 @@
     font-family: $font__secondary;
     @include font-size(1.2);
     font-weight: 700;
+  }
+
+  @include bp-medium {
+    width: 50%;
+  }
+
+  @include bp-small {
+    width: 100%;
   }
 }
 
@@ -56,6 +70,10 @@
     padding-right: ($padding-main * 2);
     border-right: $border-size dotted rgba(0,0,0,0.1);
     text-align: right;
+
+    @include bp-medium {
+      border: 0;
+    }
   }
 
   &:nth-child(2) {
@@ -76,6 +94,10 @@
   .role {
     @include font-size(1);
     padding-bottom: $padding-main;
+
+    @include bp-medium {
+      padding-bottom: 0;
+    }
   }
 
   .mug {
@@ -94,5 +116,10 @@
   .mug-last {
     float: right;
     margin: 1em 0 1em $padding-main;
+  }
+
+  @include bp-medium {
+    width: 100%;
+    margin: $padding-main 0;
   }
 }

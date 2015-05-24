@@ -43,18 +43,28 @@
   }
 }
 
-.call-to-action--left,
-.call-to-action--right {
-  width: 40%;
-}
-
 .call-to-action--left {
   float: left;
+
+  @include bp-medium {
+    padding-bottom: 50px;
+  }
 }
 
 .call-to-action--right {
   float: right;
   text-align: right;
+}
+
+.call-to-action--left,
+.call-to-action--right {
+  width: 40%;
+
+  @include bp-medium {
+    width: 100%;
+    float: none;
+    text-align: center;
+  }
 }
 
 // Post navigation text

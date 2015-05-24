@@ -767,7 +767,7 @@ object {
   font-size: 19.2px;
   font-size: 1.2rem;
 }
-@media only screen and (max-width: 50em) {
+@media only screen and (max-width: 55em) {
   .container-sm {
     width: 90%;
   }
@@ -793,18 +793,31 @@ object {
   margin: 5px;
 }
 
-.call-to-action--left,
-.call-to-action--right {
-  width: 40%;
-}
-
 .call-to-action--left {
   float: left;
+}
+@media only screen and (max-width: 55em) {
+  .call-to-action--left {
+    padding-bottom: 50px;
+  }
 }
 
 .call-to-action--right {
   float: right;
   text-align: right;
+}
+
+.call-to-action--left,
+.call-to-action--right {
+  width: 40%;
+}
+@media only screen and (max-width: 55em) {
+  .call-to-action--left,
+  .call-to-action--right {
+    width: 100%;
+    float: none;
+    text-align: center;
+  }
 }
 
 .posts-navigation h2 {
@@ -900,7 +913,7 @@ object {
   position: relative;
   height: 100vh;
 }
-@media only screen and (max-width: 50em) {
+@media only screen and (max-width: 55em) {
   .home-hero {
     height: 100%;
   }
@@ -921,7 +934,7 @@ object {
 .hero-title span {
   font-weight: 100;
 }
-@media only screen and (max-width: 50em) {
+@media only screen and (max-width: 55em) {
   .hero-title {
     padding-top: 0;
   }
@@ -933,7 +946,7 @@ object {
   font-weight: 100;
   width: 400px;
 }
-@media only screen and (max-width: 50em) {
+@media only screen and (max-width: 55em) {
   .hero-info {
     width: 100%;
   }
@@ -958,7 +971,7 @@ object {
   color: #FFFFFF;
   margin-top: 0;
 }
-@media only screen and (max-width: 50em) {
+@media only screen and (max-width: 55em) {
   .home-services h3 {
     text-align: center;
   }
@@ -985,12 +998,12 @@ object {
 .home-services-section .bar {
   border-right: 3px dotted rgba(0, 0, 0, 0.2);
 }
-@media only screen and (max-width: 50em) {
+@media only screen and (max-width: 55em) {
   .home-services-section .bar {
     border: 0;
   }
 }
-@media only screen and (max-width: 50em) {
+@media only screen and (max-width: 55em) {
   .home-services-section {
     width: 100%;
     padding: 2em 0;
@@ -1103,7 +1116,7 @@ object {
   text-decoration: none;
   display: block;
 }
-@media only screen and (max-width: 50em) {
+@media only screen and (max-width: 55em) {
   .footer-card {
     width: 100%;
   }
@@ -1292,6 +1305,13 @@ object {
   -moz-column-count: 2;
   column-count: 2;
 }
+@media only screen and (max-width: 55em) {
+  .about-intro {
+    -webkit-column-count: 1;
+    -moz-column-count: 1;
+    column-count: 1;
+  }
+}
 
 .services-list {
   float: left;
@@ -1308,6 +1328,16 @@ object {
   font-size: 1.2rem;
   font-weight: 700;
 }
+@media only screen and (max-width: 55em) {
+  .services-list {
+    width: 50%;
+  }
+}
+@media only screen and (max-width: 30em) {
+  .services-list {
+    width: 100%;
+  }
+}
 
 .about-services {
   padding-bottom: 4em;
@@ -1323,6 +1353,11 @@ object {
   padding-right: 4em;
   border-right: 3px dotted rgba(0, 0, 0, 0.1);
   text-align: right;
+}
+@media only screen and (max-width: 55em) {
+  .person:first-child {
+    border: 0;
+  }
 }
 .person:nth-child(2) {
   padding-left: 4em;
@@ -1341,6 +1376,11 @@ object {
   font-size: 1rem;
   padding-bottom: 2em;
 }
+@media only screen and (max-width: 55em) {
+  .person .role {
+    padding-bottom: 0;
+  }
+}
 .person .mug {
   border: 3px solid #DAEAEF;
   border-radius: 50%;
@@ -1354,6 +1394,12 @@ object {
 .person .mug-last {
   float: right;
   margin: 1em 0 1em 2em;
+}
+@media only screen and (max-width: 55em) {
+  .person {
+    width: 100%;
+    margin: 2em 0;
+  }
 }
 
 .page-blog {
