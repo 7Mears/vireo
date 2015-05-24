@@ -2,6 +2,10 @@
   width: 600px;
   margin: $padding-main auto;
 
+  @include bp-medium {
+    width: 100%;
+  }
+
   input[type="submit"] {
     &:hover,
     &:active,

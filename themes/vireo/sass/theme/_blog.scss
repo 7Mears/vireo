@@ -35,6 +35,10 @@
   a:first-child {
     text-decoration: none;
   }
+
+  @include bp-medium {
+    width: 100%;
+  }
 }
 
 .blog-post--content {

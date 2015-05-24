@@ -19,10 +19,16 @@
   }
 }
 
+
 .portfolio-archive-post--content,
 .portfolio-archive-post--image {
   width: 50%;
   padding: $padding-main;
+
+  @include bp-medium {
+    width: 100%;
+    float: none;
+  }
 }
 
 .portfolio-archive-post--content {
@@ -33,6 +39,7 @@
   float: left;
   padding-left: 0;
 }
+
 
 .portfolio-archive-post--title {
   color: $color__text-alt;
