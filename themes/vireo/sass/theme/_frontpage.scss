@@ -1,8 +1,20 @@
 //global
+.section-title,
+.section-sub-head {
+}
+
 .section-title {
-  color: rgba(255,255,255,0.6);
-  text-align: center;
-  @include font-size(1.6);
+  color: rgba(255,255,255,0.4);
+  @include font-size(1.2);
+  font-family: $font__primary;
+  border-bottom: 2px solid rgba(255,255,255,0.4);
+  display: inline-block;
+  margin-bottom: 0;
+}
+
+.section-sub-head {
+  color: rgba(255,255,255,0.8);
+  margin: 0;
 }
 
 // hero
@@ -123,7 +135,6 @@
   padding: $padding-main 0 ($padding-main * 2) 0;
 }
 
-
 .home-post {
   padding: 0 $padding-main;
   margin-top: ($padding-main * 2);
@@ -182,4 +193,27 @@
   @include font-size(0.8);
   font-style: italic;
   margin-top: 0;
+}
+
+
+// read all posts
+
+.read-all-posts {
+  background-color: $color1;
+  text-align: center;
+  padding:  ($padding-main / 2) ($padding-main * 2);
+  display: inline-block;
+  margin: $padding-main 0 0 0;
+
+  a {
+    text-decoration: none;
+    color: $color2;
+
+    &:hover,
+    &:active,
+    &:focus {
+      color: $color3;
+    }
+
+}
 }

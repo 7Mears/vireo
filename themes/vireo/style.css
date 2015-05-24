@@ -899,10 +899,18 @@ object {
 }
 
 .section-title {
-  color: rgba(255, 255, 255, 0.6);
-  text-align: center;
-  font-size: 25.6px;
-  font-size: 1.6rem;
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 19.2px;
+  font-size: 1.2rem;
+  font-family: "Avenir", sans-serif;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.4);
+  display: inline-block;
+  margin-bottom: 0;
+}
+
+.section-sub-head {
+  color: rgba(255, 255, 255, 0.8);
+  margin: 0;
 }
 
 .home-hero {
@@ -1070,6 +1078,21 @@ object {
   font-size: 0.8rem;
   font-style: italic;
   margin-top: 0;
+}
+
+.read-all-posts {
+  background-color: #272F32;
+  text-align: center;
+  padding: 1em 4em;
+  display: inline-block;
+  margin: 2em 0 0 0;
+}
+.read-all-posts a {
+  text-decoration: none;
+  color: #9DBDC6;
+}
+.read-all-posts a:hover, .read-all-posts a:active, .read-all-posts a:focus {
+  color: #FFFFFF;
 }
 
 .page-header,

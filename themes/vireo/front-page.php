@@ -38,6 +38,8 @@ get_header(); ?>
 <section class="home-blog">
   <div class="container">
       <h2 class="section-title">Blog</h2>
+      <h4 class="section-sub-head">Bird's Eye Review</h4>
+
     <?php query_posts('posts_per_page=3') ?>
     <?php while (have_posts()) : the_post(); ?>
 
@@ -58,7 +60,11 @@ get_header(); ?>
           </div><!-- /post content -->
           <span class="clear"></span>
     		</div> <!-- /post container -->
+
     <?php endwhile; ?>
+    <div class="read-all-posts">
+      <a href="#0">Read all posts</a>
+    </div>
 
   </div><!-- /container -->
 </section><!-- /blog -->
