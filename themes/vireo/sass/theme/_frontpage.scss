@@ -73,6 +73,10 @@
   h3 {
     color: $color__text-alt;
     margin-top: 0;
+
+    @include bp-medium {
+      text-align: center;
+    }
   }
 
   a {

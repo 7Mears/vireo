@@ -20,4 +20,8 @@
     text-decoration: none;
     display: block;
   }
+
+  @include bp-medium {
+    width: 100%;
+  }
 }
