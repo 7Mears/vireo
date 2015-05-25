@@ -63,7 +63,7 @@ get_header(); ?>
 
     <?php endwhile; ?>
     <div class="read-all-posts">
-      <a href="#0">Read all posts</a>
+      <a href="<?php echo esc_url( home_url( '/' ) ); ?>blog/">Read all posts</a>
     </div>
 
   </div><!-- /container -->

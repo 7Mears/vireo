@@ -972,14 +972,17 @@ object {
   color: #FF3D2E;
 }
 
+.section-title,
+.section-sub-head {
+  text-align: center;
+}
+
 .section-title {
   color: rgba(255, 255, 255, 0.4);
   font-size: 19.2px;
   font-size: 1.2rem;
   font-family: "Avenir", sans-serif;
-  border-bottom: 2px solid rgba(255, 255, 255, 0.4);
-  display: inline-block;
-  margin-bottom: 0;
+  margin: 1em 0 0 0;
 }
 
 .section-sub-head {
@@ -1130,19 +1133,31 @@ object {
 
 .home-post--content {
   width: 75%;
-  float: right;
   margin: 2%;
+  float: right;
   font-size: 17.6px;
   font-size: 1.1rem;
 }
+@media only screen and (max-width: 55em) {
+  .home-post--content {
+    width: 100%;
+    margin: 2em 0;
+  }
+}
 
 .home-post--image {
-  margin: 2%;
   width: 15%;
+  margin: 2%;
   border-radius: 50%;
   border: 3px solid #DAEAEF;
   float: left;
   shape-outside: circle();
+}
+@media only screen and (max-width: 55em) {
+  .home-post--image {
+    width: 75px;
+    margin-top: -30px;
+  }
 }
 
 .home-post:nth-child(3) .home-post--image {
@@ -1169,8 +1184,9 @@ object {
   background-color: #272F32;
   text-align: center;
   padding: 1em 4em;
-  display: inline-block;
-  margin: 2em 0 0 0;
+  display: block;
+  margin: 2em auto 0 auto;
+  width: 300px;
 }
 .read-all-posts a {
   text-decoration: none;

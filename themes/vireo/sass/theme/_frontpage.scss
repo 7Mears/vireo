@@ -1,20 +1,20 @@
 //global
 .section-title,
 .section-sub-head {
+  text-align: center;
 }
 
 .section-title {
   color: rgba(255,255,255,0.4);
   @include font-size(1.2);
   font-family: $font__primary;
-  border-bottom: 2px solid rgba(255,255,255,0.4);
-  display: inline-block;
-  margin-bottom: 0;
+  margin: ($padding-main / 2) 0 0 0;
 }
 
 .section-sub-head {
   color: rgba(255,255,255,0.8);
   margin: 0;
+
 }
 
 // hero
@@ -173,20 +173,31 @@
   }
 }
 
+
 .home-post--content {
   width: 75%;
-  float: right;
   margin: 2%;
+  float: right;
   @include font-size(1.1);
+
+  @include bp-medium {
+    width: 100%;
+    margin: $padding-main 0;
+  }
 }
 
 .home-post--image {
-  margin: 2%;
   width: 15%;
+  margin: 2%;
   border-radius: 50%;
   border: $border-size solid $color5;
   float: left;
   shape-outside: circle();
+
+  @include bp-medium {
+    width: 75px;
+    margin-top: -(75px / 2.5);
+  }
 }
 
 .home-post:nth-child(3) .home-post--image {
@@ -215,8 +226,9 @@
   background-color: $color1;
   text-align: center;
   padding:  ($padding-main / 2) ($padding-main * 2);
-  display: inline-block;
-  margin: $padding-main 0 0 0;
+  display: block;
+  margin: $padding-main auto 0 auto;
+  width: 300px;
 
   a {
     text-decoration: none;
