@@ -73,11 +73,17 @@
 
     @include bp-medium {
       border: 0;
+      padding: 0;
     }
   }
 
   &:nth-child(2) {
     padding-left: ($padding-main * 2);
+
+    @include bp-medium {
+      border: 0;
+      padding: 0;
+    }
   }
 
   .name,
@@ -106,6 +112,10 @@
     width: 175px;
 
     shape-outside: circle();
+
+    @include bp-small {
+      width: 100%;
+    }
   }
 
   .mug-first {

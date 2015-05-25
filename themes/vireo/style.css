@@ -1481,10 +1481,17 @@ object {
 @media only screen and (max-width: 55em) {
   .person:first-child {
     border: 0;
+    padding: 0;
   }
 }
 .person:nth-child(2) {
   padding-left: 4em;
+}
+@media only screen and (max-width: 55em) {
+  .person:nth-child(2) {
+    border: 0;
+    padding: 0;
+  }
 }
 .person .name,
 .person .role {
@@ -1510,6 +1517,11 @@ object {
   border-radius: 50%;
   width: 175px;
   shape-outside: circle();
+}
+@media only screen and (max-width: 30em) {
+  .person .mug {
+    width: 100%;
+  }
 }
 .person .mug-first {
   float: left;
