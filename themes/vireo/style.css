@@ -1188,6 +1188,11 @@ object {
   margin: 2em auto 0 auto;
   width: 300px;
 }
+@media only screen and (max-width: 30em) {
+  .read-all-posts {
+    width: 100%;
+  }
+}
 .read-all-posts a {
   text-decoration: none;
   color: #9DBDC6;
