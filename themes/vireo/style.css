@@ -991,7 +991,7 @@ object {
   background-color: #272F32;
   background: url("./images/hero.jpg") no-repeat center center;
   background-size: cover;
-  padding: 150px 0 100px 0;
+  padding: 100px 0 100px 0;
   position: relative;
   height: 100vh;
 }
@@ -1004,7 +1004,7 @@ object {
 .hero-title,
 .hero-info {
   color: #FFFFFF;
-  text-shadow: 3px 3px 10px #000, -3px -3px 10px #000;
+  text-shadow: 2px 2px 15px #000, -2px -2px 15px #000;
 }
 
 .hero-title {
@@ -1049,6 +1049,12 @@ object {
   text-decoration: none;
   font-weight: 700;
 }
+@media only screen and (max-width: 55em) {
+  .home-services h4 {
+    text-align: left;
+    padding-top: 2em;
+  }
+}
 .home-services h3 {
   color: #FFFFFF;
   margin-top: 0;
@@ -1077,10 +1083,15 @@ object {
   color: #cccccc;
   padding-right: 4em;
 }
+@media only screen and (max-width: 75em) {
+  .home-services-section p {
+    padding: 0;
+  }
+}
 .home-services-section .bar {
   border-right: 3px dotted rgba(0, 0, 0, 0.2);
 }
-@media only screen and (max-width: 55em) {
+@media only screen and (max-width: 75em) {
   .home-services-section .bar {
     border: 0;
   }
@@ -1186,7 +1197,7 @@ object {
 
 .entry-header {
   padding: 250px 2em 200px 2em;
-  text-shadow: 3px 3px 10px #000, -3px -3px 10px #000;
+  text-shadow: 2px 2px 15px #000, -2px -2px 15px #000;
 }
 
 .entry-meta {
@@ -1623,7 +1634,7 @@ object {
 .portfolio-post-header h1 {
   color: #FFFFFF;
   padding: 0;
-  text-shadow: 3px 3px 10px #000, -3px -3px 10px #000;
+  text-shadow: 2px 2px 15px #000, -2px -2px 15px #000;
 }
 .portfolio-post-header button {
   margin-bottom: 50px;
