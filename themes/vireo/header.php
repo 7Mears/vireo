@@ -23,8 +23,9 @@
 				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">Vireo</a></h1>
 			</div><!-- /site-branding -->
 
-			<nav id="site-navigation" class="main-navigation" role="navigation">
-				<ul id="primary-menu" class="menu nav-menu">
+			<a href="#" class="menu-link"><i class="fa fa-bars"></i></a>
+			<nav id="menu" class="main-navigation" role="navigation">
+				<ul >
 					<li><a href="<?php echo esc_url( home_url( '/' ) ); ?>about/">About</a></li>
 					<li><a href="<?php echo esc_url( home_url( '/' ) ); ?>portfolio/">Portfolio</a></li>
 					<li><a href="<?php echo esc_url( home_url( '/' ) ); ?>blog/">Blog</a></li>
