@@ -553,7 +553,6 @@ a:hover, a:active {
 a.menu-link {
   position: absolute;
   right: 5%;
-  background: rgba(39, 47, 50, 0.8);
   display: block;
   width: 50px;
   height: 50px;
@@ -898,6 +897,10 @@ object {
   display: none;
 }
 
+.fadeIn {
+  opacity: 0;
+}
+
 /* body {
     margin-top: -28px;
     padding-bottom: 28px;
@@ -1012,12 +1015,12 @@ object {
 
 .hero-title {
   font-family: "Avenir", sans-serif;
-  font-weight: 700;
+  font-weight: 400;
   padding-top: 100px;
   margin: 0;
 }
 .hero-title span {
-  font-weight: 100;
+  /*     font-weight: 100; */
 }
 @media only screen and (max-width: 55em) {
   .hero-title {
@@ -1029,7 +1032,7 @@ object {
   font-size: 22.4px;
   font-size: 1.4rem;
   font-weight: 100;
-  width: 400px;
+  width: 500px;
 }
 @media only screen and (max-width: 55em) {
   .hero-info {
@@ -1249,6 +1252,34 @@ object {
   .footer-card {
     width: 100%;
   }
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  margin-top: 2em;
+}
+.footer-bottom a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+.footer-bottom a:hover, .footer-bottom a:focus {
+  color: #FF3D2E;
+}
+
+.footer-bottom-copyright {
+  float: left;
+}
+
+.footer-bottom-links {
+  font-size: 19.2px;
+  font-size: 1.2rem;
+  float: right;
+}
+.footer-bottom-links ul {
+  list-style-type: none;
+}
+.footer-bottom-links li {
+  display: inline-block;
 }
 
 .process-page .entry-header {

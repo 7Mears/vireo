@@ -25,3 +25,37 @@
     width: 100%;
   }
 }
+
+//bottom
+
+.footer-bottom {
+  border-top: 1px solid rgba(255,255,255, 0.1);
+  margin-top: $padding-main;
+
+  a {
+    color: $color3;
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+      color: $color4;
+    }
+  }
+}
+
+.footer-bottom-copyright {
+  float: left;
+}
+
+.footer-bottom-links {
+  @include font-size(1.2);
+  float: right;
+
+  ul {
+    list-style-type: none;
+  }
+
+  li {
+    display: inline-block;
+  }
+}

@@ -27,6 +27,21 @@
 				</p>
 			</div>
 
+			<div class="clear"></div>
+			<div class="footer-bottom">
+				<div class="footer-bottom-copyright">
+					<p><a href="#0">Vireo Productions</a> | © <?php echo date("Y"); ?></p>
+				</div><!-- /bottom-copyright -->
+
+				<div class="footer-bottom-links">
+					<ul>
+						<li><a href="#0"><i class="fa fa-facebook-official"></i></a></li>
+						<li><a href="#0"><i class="fa fa-twitter"></i></a></li>
+						<li><a href="#0"><i class="fa fa-google-plus-square"></i></a></li>
+						<li><a href="#0"><i class="fa fa-instagram"></i></a></li>
+					</ul>
+				</div><!-- /bottom-links -->
+			</div><!-- /footer-bottom -->
 		</div><!-- /container -->
 	</footer>
 </div><!-- /page -->

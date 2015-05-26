@@ -8,7 +8,7 @@ get_header(); ?>
   <div class="container">
     <h1 class="hero-title">Vireo <span>Productions</span></h1>
     <p class="hero-info"><strong>We make websites</strong>, and we fill those sites with professional, engaging content. Websites are made to share information and ideas online, and the best websites feature both great content and beautiful design.</p>
-    <a href="<?php echo esc_url( home_url( '/' ) ); ?>portfolio/"><button type="button" name="button" class="button-alt">Check out our portfolio</button></a>
+    <a class="hero-button" href="<?php echo esc_url( home_url( '/' ) ); ?>portfolio/"><button type="button" name="button" class="button-alt">Check out our portfolio</button></a>
   </div><!-- /container -->
 </section><!-- /hero -->
 
@@ -63,7 +63,7 @@ get_header(); ?>
 
     <?php endwhile; ?>
     <div class="read-all-posts">
-      <a href="<?php echo esc_url( home_url( '/' ) ); ?>blog/">Read all posts</a>
+      <a href="<?php echo esc_url( home_url( '/' ) ); ?>blog/">See more posts</a>
     </div>
 
   </div><!-- /container -->
