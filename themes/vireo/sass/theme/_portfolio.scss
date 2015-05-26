@@ -92,6 +92,10 @@
   border-radius: $border-radius;
   padding: $padding-main 0;
 
+  @include bp-medium {
+    padding-bottom: 0;
+  }
+
   p {
     margin: 0;
   }
