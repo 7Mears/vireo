@@ -13,7 +13,8 @@ get_header(); ?>
 
         <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
         	<header class="page-header">
-        		<?php the_title( sprintf( '<h1 class="entry-title">', esc_url( get_permalink() ) ), '</h1>' ); ?>
+						<h2 class="page-title">Contact</h2>
+						<h1 class="page-sub-head">Get in touch</h1>
         	</header><!-- .entry-header -->
 
         		<div class="container">

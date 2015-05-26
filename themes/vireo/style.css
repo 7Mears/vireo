@@ -897,27 +897,12 @@ object {
   display: none;
 }
 
-.fadeIn {
-  opacity: 0;
+.page-title {
+  font-family: "Avenir", sans-serif;
+  font-size: 22.4px;
+  font-size: 1.4rem;
 }
 
-/* body {
-    margin-top: -28px;
-    padding-bottom: 28px;
-    }
-    body.admin-bar #wphead {
-       padding-top: 0;
-    }
-    body.admin-bar #footer {
-       padding-bottom: 28px;
-    }
-    #wpadminbar {
-        top: auto !important;
-        bottom: 0;
-    }
-    #wpadminbar .quicklinks .menupop ul {
-        bottom: 28px;
-    } */
 .site-header {
   background-color: rgba(39, 47, 50, 0.8);
   position: fixed;
@@ -1271,6 +1256,7 @@ object {
 }
 
 .footer-bottom-links {
+  padding-top: 0.7em;
   font-size: 19.2px;
   font-size: 1.2rem;
   float: right;
@@ -1445,18 +1431,6 @@ object {
     border-bottom-color: rgba(157, 189, 198, 0.8);
   }
 }
-.about-page .page-header h1 {
-  font-family: "Avenir", sans-serif;
-  font-weight: 700;
-}
-.about-page .page-header h1 span {
-  font-weight: 100;
-}
-.about-page .page-header h2 {
-  font-size: 32px;
-  font-size: 2rem;
-}
-
 .about-intro {
   font-size: 19.2px;
   font-size: 1.2rem;

@@ -72,26 +72,11 @@
   display: none;
 }
 
-// fade in
-.fadeIn {
-    opacity:0;
-}
+//
+.page-sub-head {
 
-// Wordpress admin bar to bottom
-/* body {
-    margin-top: -28px;
-    padding-bottom: 28px;
-    }
-    body.admin-bar #wphead {
-       padding-top: 0;
-    }
-    body.admin-bar #footer {
-       padding-bottom: 28px;
-    }
-    #wpadminbar {
-        top: auto !important;
-        bottom: 0;
-    }
-    #wpadminbar .quicklinks .menupop ul {
-        bottom: 28px;
-    } */
+}
+.page-title {
+  font-family: $font__primary;
+  @include font-size(1.4);
+}

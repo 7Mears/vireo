@@ -8,16 +8,20 @@ get_header(); ?>
 <main id="main" class="site-main page-portfolio-archive" role="main">
 
   <header class="page-header">
-    <h1 class="entry-title">Portfolio</h1>
+    <h2 class="page-title">Portfolio</h2>
+    <h1 class="page-sub-head">A sample of our work</h1>
   </header><!-- .entry-header -->
 
   <?php while (have_posts()) : the_post(); ?>
   <div class="portfolio-archive-post">
     <div class="container">
       <!-- featured image -->
-      <?php if ( has_post_thumbnail() ) {
-        the_post_thumbnail( 'large', array( 'class' => 'post portfolio-archive-post--image' ) ); }
-      ?>
+      <?php if ( has_post_thumbnail() ) : ?>
+	      <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
+	      <?php the_post_thumbnail( 'large', array( 'class' => 'post portfolio-archive-post--image' ) ); ?>
+	      </a>
+      <?php endif; ?>
+
       <div class="portfolio-archive-post--content">
         <!-- title -->
         <a href="<?php the_permalink() ?>" title="<?php the_title(); ?>"><h4 class="portfolio-archive-post--title"><?php the_title(); ?></h4></a>

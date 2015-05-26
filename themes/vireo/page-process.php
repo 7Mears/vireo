@@ -11,7 +11,8 @@ get_header(); ?>
 		<main id="main" class="site-main process-page" role="main">
 
       	<header class="entry-header">
-          <h1 class="entry-title">Building a website with Vireo</h1>
+					<h2 class="page-title">Process</h2>
+					<h1 class="page-sub-head">Building a website with Vireo</h1>
       	</header><!-- .entry-header -->
 
       	<div class="process-page-content">

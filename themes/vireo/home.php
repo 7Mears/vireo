@@ -8,7 +8,8 @@ get_header(); ?>
 		<main id="main" class="site-main page-blog" role="main">
 
       <header class="page-header">
-				<h1 class="entry-title">Blog</h1>
+				<h2 class="page-title">Blog</h2>
+				<h1 class="page-sub-head">The Bird's Eye Review</h1>
       </header><!-- .entry-header -->
 
       <div class="container">

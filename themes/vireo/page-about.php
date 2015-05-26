@@ -11,8 +11,8 @@ get_header(); ?>
 <main id="main" class="site-main about-page" role="main">
 
 	<header class="page-header">
-		<h1>Vireo <span>Productions</span></h1>
-		<h2>Web design and content creation</h2>
+		<h2 class="page-title">About</h2>
+		<h1 class="page-sub-head">Vireo Productions</h1>
 	</header><!-- .entry-header -->
 
 	<div class="container">
