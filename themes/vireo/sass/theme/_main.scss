@@ -74,7 +74,9 @@
 
 //
 .page-sub-head {
-
+  @include bp-small {
+    @include font-size(2);
+  }
 }
 .page-title {
   font-family: $font__primary;

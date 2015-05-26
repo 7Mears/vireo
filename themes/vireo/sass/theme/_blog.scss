@@ -1,6 +1,10 @@
 
 .page-blog {
   background-color: lighten($color1 , 10%);
+
+  .page-header {
+    margin-bottom: $padding-main;
+  }
 }
 
 .blog-post {

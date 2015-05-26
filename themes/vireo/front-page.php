@@ -38,7 +38,7 @@ get_header(); ?>
 <section class="home-blog">
   <div class="container">
       <h2 class="section-title">Blog</h2>
-      <h4 class="section-sub-head">Bird's Eye Review</h4>
+      <h4 class="section-sub-head">The Bird's Eye Review</h4>
 
     <?php query_posts('posts_per_page=3') ?>
     <?php while (have_posts()) : the_post(); ?>

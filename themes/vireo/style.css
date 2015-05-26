@@ -897,6 +897,13 @@ object {
   display: none;
 }
 
+@media only screen and (max-width: 30em) {
+  .page-sub-head {
+    font-size: 32px;
+    font-size: 2rem;
+  }
+}
+
 .page-title {
   font-family: "Avenir", sans-serif;
   font-size: 22.4px;
@@ -1269,7 +1276,7 @@ object {
 }
 
 .process-page .entry-header {
-  background: url("./images/process.jpg") no-repeat center center;
+  background: url("./images/process-bg.jpg") no-repeat center center;
   background-size: cover;
 }
 
@@ -1550,6 +1557,9 @@ object {
 
 .page-blog {
   background-color: #3d4a4f;
+}
+.page-blog .page-header {
+  margin-bottom: 2em;
 }
 
 .blog-post {
