@@ -8,7 +8,17 @@ get_header(); ?>
   <div class="container">
     <h1 class="hero-title">Vireo <span>Productions</span></h1>
     <p class="hero-info"><strong>We make websites</strong>, and we fill those sites with professional, engaging content. Websites are made to share information and ideas online, and the best websites feature both great content and beautiful design.</p>
-    <a class="hero-button" href="<?php echo esc_url( home_url( '/' ) ); ?>portfolio/"><button type="button" name="button">See our work</button></a>
+    <a class="hero-button" href="<?php echo esc_url( home_url( '/' ) ); ?>portfolio/"><button class="button-red" type="button" name="button">See our work</button></a>
+
+
+    <div class="hero-social">
+      <ul>
+        <li><a href="#0"><i class="fa fa-facebook-square"></i></a></li>
+        <li><a href="#0"><i class="fa fa-twitter-square"></i></a></li>
+        <li><a href="#0"><i class="fa fa-google-plus-square"></i></a></li>
+        <li><a href="#0"><i class="fa fa-instagram"></i></a></li>
+      </ul>
+    </div>
   </div><!-- /container -->
 </section><!-- /hero -->
 

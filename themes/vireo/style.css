@@ -381,7 +381,7 @@ html {
 }
 
 body {
-  background: #FFFFFF;
+  background: #272F32;
   /* Fallback for when there is no custom background color defined. */
 }
 
@@ -445,7 +445,6 @@ input[type="button"],
 input[type="reset"],
 input[type="submit"] {
   border: 3px solid;
-  border-radius: 5px;
   border-color: #9DBDC6;
   background: #9DBDC6;
   color: #272F32;
@@ -474,6 +473,23 @@ input[type="submit"]:focus {
   color: #FFFFFF;
 }
 
+.button-red {
+  border-color: #FF3D2E;
+  background: transparent;
+  color: #FFFFFF;
+  text-shadow: 2px 2px 15px #000, -2px -2px 15px #000;
+  font-weight: bold;
+}
+.button-red:hover {
+  background-color: #FF3D2E;
+  color: #272F32;
+  text-shadow: none;
+}
+.button-red:active, .button-red:focus {
+  background-color: #FF3D2E;
+  color: #272F32;
+}
+
 .button-alt {
   background-color: transparent;
   color: #FFFFFF;
@@ -495,7 +511,6 @@ input[type="search"],
 textarea {
   color: #3d4a4f;
   border: 1px solid rgba(0, 0, 0, 0.2);
-  border-radius: 5px;
   width: 100%;
 }
 input[type="text"]:focus,
@@ -834,6 +849,11 @@ object {
   }
 }
 
+main {
+  background-color: #FFFFFF;
+  padding-bottom: 1em;
+}
+
 .container-sm {
   width: 800px;
   margin: 0 auto;
@@ -985,18 +1005,48 @@ object {
   margin: 0;
 }
 
+.hero-social {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+@media only screen and (max-width: 55em) {
+  .hero-social {
+    display: none;
+  }
+}
+.hero-social ul {
+  list-style-type: none;
+  margin-bottom: -50px;
+}
+.hero-social li {
+  display: inline-block;
+  padding-left: 0.5em;
+}
+.hero-social a {
+  font-size: 28.8px;
+  font-size: 1.8rem;
+  color: rgba(218, 234, 239, 0.6);
+}
+.hero-social a:hover, .hero-social a:focus {
+  color: #DAEAEF;
+}
+
 .home-hero {
   background-color: #272F32;
   background: url("./images/hero.jpg") no-repeat center center;
   background-size: cover;
   padding: 100px 0 100px 0;
-  position: relative;
   height: 100vh;
 }
 @media only screen and (max-width: 55em) {
   .home-hero {
     height: 100%;
   }
+}
+.home-hero .container {
+  position: relative;
+  height: 100%;
 }
 
 .hero-title,

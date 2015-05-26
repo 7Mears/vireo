@@ -35,7 +35,7 @@
 
 				<div class="footer-bottom-links">
 					<ul>
-						<li><a href="#0"><i class="fa fa-facebook-official"></i></a></li>
+						<li><a href="#0"><i class="fa fa-facebook-square"></i></a></li>
 						<li><a href="#0"><i class="fa fa-twitter-square"></i></a></li>
 						<li><a href="#0"><i class="fa fa-google-plus-square"></i></a></li>
 						<li><a href="#0"><i class="fa fa-instagram"></i></a></li>

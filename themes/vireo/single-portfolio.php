@@ -35,7 +35,7 @@
 </div>
 
  <div class="clear"></div>
-</div>
+
 
  	<div class="portfolio-post-content">
  		<div class="container">

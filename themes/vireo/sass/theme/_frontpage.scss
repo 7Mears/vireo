@@ -19,15 +19,47 @@
 
 // hero
 
+.hero-social {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  @include bp-medium {
+    display: none;
+  }
+
+  ul {
+    list-style-type: none;
+    margin-bottom: -50px;
+  }
+  li {
+    display: inline-block;
+    padding-left: 0.5em;
+  }
+
+  a {
+    @include font-size(1.8);
+    color: rgba($color5, 0.6);
+
+    &:hover,
+    &:focus {
+      color: $color5;
+    }
+  }
+}
+
 .home-hero {
   background-color: $color__background-dark;
   background: url('./images/hero.jpg') no-repeat center center;
   background-size: cover;
   padding: 100px 0 100px 0;
-  position: relative;
   height: 100vh;
 
   @include bp-medium {
+    height: 100%;
+  }
+
+  .container {
+    position: relative;
     height: 100%;
   }
 }
