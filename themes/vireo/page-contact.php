@@ -22,10 +22,10 @@ get_header(); ?>
 
 							<div class="contact-links">
 								<ul>
-									<li><a href="#0"><i class="fa fa-facebook-square"></i> Facebook</a></li>
-									<li><a href="#0"><i class="fa fa-twitter-square"></i> Twitter</a></li>
-									<li><a href="#0"><i class="fa fa-google-plus-square"></i> Google+</a></li>
-									<li><a href="#0"><i class="fa fa-instagram"></i> Instagram</a></li>
+									<li><a href="https://www.facebook.com/VireoProductions" target="_BLANK"><i class="fa fa-facebook-square"></i> Facebook</a></li>
+									<li><a href="https://twitter.com/vireoproduction" target="_BLANK"><i class="fa fa-twitter-square"></i> Twitter</a></li>
+									<li><a href="https://plus.google.com/u/1/102692056654896730713" target="_BLANK"><i class="fa fa-google-plus-square"></i> Google+</a></li>
+									<li><a href="https://instagram.com/vireoproductions/" target="_BLANK"><i class="fa fa-instagram"></i> Instagram</a></li>
 								</ul>
 							</div>
 

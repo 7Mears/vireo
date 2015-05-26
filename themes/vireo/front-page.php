@@ -13,10 +13,10 @@ get_header(); ?>
 
     <div class="hero-social">
       <ul>
-        <li><a href="#0"><i class="fa fa-facebook-square"></i></a></li>
-        <li><a href="#0"><i class="fa fa-twitter-square"></i></a></li>
-        <li><a href="#0"><i class="fa fa-google-plus-square"></i></a></li>
-        <li><a href="#0"><i class="fa fa-instagram"></i></a></li>
+        <li><a href="https://www.facebook.com/VireoProductions" target="_BLANK"><i class="fa fa-facebook-square"></i></a></li>
+        <li><a href="https://twitter.com/vireoproduction" target="_BLANK"><i class="fa fa-twitter-square"></i></a></li>
+        <li><a href="https://plus.google.com/u/1/102692056654896730713" target="_BLANK"><i class="fa fa-google-plus-square"></i></a></li>
+        <li><a href="https://instagram.com/vireoproductions/" target="_BLANK"><i class="fa fa-instagram"></i></a></li>
       </ul>
     </div>
   </div><!-- /container -->

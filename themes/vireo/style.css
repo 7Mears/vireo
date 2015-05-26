@@ -931,7 +931,7 @@ main {
 }
 
 .site-header {
-  background-color: rgba(39, 47, 50, 0.8);
+  background-color: rgba(39, 47, 50, 0.9);
   position: fixed;
   top: 0;
   transition: top 0.2s ease-in-out;
@@ -956,6 +956,9 @@ main {
 .site-branding a {
   color: #FFFFFF;
   text-decoration: none;
+}
+.site-branding a:hover, .site-branding a:focus {
+  color: #272F32;
 }
 
 .site-title {
@@ -1026,17 +1029,17 @@ main {
 .hero-social a {
   font-size: 28.8px;
   font-size: 1.8rem;
-  color: rgba(218, 234, 239, 0.6);
+  color: rgba(255, 255, 255, 0.6);
 }
 .hero-social a:hover, .hero-social a:focus {
-  color: #DAEAEF;
+  color: #FF3D2E;
 }
 
 .home-hero {
   background-color: #272F32;
   background: url("./images/hero.jpg") no-repeat center center;
   background-size: cover;
-  padding: 100px 0 100px 0;
+  padding: 125px 0 100px 0;
   height: 100vh;
 }
 @media only screen and (max-width: 55em) {
@@ -1061,9 +1064,6 @@ main {
   padding-top: 100px;
   margin: 0;
 }
-.hero-title span {
-  /*     font-weight: 100; */
-}
 @media only screen and (max-width: 55em) {
   .hero-title {
     padding-top: 0;
@@ -1071,10 +1071,9 @@ main {
 }
 
 .hero-info {
-  font-size: 22.4px;
-  font-size: 1.4rem;
-  font-weight: 100;
-  width: 500px;
+  font-size: 19.2px;
+  font-size: 1.2rem;
+  width: 450px;
 }
 @media only screen and (max-width: 55em) {
   .hero-info {
@@ -1088,6 +1087,7 @@ main {
   padding: 2em 0;
 }
 .home-services h4 {
+  padding: 2em 0;
   color: #FFFFFF;
   font-size: 22.4px;
   font-size: 1.4rem;
@@ -1100,20 +1100,15 @@ main {
 @media only screen and (max-width: 55em) {
   .home-services h4 {
     text-align: left;
-    padding-top: 2em;
   }
 }
 .home-services h3 {
   color: #FFFFFF;
-  margin-top: 0;
 }
 @media only screen and (max-width: 55em) {
   .home-services h3 {
     text-align: center;
   }
-}
-.home-services a {
-  font-style: italic;
 }
 
 .home-services-section {
@@ -1226,12 +1221,9 @@ main {
 }
 
 .read-all-posts {
-  background-color: #272F32;
   text-align: center;
-  padding: 1em 4em;
-  display: block;
-  margin: 2em auto 0 auto;
-  width: 300px;
+  width: 200px;
+  margin: 0 auto;
 }
 @media only screen and (max-width: 30em) {
   .read-all-posts {
@@ -1239,10 +1231,15 @@ main {
   }
 }
 .read-all-posts a {
+  background-color: #272F32;
+  padding: 1em 2em;
+  display: block;
+  margin: 2em auto 0 auto;
   text-decoration: none;
   color: #9DBDC6;
 }
 .read-all-posts a:hover, .read-all-posts a:active, .read-all-posts a:focus {
+  background-color: rgba(39, 47, 50, 0.4);
   color: #FFFFFF;
 }
 
@@ -1299,13 +1296,16 @@ main {
 .footer-bottom {
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   margin-top: 2em;
+  color: #cccccc;
+  font-size: 14.4px;
+  font-size: 0.9rem;
 }
 .footer-bottom a {
-  color: #FFFFFF;
+  color: #cccccc;
   text-decoration: none;
 }
 .footer-bottom a:hover, .footer-bottom a:focus {
-  color: #FF3D2E;
+  color: #FFEB3B;
 }
 
 .footer-bottom-copyright {
@@ -1323,6 +1323,7 @@ main {
 }
 .footer-bottom-links li {
   display: inline-block;
+  margin-left: 0.2em;
 }
 
 .process-page .entry-header {
@@ -1732,10 +1733,15 @@ main {
 .portfolio-post-header h1 {
   color: #FFFFFF;
   padding: 0;
+  margin-bottom: 0;
   text-shadow: 2px 2px 15px #000, -2px -2px 15px #000;
 }
 .portfolio-post-header button {
   margin-bottom: 50px;
+  font-weight: 700;
+}
+.portfolio-post-header button:hover, .portfolio-post-header button:focus {
+  text-shadow: 2px 2px 15px #000, -2px -2px 15px #000;
 }
 
 .portfolio-post-left {

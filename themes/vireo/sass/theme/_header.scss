@@ -1,7 +1,7 @@
 
 
 .site-header {
-  background-color: rgba($color1, 0.8);
+  background-color: rgba($color1, 0.9);
   position: fixed;
   top: 0;
   transition: top 0.2s ease-in-out;
@@ -27,6 +27,11 @@
   a {
     color: $color3;
     text-decoration: none;
+
+    &:hover,
+    &:focus {
+      color: $color1;
+    }
   }
 }
 

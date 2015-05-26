@@ -55,11 +55,18 @@
   h1 {
     color: $color__text-alt;
     padding: 0;
+    margin-bottom: 0;
     text-shadow: 2px 2px 15px #000, -2px -2px 15px #000;
   }
 
   button {
     margin-bottom: 50px;
+    font-weight: 700;
+
+    &:hover,
+    &:focus {
+      text-shadow: 2px 2px 15px #000, -2px -2px 15px #000;
+    }
   }
 }
 

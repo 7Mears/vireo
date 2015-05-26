@@ -31,14 +31,16 @@
 .footer-bottom {
   border-top: 1px solid rgba(255,255,255, 0.1);
   margin-top: $padding-main;
+  color: $color__text-alt-dark;
+  @include font-size(0.9);
 
   a {
-    color: $color3;
+    color: $color__text-alt-dark;
     text-decoration: none;
 
     &:hover,
     &:focus {
-      color: $color4;
+      color: $color6;
     }
   }
 }
@@ -58,5 +60,6 @@
 
   li {
     display: inline-block;
+    margin-left: 0.2em;
   }
 }

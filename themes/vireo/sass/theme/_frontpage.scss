@@ -38,11 +38,11 @@
 
   a {
     @include font-size(1.8);
-    color: rgba($color5, 0.6);
+    color: rgba($color3, 0.6);
 
     &:hover,
     &:focus {
-      color: $color5;
+      color: $color4;
     }
   }
 }
@@ -51,7 +51,7 @@
   background-color: $color__background-dark;
   background: url('./images/hero.jpg') no-repeat center center;
   background-size: cover;
-  padding: 100px 0 100px 0;
+  padding: 125px 0 100px 0;
   height: 100vh;
 
   @include bp-medium {
@@ -76,19 +76,14 @@
   padding-top: 100px;
   margin: 0;
 
-  span {
-/*     font-weight: 100; */
-  }
-
   @include bp-medium {
     padding-top: 0;
   }
 }
 
 .hero-info {
-  @include font-size(1.4);
-  font-weight: 100;
-  width: 500px;
+  @include font-size(1.2);
+  width: 450px;
 
   @include bp-medium {
     width: 100%;
@@ -104,6 +99,7 @@
 
   // bottom section with links
   h4 {
+    padding: $padding-main 0;
     color: $color__text-alt;
     @include font-size(1.4);
     text-align: center;
@@ -116,22 +112,16 @@
 
     @include bp-medium {
       text-align: left;
-      padding-top: $padding-main;
     }
   }
 
   // 3 section titles
   h3 {
     color: $color__text-alt;
-    margin-top: 0;
 
     @include bp-medium {
       text-align: center;
     }
-  }
-
-  a {
-    font-style: italic;
   }
 }
 
@@ -255,24 +245,27 @@
 // read all posts
 
 .read-all-posts {
-  background-color: $color1;
+
   text-align: center;
-  padding:  ($padding-main / 2) ($padding-main * 2);
-  display: block;
-  margin: $padding-main auto 0 auto;
-  width: 300px;
+  width: 200px;
+  margin: 0 auto;
 
   @include bp-small {
     width: 100%;
   }
 
   a {
+    background-color: $color1;
+    padding:  ($padding-main / 2) $padding-main;
+    display: block;
+    margin: $padding-main auto 0 auto;
     text-decoration: none;
     color: $color2;
 
     &:hover,
     &:active,
     &:focus {
+      background-color: rgba($color1, 0.4);
       color: $color3;
     }
   }
