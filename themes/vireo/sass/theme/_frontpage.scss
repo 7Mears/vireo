@@ -167,18 +167,18 @@
   background-color: lighten($color1 , 10%);
   margin: 0;
   padding: $padding-main 0 ($padding-main * 2) 0;
+
+  .container {
+    overflow: auto; // ie fix
+  }
 }
 
 .home-post {
   padding: 0 $padding-main;
   margin-top: ($padding-main * 2);
-  background-color: rgba($color1, 1);
+  background-color: $color1;
   color: $color__text-alt-dark;
-  overflow: auto; // ie fix
-
-  &:nth-child(2) {
-    margin-top: 0;
-  }
+  border-radius: 0 2em 0 2em;
 
   a {
     color: $color2;
