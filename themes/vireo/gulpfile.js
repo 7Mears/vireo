@@ -39,7 +39,7 @@ gulp.task("styles", function() {
 });
 
 // javascript
-gulp.task('javascript', function() {
+gulp.task('scripts', function() {
   return gulp.src('js/*.js')
     .pipe(concat('script.js'))
 		// .pipe(uglify())
@@ -47,8 +47,13 @@ gulp.task('javascript', function() {
 		// .on('error', gutil.log)
 });
 
-// live reload and sass
+// default gulp task
 gulp.task("default", function() {
 	livereload.listen();
 	gulp.watch(paths.styles.src, ["styles"]);
+});
+
+
+// gulp build task
+gulp.task('build', ['styles', 'scripts'], function() {
 });
