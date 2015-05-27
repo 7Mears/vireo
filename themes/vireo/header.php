@@ -9,7 +9,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
-
 <?php wp_head(); ?>
 </head>
 
@@ -18,7 +17,6 @@
 
 	<header id="site-header" class="site-header" role="banner">
 		<div class="container">
-
 			<div class="site-branding">
 				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">Vireo</a></h1>
 			</div><!-- /site-branding -->

@@ -1157,6 +1157,7 @@ main {
   margin-top: 4em;
   background-color: #272f32;
   color: #cccccc;
+  overflow: auto;
 }
 .home-post:nth-child(2) {
   margin-top: 0;
@@ -1224,6 +1225,7 @@ main {
   text-align: center;
   width: 200px;
   margin: 0 auto;
+  position: relative;
 }
 @media only screen and (max-width: 30em) {
   .read-all-posts {
@@ -1609,6 +1611,9 @@ main {
 .page-blog {
   background-color: #3d4a4f;
 }
+.page-blog .container {
+  overflow: auto;
+}
 .page-blog .page-header {
   margin-bottom: 2em;
 }
@@ -1688,6 +1693,7 @@ main {
 
 .portfolio-archive-post {
   color: #cccccc;
+  overflow: auto;
 }
 .portfolio-archive-post:nth-child(2n + 2) {
   background-color: rgba(0, 0, 0, 0.2);

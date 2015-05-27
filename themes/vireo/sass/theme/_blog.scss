@@ -2,6 +2,10 @@
 .page-blog {
   background-color: lighten($color1 , 10%);
 
+  .container {
+    overflow: auto;  // ie fix
+  }
+
   .page-header {
     margin-bottom: $padding-main;
   }

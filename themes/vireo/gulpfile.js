@@ -9,6 +9,7 @@ var gulp 					= require("gulp"),
 		compass 			= require("gulp-compass"),
 		plumber				= require("gulp-plumber"),
 		livereload 		= require('gulp-livereload'),
+		minifycss			= require('gulp-minify-css'),
 		uglify 				= require('gulp-uglify');
 
 var paths = {
@@ -54,6 +55,6 @@ gulp.task("default", function() {
 });
 
 
-// gulp build task
+// build gulp task
 gulp.task('build', ['styles', 'scripts'], function() {
 });
