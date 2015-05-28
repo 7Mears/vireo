@@ -42,7 +42,7 @@
 }
 
 .hero-title {
-  font-family: $font__primary;
+  font-family: $font__secondary;
   font-weight: 400;
   padding-top: 100px;
   margin: 0;
@@ -69,6 +69,17 @@
     display: none;
   }
 
+  img {
+    height: 30px;
+    width: 30px;
+    @include opacity(0.6);
+    transition: 0.4s ease;
+
+    &:hover {
+      @include opacity(1);
+    }
+  }
+
   ul {
     list-style-type: none;
     margin-bottom: -50px;
@@ -78,15 +89,6 @@
     padding-left: 0.5em;
   }
 
-  a {
-    @include font-size(1.8);
-    color: rgba($color3, 0.6);
-
-    &:hover,
-    &:focus {
-      color: $color4;
-    }
-  }
 }
 
 // services
