@@ -998,8 +998,8 @@ main {
 
 .section-title {
   color: rgba(255, 255, 255, 0.4);
-  font-size: 19.2px;
-  font-size: 1.2rem;
+  font-size: 16px;
+  font-size: 1rem;
   font-family: "Avenir", sans-serif;
   margin: 1em 0 0 0;
 }
@@ -1033,7 +1033,7 @@ main {
 }
 
 .hero-title {
-  font-family: "Arvo", serif;
+  font-family: "Avenir", sans-serif;
   font-weight: 400;
   padding-top: 100px;
   margin: 0;
@@ -1093,20 +1093,12 @@ main {
 .home-services h4 {
   padding: 2em 0;
   color: #FFFFFF;
-  font-size: 22.4px;
-  font-size: 1.4rem;
   text-align: center;
-}
-.home-services h4 a {
-  text-decoration: none;
-  font-weight: 700;
-}
-@media only screen and (max-width: 55em) {
-  .home-services h4 {
-    text-align: left;
-  }
+  margin: 0;
 }
 .home-services h3 {
+  font-size: 32px;
+  font-size: 2rem;
   color: #FFFFFF;
 }
 @media only screen and (max-width: 55em) {
@@ -1118,30 +1110,13 @@ main {
 .home-services-section {
   width: 33.333%;
   float: left;
-  padding: 2em;
+  padding: 0 2em;
 }
-.home-services-section:first-child {
-  padding-left: 0;
-}
-.home-services-section:nth-child(3) {
-  padding-right: 0;
+.home-services-section strong {
+  color: #FFFFFF;
 }
 .home-services-section p {
   color: #cccccc;
-  padding-right: 4em;
-}
-@media only screen and (max-width: 75em) {
-  .home-services-section p {
-    padding: 0;
-  }
-}
-.home-services-section .bar {
-  border-right: 3px dotted rgba(0, 0, 0, 0.2);
-}
-@media only screen and (max-width: 75em) {
-  .home-services-section .bar {
-    border: 0;
-  }
 }
 @media only screen and (max-width: 55em) {
   .home-services-section {
@@ -1160,20 +1135,24 @@ main {
 }
 
 .home-post {
-  padding: 0 2em;
+  padding: 2em;
   margin-top: 4em;
   background-color: #272F32;
   color: #cccccc;
   border-radius: 0 2em 0 2em;
+  position: relative;
 }
-.home-post a {
-  color: #9DBDC6;
-}
-.home-post a:hover, .home-post a:active, .home-post a:focus {
+.home-post a,
+.home-post h4 {
   color: #FFFFFF;
-}
-.home-post a:first-child {
   text-decoration: none;
+  transition: 0.4s ease;
+}
+.home-post a:hover, .home-post a:active, .home-post a:focus,
+.home-post h4:hover,
+.home-post h4:active,
+.home-post h4:focus {
+  color: #FF3D2E;
 }
 
 .home-post--content {
@@ -1201,15 +1180,17 @@ main {
 @media only screen and (max-width: 55em) {
   .home-post--image {
     width: 75px;
-    margin-top: -30px;
+    margin-top: -4em;
   }
 }
 
-.home-post:nth-child(3) .home-post--image {
+.home-post:nth-child(3n + 1) {
+  border-radius: 2em 0 2em 0;
+}
+.home-post:nth-child(3n + 1) .home-post--image {
   float: right;
 }
-
-.home-post:nth-child(3) .home-post--content {
+.home-post:nth-child(3n + 1) .home-post--content {
   float: left;
 }
 
@@ -1226,27 +1207,15 @@ main {
 }
 
 .read-all-posts {
+  margin-top: 2em;
   text-align: center;
-  width: 200px;
-  margin: 0 auto;
-  position: relative;
-}
-@media only screen and (max-width: 30em) {
-  .read-all-posts {
-    width: 100%;
-  }
 }
 .read-all-posts a {
-  background-color: #272F32;
-  padding: 1em 2em;
-  display: block;
-  margin: 2em auto 0 auto;
   text-decoration: none;
   color: #9DBDC6;
 }
 .read-all-posts a:hover, .read-all-posts a:active, .read-all-posts a:focus {
-  background-color: rgba(39, 47, 50, 0.4);
-  color: #FFFFFF;
+  color: #FF3D2E;
 }
 
 .page-header,
@@ -1708,7 +1677,8 @@ main {
 
 .portfolio-archive-post {
   color: #cccccc;
-  overflow: auto;
+  position: relative;
+  padding: 2em 0;
 }
 .portfolio-archive-post:nth-child(2n + 2) {
   background-color: rgba(0, 0, 0, 0.2);
@@ -1718,6 +1688,10 @@ main {
 }
 .portfolio-archive-post h4 {
   margin: 0;
+}
+.portfolio-archive-post img {
+  border-radius: 2em 0 2em 0;
+  padding: 0;
 }
 
 .portfolio-archive-post--content,

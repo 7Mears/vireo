@@ -27,22 +27,23 @@ get_header(); ?>
 
     <div class="home-services-section">
       <h3>Design</h3>
-      <p class="bar">Websites are an applied art; they require both practical function and pleasing aesthetics. The same principles apply to all types of graphic design. We know how to create a coherent, appealing design for any visual product.</p>
+      <p>Websites are an applied art; they require both <strong>practical function and pleasing aesthetics</strong>. The same principles apply to all types of graphic design. We know how to create a <strong>coherent, appealing design</strong> for any visual product.</p>
     </div>
 
     <div class="home-services-section">
       <h3>Content</h3>
-      <p class="bar">When done well, words and images can be inspiring, exciting, and motivating. At Vireo Productions, we produce writing, photos, and videos that deliver a clear message: Your business cares about the quality of the content it delivers.</p>
+      <p>When done well, words and images can be <strong>inspiring, exciting, and motivating</strong>. At Vireo Productions, we produce writing, photos, and videos that deliver a <strong>clear message</strong>: Your business cares about the quality of the content it delivers.</p>
     </div>
 
     <div class="home-services-section">
       <h3>Marketing</h3>
-      <p>Everything your business puts out into the world is part of its brand. Whether you need a website, social media management, email marketing, or a press kit, we'll make sure it strengthens and enhances your business's unique image.</p>
+      <p>Everything your business puts out into the world is part of its <strong>brand</strong>. Whether you need a website, social media management, email marketing, or a press kit, we'll make sure it <strong>strengthens and enhances</strong> your business's unique image.</p>
     </div>
 
     <h4>Websites are a dance between design, content, and marketing; <a href="<?php echo esc_url( home_url( '/' ) ); ?>process/">take a look at our process</a> for building a website. <a href="<?php echo esc_url( home_url( '/' ) ); ?>about/">Learn more about us</a> to see a full list of the services we provide.</h4>
   </div><!-- /container -->
 </section><!-- /services -->
+
 
 
 <section class="home-blog">
@@ -66,7 +67,7 @@ get_header(); ?>
             <!-- excerpt -->
             <?php the_excerpt(); ?>
 
-            <a href="<?php the_permalink() ?>" title="<?php the_title(); ?>" class="read-more">read the post</a>
+            <a href="<?php the_permalink() ?>" title="<?php the_title(); ?>" class="read-more"><i class="fa fa-angle-double-right"></i> read the post</a>
 
           </div><!-- /post content -->
           <div class="clear"></div>

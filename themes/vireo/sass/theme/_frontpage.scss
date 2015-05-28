@@ -6,7 +6,7 @@
 
 .section-title {
   color: rgba(255,255,255,0.4);
-  @include font-size(1.2);
+  @include font-size(1);
   font-family: $font__primary;
   margin: ($padding-main / 2) 0 0 0;
 }
@@ -42,7 +42,7 @@
 }
 
 .hero-title {
-  font-family: $font__secondary;
+  font-family: $font__primary;
   font-weight: 400;
   padding-top: 100px;
   margin: 0;
@@ -102,22 +102,13 @@
   h4 {
     padding: $padding-main 0;
     color: $color__text-alt;
-    @include font-size(1.4);
     text-align: center;
-
-
-    a {
-      text-decoration: none;
-      font-weight: 700;
-    }
-
-    @include bp-medium {
-      text-align: left;
-    }
+    margin: 0;
   }
 
   // 3 section titles
   h3 {
+    @include font-size(2);
     color: $color__text-alt;
 
     @include bp-medium {
@@ -129,31 +120,14 @@
 .home-services-section {
   width: 33.333%;
   float: left;
-  padding: $padding-main;
+  padding: 0 $padding-main;
 
-  &:first-child {
-    padding-left: 0;
-  }
-
-  &:nth-child(3) {
-    padding-right: 0;
+  strong {
+    color: $color__text-alt;
   }
 
   p {
     color: $color__text-alt-dark;
-    padding-right: ($padding-main * 2);
-
-    @include bp-large {
-      padding: 0;
-    }
-  }
-
-  .bar {
-    border-right: $border-size dotted rgba(0,0,0,0.2);
-
-    @include bp-large {
-      border: 0;
-    }
   }
 
   @include bp-medium {
@@ -176,27 +150,26 @@
 }
 
 .home-post {
-  padding: 0 $padding-main;
+  padding: $padding-main;
   margin-top: ($padding-main * 2);
   background-color: $color1;
   color: $color__text-alt-dark;
   border-radius: 0 2em 0 2em;
+  position: relative;
 
-  a {
-    color: $color2;
+  a,
+  h4 {
+    color: $color3;
+    text-decoration: none;
+    transition: 0.4s ease;
 
     &:hover,
     &:active,
     &:focus {
-      color: $color3;
+      color: $color4;
     }
   }
-
-  a:first-child {
-    text-decoration: none;
-  }
 }
-
 
 .home-post--content {
   width: 75%;
@@ -220,16 +193,21 @@
 
   @include bp-medium {
     width: 75px;
-    margin-top: -(75px / 2.5);
+    margin-top: -($padding-main * 2);
   }
 }
 
-.home-post:nth-child(3) .home-post--image {
-  float: right;
-}
+.home-post:nth-child(3n + 1) {
+  border-radius: 2em 0 2em 0;
 
-.home-post:nth-child(3) .home-post--content {
-  float: left;
+  .home-post--image {
+    float: right;
+  }
+
+  .home-post--content {
+    float: left;
+
+  }
 }
 
 .home-post--title {
@@ -247,29 +225,17 @@
 // read all posts
 
 .read-all-posts {
-
+  margin-top: $padding-main;
   text-align: center;
-  width: 200px;
-  margin: 0 auto;
-  position: relative;
-
-  @include bp-small {
-    width: 100%;
-  }
 
   a {
-    background-color: $color1;
-    padding:  ($padding-main / 2) $padding-main;
-    display: block;
-    margin: $padding-main auto 0 auto;
     text-decoration: none;
     color: $color2;
 
     &:hover,
     &:active,
     &:focus {
-      background-color: rgba($color1, 0.4);
-      color: $color3;
+      color: $color4;
     }
   }
 

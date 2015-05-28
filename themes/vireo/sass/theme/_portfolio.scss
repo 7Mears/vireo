@@ -5,7 +5,8 @@
 
 .portfolio-archive-post {
   color: $color__text-alt-dark;
-  overflow: auto; // ie fix
+  position: relative;
+  padding: $padding-main 0;
 
   &:nth-child(2n + 2) {
     background-color: rgba(0,0,0,0.2);
@@ -17,6 +18,11 @@
 
   h4 {
     margin: 0;
+  }
+
+  img {
+    border-radius: 2em 0 2em 0;
+    padding: 0;
   }
 }
 
