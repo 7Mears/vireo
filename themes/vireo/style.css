@@ -1232,6 +1232,11 @@ main {
   margin: 0;
   padding: 0;
 }
+.page-header h2,
+.entry-header h2 {
+  margin-bottom: -0.7em;
+  color: #cccccc;
+}
 
 .entry-header {
   padding: 250px 2em 200px 2em;
