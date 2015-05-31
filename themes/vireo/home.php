@@ -31,12 +31,11 @@ get_header(); ?>
               <!-- date posted -->
               <p class="blog-post--date"><?php the_time('jS F Y') ?></p>
 	          </div><!-- /post content -->
-	          <span class="clear"></span>
+
 	    		</div> <!-- /blog post -->
 	    <?php endwhile; ?>
       <?php the_posts_navigation(); ?>
       </div><!-- /container -->
-      <span class="clear"></span>
 		</main><!-- #main -->
 
 <?php get_footer(); ?>

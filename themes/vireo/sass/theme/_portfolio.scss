@@ -3,10 +3,13 @@
   background-color: lighten($color1 , 10%);
 }
 
+.portfolio-archive-container {
+  @include clearfix();
+}
 .portfolio-archive-post {
   color: $color__text-alt-dark;
-  position: relative;
   padding: $padding-main 0;
+  position: relative;
 
   &:nth-child(2n + 2) {
     background-color: rgba(0,0,0,0.2);

@@ -57,10 +57,9 @@ get_header(); ?>
           <?php the_excerpt(); ?>
           <a href="<?php the_permalink() ?>" title="<?php the_title(); ?>" class="read-more"><i class="fa fa-angle-double-right"></i> read the post</a>
         </div><!-- /post content -->
-        <div class="clear"></div>
   		</div> <!-- /post container -->
       <?php endwhile; ?>
-    <div class="clear"></div>
+
     <div class="read-all-posts">
       <a href="<?php echo esc_url( home_url( '/' ) ); ?>blog/">See more posts</a>
     </div>

@@ -1539,9 +1539,6 @@ main {
 .page-blog {
   background-color: #3d4a4f;
 }
-.page-blog .container {
-  overflow: auto;
-}
 .page-blog .page-header {
   margin-bottom: 2em;
 }
@@ -1564,6 +1561,8 @@ main {
   color: #cccccc;
   border-radius: 0 2em 0 2em;
   position: relative;
+  content: "";
+  display: table;
 }
 .blog-post a,
 .blog-post h4 {
@@ -1642,10 +1641,15 @@ main {
   background-color: #3d4a4f;
 }
 
+.portfolio-archive-container {
+  content: "";
+  display: table;
+}
+
 .portfolio-archive-post {
   color: #cccccc;
-  position: relative;
   padding: 2em 0;
+  position: relative;
 }
 .portfolio-archive-post:nth-child(2n + 2) {
   background-color: rgba(0, 0, 0, 0.2);
