@@ -27,7 +27,7 @@ get_header(); ?>
 	            <!-- excerpt -->
 	            <?php the_excerpt(); ?>
 
-	            <a href="<?php the_permalink() ?>" title="<?php the_title(); ?>" class="blog-post-more">read the post</a>
+	            <a href="<?php the_permalink() ?>" title="<?php the_title(); ?>" class="blog-post-more"><i class="fa fa-angle-double-right"></i> read the post</a>
               <!-- date posted -->
               <p class="blog-post--date"><?php the_time('jS F Y') ?></p>
 	          </div><!-- /post content -->

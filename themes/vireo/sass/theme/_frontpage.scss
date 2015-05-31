@@ -33,6 +33,10 @@
     position: relative;
     height: 100%;
   }
+
+  button {
+    margin-top: $padding-main;
+  }
 }
 
 .hero-title,
@@ -40,6 +44,7 @@
   color: $color__text-alt;
   text-shadow: 2px 2px 15px #000, -2px -2px 15px #000;
 }
+
 
 .hero-title {
   font-family: $font__primary;
@@ -54,7 +59,7 @@
 
 .hero-info {
   @include font-size(1.2);
-  width: 450px;
+  width: 500px;
 
   @include bp-medium {
     width: 100%;
@@ -143,83 +148,8 @@
   background-color: lighten($color1 , 10%);
   margin: 0;
   padding: $padding-main 0 ($padding-main * 2) 0;
-
-  .container {
-    overflow: auto; // ie fix
-  }
 }
 
-.home-post {
-  padding: $padding-main;
-  margin-top: ($padding-main * 2);
-  background-color: $color1;
-  color: $color__text-alt-dark;
-  border-radius: 0 2em 0 2em;
-  position: relative;
-
-  a,
-  h4 {
-    color: $color3;
-    text-decoration: none;
-    transition: 0.4s ease;
-
-    &:hover,
-    &:active,
-    &:focus {
-      color: $color4;
-    }
-  }
-}
-
-.home-post--content {
-  width: 75%;
-  margin: 2%;
-  float: right;
-  @include font-size(1.1);
-
-  @include bp-medium {
-    width: 100%;
-    margin: $padding-main 0;
-  }
-}
-
-.home-post--image {
-  width: 15%;
-  margin: 2%;
-  border-radius: 50%;
-  border: $border-size solid $color5;
-  float: left;
-  shape-outside: circle();
-
-  @include bp-medium {
-    width: 75px;
-    margin-top: -($padding-main * 2);
-  }
-}
-
-.home-post:nth-child(3n + 1) {
-  border-radius: 2em 0 2em 0;
-
-  .home-post--image {
-    float: right;
-  }
-
-  .home-post--content {
-    float: left;
-
-  }
-}
-
-.home-post--title {
-  color: $color__text-alt;
-  margin: 0;
-}
-
-.home-post--date {
-  @include font-size(0.8);
-  font-style: italic;
-  margin-top: 0;
-}
 
 
 // read all posts

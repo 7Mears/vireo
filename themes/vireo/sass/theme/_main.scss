@@ -27,7 +27,9 @@ main {
 .call-to-action {
   background-color: rgba($color1, 0.1);
   background: url('./images/wood.png') repeat;
+  background-attachment: fixed;
   padding: ($padding-main * 2) 0;
+  text-shadow: 2px 2px 15px #000, -2px -2px 15px #000;
 
   h4,
   p {
