@@ -68,13 +68,22 @@ function vireo_widgets_init() {
 add_action( 'widgets_init', 'vireo_widgets_init' );
 
 /**
+*	Use latest jQuery release
+*/
+if( !is_admin() ){
+	wp_deregister_script('jquery');
+	wp_register_script('jquery', ("http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"), false, '');
+	wp_enqueue_script('jquery');
+}
+
+/**
  * Enqueue scripts and styles.
  */
 function vireo_scripts() {
 	// Main stylesheet
 	wp_enqueue_style( 'vireo-style', get_stylesheet_uri() );
 	// Main javascript file with jquery
-	wp_enqueue_script( 'vireo-javascript', get_template_directory_uri() . '/js/script.js', array('jquery'), '20130115', true );
+	wp_enqueue_script( 'vireo-javascript', get_template_directory_uri() . '/js/app.js', array('jquery'), '20130115', true );
 	// Google Fonts
 
 	wp_register_style('googleFonts', 'http://fonts.googleapis.com/css?family=Arvo:400,700');

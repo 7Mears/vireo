@@ -24,8 +24,10 @@
 
  <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
  	<header class="portfolio-post-header">
+    <div class="parallax">
  		<?php the_title( sprintf( '<h1 class="entry-title">', esc_url( get_permalink() ) ), '</h1>' ); ?>
      <a href="<?php the_field('website_link'); ?>"><button>Visit the site</button></a>
+   </div>
  	</header><!-- .entry-header -->
 
 <div class="container">

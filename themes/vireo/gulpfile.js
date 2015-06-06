@@ -1,17 +1,18 @@
-/*
-* sudo npm install --save-dev gulp gulp-uglify gulp-util gulp-concat gulp-watch gulp-compass gulp-plumber gulp-livereload
-*/
+// npm install --save-dev gulp gulp-html-prettify gulp-util gulp-uglifyjs gulp-concat gulp-watch gulp-compass gulp-plumber gulp-livereload
+
+//////////
 
 var gulp 					= require("gulp"),
 		gutil 				= require("gulp-util"),
 		concat				= require("gulp-concat"),
 		watch 				= require("gulp-watch"),
 		compass 			= require("gulp-compass"),
+		uglify				= require('gulp-uglifyjs'),
 		plumber				= require("gulp-plumber"),
-		livereload 		= require('gulp-livereload'),
-		minifycss			= require('gulp-minify-css'),
-		uglify 				= require('gulp-uglify');
+		prettify 			= require('gulp-html-prettify'),
+		livereload 		= require('gulp-livereload');
 
+// Paths
 var paths = {
 	styles: {
 		src: "./sass/**/*.scss",
@@ -19,12 +20,33 @@ var paths = {
 	}
 };
 
+// Error handler
 function handleError(err) {
   console.log(err.toString());
   this.emit('end');
 }
 
-// sass
+////////////////////////////////////////////////////////////////////////////////
+////////// WEBSITE TASKS //////////
+////////////////////////////////////////////////////////////////////////////////
+
+//////////
+// HTML
+//////////
+
+gulp.task('html', function() {
+  gulp.src([
+		'!./functions.php',
+		'./*.php'
+	])
+    .pipe(prettify({indent_char: ' ', indent_size: 2}))
+    .pipe(gulp.dest('./'))
+});
+
+//////////
+// Sass
+//////////
+
 gulp.task("styles", function() {
 	return gulp.src(paths.styles.src)
 		.pipe(plumber())
@@ -39,22 +61,53 @@ gulp.task("styles", function() {
 		.pipe(livereload());
 });
 
-// javascript
-gulp.task('scripts', function() {
-  return gulp.src('js/*.js')
-    .pipe(concat('script.js'))
-		// .pipe(uglify())
-    .pipe(gulp.dest('js/'))
-		// .on('error', gutil.log)
+//////////
+// JS
+//////////
+
+// minify
+gulp.task('uglifyjs', function() {
+  gulp.src([
+		'!./js/app.js',
+		'./js/*.js'
+		])
+	.pipe(uglify('app.js', {
+		outSourceMap: true
+	}))
+    .pipe(gulp.dest('./js'))
 });
 
-// default gulp task
-gulp.task("default", function() {
+// beautify
+gulp.task('beautifyjs', function() {
+	gulp.src([
+		'!./js/app.js',
+		'./js/*.js'
+		])
+    .pipe(uglify('app.js', {
+      mangle: false,
+      output: {
+        beautify: true
+      }
+    }))
+		.pipe(gulp.dest('./js'))
+		.pipe(livereload());
+});
+
+////////////////////////////////////////////////////////////////////////////////
+////////// WATCH AND BUILD TASKS //////////
+////////////////////////////////////////////////////////////////////////////////
+
+// watch
+gulp.task('watch', function() {
 	livereload.listen();
-	gulp.watch(paths.styles.src, ["styles"]);
+	// Watch Sass
+	gulp.watch(paths.styles.src, ['styles']);
+	// Watch JS
+	gulp.watch('./js/script.js', ['beautifyjs']);
 });
 
+// Build task
+gulp.task('build', ['styles', 'uglifyjs']);
 
-// build gulp task
-gulp.task('build', ['styles', 'scripts'], function() {
-});
+// Default task
+gulp.task('default', ['styles', 'beautifyjs']);
