@@ -45,75 +45,40 @@
 
 // employees
 .person {
-  width: 50%;
-  float: left;
-  margin: ($padding-main * 2) 0;
-  padding: 0;
+  width: 100%;
+  padding: 200px 0;
+  position: relative;
+  @include clearfix();
 
-  &:first-child {
-    padding-right: ($padding-main * 2);
-    border-right: $border-size dotted rgba(0,0,0,0.1);
-    text-align: right;
-
-    @include bp-medium {
-      border: 0;
-      padding: 0;
-    }
-  }
-
-  &:nth-child(2) {
-    padding-left: ($padding-main * 2);
-
-    @include bp-medium {
-      border: 0;
-      padding: 0;
-    }
-  }
-
-  .name,
-  .role {
+  h3 {
     margin: 0;
-    padding: 0;
   }
-
-  .name {
-    font-family: $font__primary;
-    font-weight: 100;
+  h5 {
+    margin-top: 0;
   }
+}
 
-  .role {
-    @include font-size(1);
-    padding-bottom: $padding-main;
+.person-content {
+  width: 50%;
+  z-index: 1;
+  position: relative;
+}
 
-    @include bp-medium {
-      padding-bottom: 0;
-    }
-  }
+// employee image
+.ashleigh-image,
+.jordan-image {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
 
-  .mug {
-    border: $border-size solid $color5;
-    border-radius: 50%;
-    width: 175px;
+.ashleigh-image {
+  background: url('./images/ash.jpg') no-repeat;
+}
 
-    shape-outside: circle();
-
-    @include bp-small {
-      width: 100%;
-    }
-  }
-
-  .mug-first {
-    float: left;
-    margin: 1em $padding-main 1em 0;
-  }
-
-  .mug-last {
-    float: right;
-    margin: 1em 0 1em $padding-main;
-  }
-
-  @include bp-medium {
-    width: 100%;
-    margin: $padding-main 0;
-  }
+.jordan-image {
+  background: url('./images/jordan.jpg') no-repeat;
 }

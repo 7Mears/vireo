@@ -915,6 +915,14 @@ main {
   }
 }
 
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
 .posts-navigation h2 {
   display: none;
 }
@@ -1014,7 +1022,7 @@ main {
   background-color: #272F32;
   background: url("./images/hero.jpg") no-repeat center center;
   background-size: cover;
-  padding: 125px 0 100px 0;
+  padding: 100px 0 100px 0;
 }
 @media only screen and (max-width: 55em) {
   .home-hero {
@@ -1465,74 +1473,41 @@ main {
 }
 
 .person {
-  width: 50%;
-  float: left;
-  margin: 4em 0;
-  padding: 0;
+  width: 100%;
+  padding: 200px 0;
+  position: relative;
+  content: "";
+  display: table;
 }
-.person:first-child {
-  padding-right: 4em;
-  border-right: 3px dotted rgba(0, 0, 0, 0.1);
-  text-align: right;
-}
-@media only screen and (max-width: 55em) {
-  .person:first-child {
-    border: 0;
-    padding: 0;
-  }
-}
-.person:nth-child(2) {
-  padding-left: 4em;
-}
-@media only screen and (max-width: 55em) {
-  .person:nth-child(2) {
-    border: 0;
-    padding: 0;
-  }
-}
-.person .name,
-.person .role {
+.person h3 {
   margin: 0;
-  padding: 0;
 }
-.person .name {
-  font-family: "Avenir", sans-serif;
-  font-weight: 100;
+.person h5 {
+  margin-top: 0;
 }
-.person .role {
-  font-size: 16px;
-  font-size: 1rem;
-  padding-bottom: 2em;
+
+.person-content {
+  width: 50%;
+  z-index: 1;
+  position: relative;
 }
-@media only screen and (max-width: 55em) {
-  .person .role {
-    padding-bottom: 0;
-  }
+
+.ashleigh-image,
+.jordan-image {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
 }
-.person .mug {
-  border: 3px solid #DAEAEF;
-  border-radius: 50%;
-  width: 175px;
-  shape-outside: circle();
+
+.ashleigh-image {
+  background: url("./images/ash.jpg") no-repeat;
 }
-@media only screen and (max-width: 30em) {
-  .person .mug {
-    width: 100%;
-  }
-}
-.person .mug-first {
-  float: left;
-  margin: 1em 2em 1em 0;
-}
-.person .mug-last {
-  float: right;
-  margin: 1em 0 1em 2em;
-}
-@media only screen and (max-width: 55em) {
-  .person {
-    width: 100%;
-    margin: 2em 0;
-  }
+
+.jordan-image {
+  background: url("./images/jordan.jpg") no-repeat;
 }
 
 .page-blog {

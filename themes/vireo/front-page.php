@@ -6,7 +6,7 @@
 get_header(); ?>
 <section class="home-hero">
   <div class="container">
-    <h1 class="hero-title"><strong>Vireo</strong> Productions</h1>
+    <h1 class="hero-title">Vireo Productions</h1>
     <p class="hero-info"><strong>We make websites</strong>, and we fill those sites with professional, engaging content. Websites are made to share information and ideas online, and the best websites feature both great content and beautiful design.</p>
     <a class="hero-button" href="<?php echo esc_url( home_url( '/' ) ); ?>portfolio/"><button class="button-red" type="button" name="button">See our work</button></a>
     <div class="hero-social">

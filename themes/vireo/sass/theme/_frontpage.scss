@@ -22,7 +22,7 @@
   background-color: $color__background-dark;
   background: url('./images/hero.jpg') no-repeat center center;
   background-size: cover;
-  padding: 125px 0 100px 0;
+  padding: 100px 0 100px 0;
 
   @include bp-medium {
     height: 100%;

@@ -81,23 +81,28 @@ get_header(); ?>
 	</div>
 
 
-	<div class="container">
+  <div class="person">
+		<div class="ashleigh-image"></div><!-- /ashleigh image -->
+		<div class="container">
+			<div class="person-content right">
+      	<h3 class="name">Ashleigh Mattern</h3>
+      	<h5 class="role">Owner and project manager</h5>
+      	<p>Ashleigh is a writer and editor by training and experience. For seven years, she ran a freelance writing and editing business under her own name, and she continues to serve many of her long-time clients through Vireo Productions. As Vireo’s project manager, she’s our clients’ main point of contact, ensuring projects are moving along smoothly, and websites are being delivered on time.</p>
+			</div>
+		</div><!-- /container -->
+	</div><!-- /person -->
 
-    <div class="person">
-      <h4 class="name">Ashleigh Mattern</h4>
-      <h5 class="role">Owner and project manager</h5>
-			<img class="mug mug-first" src="http://vireoproductions.com/wp-content/uploads/2015/05/ashleigh-face.jpg" alt="Ashleigh Mattern mug shot">
-      <p>Ashleigh is a writer and editor by training and experience. For seven years, she ran a freelance writing and editing business under her own name, and she continues to serve many of her long-time clients through Vireo Productions. As Vireo’s project manager, she’s our clients’ main point of contact, ensuring projects are moving along smoothly, and websites are being delivered on time.</p>
-    </div>
+  <div class="person">
+		<div class="jordan-image"></div><!-- /jordan image -->
+		<div class="container">
+			<div class="person-content left">
+      	<h3 class="name">Jordan Mears</h3>
+      	<h5 class="role">Owner and designer-developer</h5>
+      	<p>Jordan is a self-taught designer and front-end developer. He first started learning code as a kid, and has been making websites since Angelfire and Geocities were cool. As Vireo’s designer-developer, he helps you create the visual style for your site, then builds it from the ground up. His goal with all of his sites is to write clean code that any programmer can work with down the road.</p>
+			</div>
+		</div><!-- /container -->
+	</div><!-- /person -->
 
-    <div class="person">
-      <h4 class="name">Jordan Mears</h4>
-      <h5 class="role">Owner and designer-developer</h5>
-			<img class="mug mug-last" src="http://vireoproductions.com/wp-content/uploads/2015/05/jordan-face.jpg" alt="Jordan Mears mug shot">
-      <p>Jordan is a self-taught designer and front-end developer. He first started learning code as a kid, and has been making websites since Angelfire and Geocities were cool. As Vireo’s designer-developer, he helps you create the visual style for your site, then builds it from the ground up. His goal with all of his sites is to write clean code that any programmer can work with down the road.</p>
-		</div>
-<div class="clear"></div>
-  </div><!-- /container -->
 
 </main><!-- /main -->
 
