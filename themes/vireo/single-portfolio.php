@@ -70,12 +70,6 @@
         <!-- /website-image2 -->
         <?php endif; ?>
 
-        <?php if( !empty($image3) ): ?>
-          <img src="<?php echo $image3['url']; ?>" alt="<?php echo $image3['alt']; ?>" />
-        <!-- /website-image3 -->
-        <?php endif; ?>
-
-
         <?php
           $second_text = get_field('portfolio_second_text');
           if( !empty($second_text) ):
@@ -86,6 +80,11 @@
             <p><?php echo $second_text ?> </p>
           </div>
         <div class="portfolio-post-right">
+        <?php endif; ?>
+
+        <?php if( !empty($image3) ): ?>
+          <img src="<?php echo $image3['url']; ?>" alt="<?php echo $image3['alt']; ?>" />
+        <!-- /website-image3 -->
         <?php endif; ?>
 
         <?php if( !empty($image4) ): ?>

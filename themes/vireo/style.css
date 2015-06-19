@@ -1015,7 +1015,6 @@ main {
   background: url("./images/hero.jpg") no-repeat center center;
   background-size: cover;
   padding: 125px 0 100px 0;
-  height: 100vh;
 }
 @media only screen and (max-width: 55em) {
   .home-hero {

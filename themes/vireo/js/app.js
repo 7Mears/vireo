@@ -1,3 +1,18 @@
+function stickyTitles(stickies) {
+    this.load = function() {
+        stickies.each(function() {
+            var thisSticky = jQuery(this).wrap('<div class="followWrap" />');
+            thisSticky.parent().height(thisSticky.outerHeight()), jQuery.data(thisSticky[0], "pos", thisSticky.offset().top);
+        });
+    }, this.scroll = function() {
+        stickies.each(function(i) {
+            var thisSticky = jQuery(this), nextSticky = stickies.eq(i + 1), prevSticky = stickies.eq(i - 1), pos = jQuery.data(thisSticky[0], "pos");
+            pos <= jQuery(window).scrollTop() ? (thisSticky.addClass("fixed"), nextSticky.length > 0 && thisSticky.offset().top >= jQuery.data(nextSticky[0], "pos") - thisSticky.outerHeight() && thisSticky.addClass("absolute").css("top", jQuery.data(nextSticky[0], "pos") - thisSticky.outerHeight())) : (thisSticky.removeClass("fixed"), 
+            prevSticky.length > 0 && jQuery(window).scrollTop() <= jQuery.data(thisSticky[0], "pos") - prevSticky.outerHeight() && prevSticky.removeClass("absolute").removeAttr("style"));
+        });
+    };
+}
+
 jQuery(document).ready(function($) {
     function hasScrolled() {
         var st = $(this).scrollTop();
@@ -68,5 +83,10 @@ $(window).on("scroll", function() {
         offset += height / 1.5, $(this).css({
             opacity: 1 - (st - offset + range) / range
         });
+    });
+}), jQuery(document).ready(function() {
+    var newStickies = new stickyTitles(jQuery(".followMe"));
+    newStickies.load(), jQuery(window).on("scroll", function() {
+        newStickies.scroll();
     });
 });
