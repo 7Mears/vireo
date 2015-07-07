@@ -867,11 +867,8 @@ main {
 }
 
 .call-to-action {
-  background-color: rgba(39, 47, 50, 0.1);
-  background: url("./images/wood.png") repeat;
-  background-attachment: fixed;
+  background-color: #3d4a4f;
   padding: 4em 0;
-  text-shadow: 2px 2px 15px #000, -2px -2px 15px #000;
 }
 .call-to-action h4,
 .call-to-action p {
@@ -941,34 +938,33 @@ main {
 }
 
 .site-header {
-  background-color: rgba(39, 47, 50, 0.9);
+  background-color: #272f32;
   position: fixed;
   top: 0;
   transition: top 0.2s ease-in-out;
   width: 100%;
-  height: 50px;
+  height: 75px;
   z-index: 3;
 }
 
 .nav-up {
-  top: -50px;
+  top: -75px;
 }
 
 .site-branding {
   float: left;
-  background: #FF3D2E;
-  margin-bottom: -100px;
 }
 .site-branding h1 {
   margin: 0;
-  padding: 50px 12.5px 0 12.5px;
+  padding-top: 17.5px;
+  letter-spacing: 1px;
 }
 .site-branding a {
   color: #FFFFFF;
   text-decoration: none;
 }
 .site-branding a:hover, .site-branding a:focus {
-  color: #272F32;
+  color: #FF3D2E;
 }
 
 .site-title {
@@ -998,6 +994,12 @@ main {
 }
 .main-navigation a:hover {
   color: #FF3D2E;
+}
+.main-navigation span {
+  display: block;
+  font-weight: 100;
+  font-size: 12.8px;
+  font-size: 0.8rem;
 }
 
 .section-title,
