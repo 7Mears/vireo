@@ -4,7 +4,68 @@
  */
 
 get_header(); ?>
-<section class="home-hero">
+
+
+<section class="hero">
+  <ul class="hero-slider">
+    <li class="selected">
+      <div class="full-width">
+        <h2>Vireo Productions</h2>
+        <p>We make websites.</p>
+        <p>and we fill those sites with professional, engaging content. Websites are made to share information and ideas online, and the best websites feature both great content and beautiful design.</p>
+      </div> <!-- .full-width -->
+    </li>
+
+    <li>
+      <div class="half-width">
+        <h2>Let's get started</h2>
+        <p>Not sure where to start? How about with a free quote.</p>
+        <a href="#0"><button class="button-red">Get a quote</button></a>
+      </div> <!-- .half-width -->
+
+      <div class="half-width img-container">
+        <img src="<?php bloginfo('template_directory'); ?>/images/hero.jpg" alt="tech 1">
+      </div> <!-- .half-width.img-container -->
+    </li>
+
+    <li>
+      <div class="half-width img-container">
+        <img src="<?php bloginfo('template_directory'); ?>/images/hero.jpg" alt="tech 2">
+      </div> <!-- .half-width.img-container -->
+
+      <div class="half-width">
+        <h2>See our work</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In consequatur cumque natus!</p>
+        <a href="#0"><button class="button-red">Visit site</button></a>
+        <a href="#0"><button class="button-red">Case study</button></a>
+      </div> <!-- .half-width -->
+
+    </li>
+
+    <li>
+      <div class="full-width">
+        <h2>Slide title here</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, explicabo.</p>
+        <a href="#0"><button class="button-red">Start</button></a>
+      </div> <!-- .full-width -->
+    </li>
+  </ul> <!-- .hero-slider -->
+
+  <div class="slider-nav">
+    <nav>
+      <span class="marker item-1"></span>
+
+      <ul>
+        <li class="selected"><a href="#0">Welcome</a></li>
+        <li><a href="#0">Quote</a></li>
+        <li><a href="#0">Examples</a></li>
+        <li><a href="#0">Process</a></li>
+      </ul>
+    </nav>
+  </div> <!-- .slider-nav -->
+</section> <!-- .hero -->
+
+<!-- <section class="home-hero">
   <div class="container">
     <h1 class="hero-title">Vireo Productions</h1>
     <p class="hero-info"><strong>We make websites</strong>, and we fill those sites with professional, engaging content. Websites are made to share information and ideas online, and the best websites feature both great content and beautiful design.</p>
@@ -17,8 +78,8 @@ get_header(); ?>
         <li><a href="https://instagram.com/vireoproductions/" target="_BLANK"><img src="<?php bloginfo('template_directory'); ?>/images/icons/instagram.png" alt="Instagram"></a></li>
       </ul>
     </div>
-  </div><!-- /container -->
-</section><!-- /hero -->
+  </div>
+</section> -->
 
 <section class="home-services">
   <div class="container">

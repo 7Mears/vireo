@@ -1,18 +1,3 @@
-function stickyTitles(stickies) {
-    this.load = function() {
-        stickies.each(function() {
-            var thisSticky = jQuery(this).wrap('<div class="followWrap" />');
-            thisSticky.parent().height(thisSticky.outerHeight()), jQuery.data(thisSticky[0], "pos", thisSticky.offset().top);
-        });
-    }, this.scroll = function() {
-        stickies.each(function(i) {
-            var thisSticky = jQuery(this), nextSticky = stickies.eq(i + 1), prevSticky = stickies.eq(i - 1), pos = jQuery.data(thisSticky[0], "pos");
-            pos <= jQuery(window).scrollTop() ? (thisSticky.addClass("fixed"), nextSticky.length > 0 && thisSticky.offset().top >= jQuery.data(nextSticky[0], "pos") - thisSticky.outerHeight() && thisSticky.addClass("absolute").css("top", jQuery.data(nextSticky[0], "pos") - thisSticky.outerHeight())) : (thisSticky.removeClass("fixed"), 
-            prevSticky.length > 0 && jQuery(window).scrollTop() <= jQuery.data(thisSticky[0], "pos") - prevSticky.outerHeight() && prevSticky.removeClass("absolute").removeAttr("style"));
-        });
-    };
-}
-
 jQuery(document).ready(function($) {
     function hasScrolled() {
         var st = $(this).scrollTop();
@@ -84,9 +69,75 @@ $(window).on("scroll", function() {
             opacity: 1 - (st - offset + range) / range
         });
     });
-}), jQuery(document).ready(function() {
-    var newStickies = new stickyTitles(jQuery(".followMe"));
-    newStickies.load(), jQuery(window).on("scroll", function() {
-        newStickies.scroll();
-    });
+}), jQuery(document).ready(function($) {
+    function nextSlide(visibleSlide, container, pagination, n) {
+        visibleSlide.removeClass("selected from-left from-right").addClass("is-moving").one("webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend", function() {
+            visibleSlide.removeClass("is-moving");
+        }), container.children("li").eq(n).addClass("selected from-right").prevAll().addClass("move-left"), 
+        checkVideo(visibleSlide, container, n);
+    }
+    function prevSlide(visibleSlide, container, pagination, n) {
+        visibleSlide.removeClass("selected from-left from-right").addClass("is-moving").one("webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend", function() {
+            visibleSlide.removeClass("is-moving");
+        }), container.children("li").eq(n).addClass("selected from-left").removeClass("move-left").nextAll().removeClass("move-left"), 
+        checkVideo(visibleSlide, container, n);
+    }
+    function updateSliderNavigation(pagination, n) {
+        var navigationDot = pagination.find(".selected");
+        navigationDot.removeClass("selected"), pagination.find("li").eq(n).addClass("selected");
+    }
+    function setAutoplay(wrapper, length, delay) {
+        wrapper.hasClass("autoplay") && (clearInterval(autoPlayId), autoPlayId = window.setInterval(function() {
+            autoplaySlider(length);
+        }, delay));
+    }
+    function autoplaySlider(length) {
+        length - 1 > visibleSlidePosition ? (nextSlide(slidesWrapper.find(".selected"), slidesWrapper, sliderNav, visibleSlidePosition + 1), 
+        visibleSlidePosition += 1) : (prevSlide(slidesWrapper.find(".selected"), slidesWrapper, sliderNav, 0), 
+        visibleSlidePosition = 0), updateNavigationMarker(navigationMarker, visibleSlidePosition + 1), 
+        updateSliderNavigation(sliderNav, visibleSlidePosition);
+    }
+    function uploadVideo(container) {
+        container.find(".bg-video-wrapper").each(function() {
+            var videoWrapper = $(this);
+            if (videoWrapper.is(":visible")) {
+                var videoUrl = videoWrapper.data("video"), video = $('<video loop><source src="' + videoUrl + '.mp4" type="video/mp4" /><source src="' + videoUrl + '.webm" type="video/webm" /></video>');
+                video.appendTo(videoWrapper), videoWrapper.parent(".bg-video.selected").length > 0 && video.get(0).play();
+            }
+        });
+    }
+    function checkVideo(hiddenSlide, container, n) {
+        var hiddenVideo = hiddenSlide.find("video");
+        hiddenVideo.length > 0 && hiddenVideo.get(0).pause();
+        var visibleVideo = container.children("li").eq(n).find("video");
+        visibleVideo.length > 0 && visibleVideo.get(0).play();
+    }
+    function updateNavigationMarker(marker, n) {
+        marker.removeClassPrefix("item").addClass("item-" + n);
+    }
+    var slidesWrapper = $(".hero-slider");
+    if (slidesWrapper.length > 0) {
+        var autoPlayId, primaryNav = $(".primary-nav"), sliderNav = $(".slider-nav"), navigationMarker = $(".marker"), slidesNumber = slidesWrapper.children("li").length, visibleSlidePosition = 0, autoPlayDelay = 1e4;
+        uploadVideo(slidesWrapper), setAutoplay(slidesWrapper, slidesNumber, autoPlayDelay), 
+        primaryNav.on("click", function(event) {
+            $(event.target).is(".primary-nav") && $(this).children("ul").toggleClass("is-visible");
+        }), sliderNav.on("click", "li", function(event) {
+            event.preventDefault();
+            var selectedItem = $(this);
+            if (!selectedItem.hasClass("selected")) {
+                var selectedPosition = selectedItem.index(), activePosition = slidesWrapper.find("li.selected").index();
+                selectedPosition > activePosition ? nextSlide(slidesWrapper.find(".selected"), slidesWrapper, sliderNav, selectedPosition) : prevSlide(slidesWrapper.find(".selected"), slidesWrapper, sliderNav, selectedPosition), 
+                visibleSlidePosition = selectedPosition, updateSliderNavigation(sliderNav, selectedPosition), 
+                updateNavigationMarker(navigationMarker, selectedPosition + 1), setAutoplay(slidesWrapper, slidesNumber, autoPlayDelay);
+            }
+        });
+    }
+    $.fn.removeClassPrefix = function(prefix) {
+        return this.each(function(i, el) {
+            var classes = el.className.split(" ").filter(function(c) {
+                return 0 !== c.lastIndexOf(prefix, 0);
+            });
+            el.className = $.trim(classes.join(" "));
+        }), this;
+    };
 });
