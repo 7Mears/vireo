@@ -62,25 +62,6 @@ get_header(); ?>
 </div>
 	</div><!-- /container -->
 
-	<div class="call-to-action">
-		<div class="container">
-
-		<div class="call-to-action--left">
-			<h4>Our website creation process</h4>
-			<p>A walk-through of the typical steps we take to build a site.</p>
-			<a href="<?php echo esc_url( home_url( '/' ) ); ?>process/"><button>Website process</button></a>
-		</div>
-
-		<div class="call-to-action--right">
-			<h4>Our Blog: Bird's Eye Review</h4>
-			<p>Ideas and inspiration about design, content, and marketing.</p>
-			<a href="<?php echo esc_url( home_url( '/' ) ); ?>blog/"><button>Read the blog</button></a>
-		</div>
-		</div><!-- /container -->
-		<div class="clear"></div>
-	</div>
-
-
   <div class="person">
 		<div class="ashleigh-image"></div><!-- /ashleigh image -->
 		<div class="container">
@@ -105,5 +86,24 @@ get_header(); ?>
 
 
 </main><!-- /main -->
+
+
+<div class="call-to-action">
+	<div class="container">
+
+	<div class="call-to-action--left">
+		<h4>Our website creation process</h4>
+		<p>A walk-through of the typical steps we take to build a site.</p>
+		<a href="<?php echo esc_url( home_url( '/' ) ); ?>process/"><button>Website process</button></a>
+	</div>
+
+	<div class="call-to-action--right">
+		<h4>Our Blog: Bird's Eye Review</h4>
+		<p>Ideas and inspiration about design, content, and marketing.</p>
+		<a href="<?php echo esc_url( home_url( '/' ) ); ?>blog/"><button>Read the blog</button></a>
+	</div>
+	</div><!-- /container -->
+	<div class="clear"></div>
+</div>
 
   <?php get_footer(); ?>

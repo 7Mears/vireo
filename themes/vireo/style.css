@@ -1520,11 +1520,11 @@ main {
 }
 
 .ashleigh-image {
-  background: url("./images/ash.jpg") no-repeat;
+  background: url("./images/ash.jpg") no-repeat top left;
 }
 
 .jordan-image {
-  background: url("./images/jordan.jpg") no-repeat;
+  background: url("./images/jordan.jpg") no-repeat top right;
 }
 
 .page-blog {
