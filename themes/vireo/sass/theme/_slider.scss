@@ -177,7 +177,6 @@ Single slide style
 .hero-slider h1 {
   font-family: $font__primary;
   font-weight: 700;
-  padding-top: 50px;
 }
 .hero-slider h2 {
   font-family: $font__fancy;
@@ -374,7 +373,7 @@ Slider navigation
   bottom: 0;
   z-index: 2;
   text-align: center;
-  height: 55px;
+  height: 50px;
   background-color: rgba(0, 1, 1, 0.5);
 
   nav {
@@ -386,7 +385,7 @@ Slider navigation
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 60px;
+    width: 100px;
     height: 100%;
     color: $color4;
     background-color: $color1;
@@ -404,8 +403,13 @@ Slider navigation
 
   li {
     display: inline-block;
-    width: 60px;
+    width: 100px;
     float: left;
+
+    a {
+      padding-top: 12.5px;
+      @include font-size(0.8);
+    }
   }
 
 }
@@ -424,20 +428,7 @@ Slider navigation
   -o-transform: translateX(200%);
   transform: translateX(200%);
 }
-.slider-nav .marker.item-4 {
-  -webkit-transform: translateX(300%);
-  -moz-transform: translateX(300%);
-  -ms-transform: translateX(300%);
-  -o-transform: translateX(300%);
-  transform: translateX(300%);
-}
-.slider-nav .marker.item-5 {
-  -webkit-transform: translateX(400%);
-  -moz-transform: translateX(400%);
-  -ms-transform: translateX(400%);
-  -o-transform: translateX(400%);
-  transform: translateX(400%);
-}
+
 
 .slider-nav li.selected a {
   color: $color4;
@@ -459,9 +450,31 @@ Slider navigation
 .no-touch .slider-nav a:hover {
   background-color: rgba(0, 1, 1, 0.5);
 }
+
+@media only screen and (max-width: 768px) {
+  .hero-slider {
+
+    h1 {
+      @include font-size(2.4);
+      padding-top: 25px;
+    }
+
+    h2 {
+      @include font-size(1.8);
+    }
+  }
+
+}
+
 @media only screen and (min-width: 768px) {
   .slider-nav {
     height: 50px;
+
+    li {
+      a {
+        @include font-size(1);
+      }
+    }
   }
   .slider-nav .marker,
   .slider-nav li {
@@ -469,5 +482,9 @@ Slider navigation
   }
   .slider-nav a {
     padding-top: 12.5px;
+  }
+
+  .hero-slider h1 {
+    padding-top: 50px;
   }
 }
