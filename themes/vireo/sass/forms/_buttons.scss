@@ -21,7 +21,7 @@ input[type="submit"] {
 	}
 }
 
-
+// red button
 .button-red {
 	border-color: $color4;
 	background: rgba(0,0,0,0);
@@ -41,6 +41,26 @@ input[type="submit"] {
 	}
 }
 
+// solidred button
+.button-red-solid {
+	border-color: $color4;
+	background: $color4;
+	color: $color3;
+	font-weight: bold;
+
+	&:hover {
+		background-color: rgba(0,0,0,0);
+		text-shadow: 2px 2px 15px #000, -2px -2px 15px #000;
+	}
+
+	&:active,
+	&:focus {
+		background: rgba(0,0,0,0);
+		color: $color4;
+	}
+}
+
+// alternative button
 .button-alt {
 	background-color: $color__button-hover;
 	color: $color__button-text;

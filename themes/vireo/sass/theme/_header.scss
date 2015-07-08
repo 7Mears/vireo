@@ -24,12 +24,12 @@
   }
 
   a {
-    color: $color3;
+    color: $color4;
     text-decoration: none;
 
     &:hover,
     &:focus {
-      color: $color4;
+      color: $color3;
     }
   }
 }

@@ -10,44 +10,36 @@ get_header(); ?>
   <ul class="hero-slider">
     <li class="selected">
       <div class="full-width">
-        <h2>Vireo Productions</h2>
-        <p>We make websites.</p>
-        <p>and we fill those sites with professional, engaging content. Websites are made to share information and ideas online, and the best websites feature both great content and beautiful design.</p>
+        <h1>Vireo Productions</h1>
+        <p><strong>We make websites.</strong></p>
       </div> <!-- .full-width -->
     </li>
 
     <li>
       <div class="half-width">
         <h2>Let's get started</h2>
-        <p>Not sure where to start? How about with a free quote.</p>
-        <a href="#0"><button class="button-red">Get a quote</button></a>
+        <p>Websites are a dance between design, content, and marketing; take a look at our process for building a website.</p>
+        <a href="#0"><button class="button-red-solid">The process</button></a>
+        <a href="#0"><button class="button-red">Contact us</button></a>
       </div> <!-- .half-width -->
 
       <div class="half-width img-container">
-        <img src="<?php bloginfo('template_directory'); ?>/images/hero.jpg" alt="tech 1">
+        <!-- <img src="<?php bloginfo('template_directory'); ?>/images/hero.jpg" alt="tech 1"> -->
       </div> <!-- .half-width.img-container -->
     </li>
 
     <li>
       <div class="half-width img-container">
-        <img src="<?php bloginfo('template_directory'); ?>/images/hero.jpg" alt="tech 2">
+        <img src="<?php bloginfo('template_directory'); ?>/images/slider/slide-website2.png" alt="tech 2" class="slide-website-img">
       </div> <!-- .half-width.img-container -->
 
       <div class="half-width">
         <h2>See our work</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In consequatur cumque natus!</p>
-        <a href="#0"><button class="button-red">Visit site</button></a>
+        <a href="#0"><button class="button-red-solid">Visit site</button></a>
         <a href="#0"><button class="button-red">Case study</button></a>
       </div> <!-- .half-width -->
 
-    </li>
-
-    <li>
-      <div class="full-width">
-        <h2>Slide title here</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, explicabo.</p>
-        <a href="#0"><button class="button-red">Start</button></a>
-      </div> <!-- .full-width -->
     </li>
   </ul> <!-- .hero-slider -->
 
@@ -57,9 +49,8 @@ get_header(); ?>
 
       <ul>
         <li class="selected"><a href="#0">Welcome</a></li>
-        <li><a href="#0">Quote</a></li>
-        <li><a href="#0">Examples</a></li>
-        <li><a href="#0">Process</a></li>
+        <li><a href="#0">Get started</a></li>
+        <li><a href="#0">Featured site</a></li>
       </ul>
     </nav>
   </div> <!-- .slider-nav -->
