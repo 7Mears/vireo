@@ -30,6 +30,7 @@ $color6: $yellow;
 
 $color__background-body: $color3;
 $color__background-dark: $color1;
+$color__background-secondary: darken($color1 , 10%);
 
 $color__text-main: $color1;
 $color__text-main-light: lighten($color__text-main, 10%);

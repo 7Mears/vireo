@@ -144,7 +144,7 @@
 // blog
 
 .home-blog {
-  background-color: lighten($color1 , 10%);
+  background-color: $color__background-secondary;
   margin: 0;
   padding: $padding-main 0 ($padding-main * 2) 0;
 }

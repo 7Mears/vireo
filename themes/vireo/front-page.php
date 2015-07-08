@@ -7,7 +7,7 @@ get_header(); ?>
 
 
 <section class="hero">
-  <ul class="hero-slider">
+  <ul class="hero-slider autoplay">
     <li class="selected">
       <div class="full-width">
         <h1>Vireo Productions</h1>
