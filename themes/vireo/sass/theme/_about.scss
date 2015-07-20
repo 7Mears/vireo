@@ -49,6 +49,9 @@
   padding: 200px 0;
   position: relative;
   @include clearfix();
+  @include bp-medium {
+    padding: 50px 0;
+  }
 
   h3 {
     margin: 0;
@@ -62,6 +65,10 @@
   width: 50%;
   z-index: 1;
   position: relative;
+
+  @include bp-medium {
+    width: 100%;
+  }
 }
 
 // employee image
@@ -77,8 +84,16 @@
 
 .ashleigh-image {
   background: url('./images/ash.jpg') no-repeat top left;
+
+  @include bp-medium {
+    display: none;
+  }
 }
 
 .jordan-image {
   background: url('./images/jordan.jpg') no-repeat top right;
+
+  @include bp-medium {
+    display: none;
+  }
 }
