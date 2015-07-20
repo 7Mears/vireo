@@ -29,9 +29,12 @@
   color: $color__text-alt-dark;
   border-radius: 0 2em 0 2em;
   position: relative;
-
   @include transition(0.6s ease);
   @include clearfix();
+
+  @include bp-medium {
+    margin-top: ($padding-main * 2);    
+  }
 
   &:hover {
     box-shadow: 5px 5px 20px rgba(0,0,0,0.8);

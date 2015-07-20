@@ -1563,6 +1563,11 @@ main {
   content: "";
   display: table;
 }
+@media only screen and (max-width: 55em) {
+  .blog-post {
+    margin-top: 4em;
+  }
+}
 .blog-post:hover {
   box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.8);
 }
