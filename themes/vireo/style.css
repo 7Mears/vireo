@@ -598,6 +598,10 @@ a.menu-link:hover {
 }
 
 @media screen and (max-width: 55em) {
+  a.menu-link {
+    margin-top: 15px;
+  }
+
   nav[role=navigation] {
     clear: both;
     -webkit-transition: all 0.3s ease-out;
@@ -608,7 +612,6 @@ a.menu-link:hover {
   }
   nav[role=navigation] ul {
     list-style-type: none;
-    margin: 50px 0 0 0;
     padding: 0 50px 0 0;
     background: #272F32;
   }
@@ -627,7 +630,7 @@ a.menu-link:hover {
   }
 
   nav[role=navigation].active {
-    max-height: 20em;
+    max-height: 80em;
   }
 }
 @media screen and (min-width: 55em) {

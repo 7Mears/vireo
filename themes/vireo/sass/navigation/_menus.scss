@@ -20,6 +20,10 @@ a.menu-link {
 
   @media screen and (max-width: $M) {
 
+    a.menu-link {
+      margin-top: 15px;
+    }
+
     nav[role=navigation] {
         clear: both;
         -webkit-transition: all 0.3s ease-out;
@@ -30,7 +34,6 @@ a.menu-link {
 
         ul {
           list-style-type: none;
-          margin: 50px 0 0 0;
           padding: 0 50px 0 0;
           background: $color1;
         }
@@ -51,7 +54,7 @@ a.menu-link {
         max-height: 0;
       }
       nav[role=navigation].active {
-        max-height: 20em;
+        max-height: 80em;
       }
   }
 
