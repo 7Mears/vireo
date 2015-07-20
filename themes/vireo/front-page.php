@@ -19,25 +19,24 @@ get_header(); ?>
       <div class="half-width">
         <h2>Let's get started</h2>
         <p>Websites are a dance between design, content, and marketing; take a look at our process for building a website.</p>
-        <a href="#0"><button class="button-red-solid">The process</button></a>
-        <a href="#0"><button class="button-red">Contact us</button></a>
+        <a href="<?php echo esc_url( home_url( '/' ) ); ?>process/"><button class="button-red-solid">The process</button></a>
+        <a href="<?php echo esc_url( home_url( '/' ) ); ?>contact/"><button class="button-red">Contact us</button></a>
       </div> <!-- .half-width -->
 
       <div class="half-width img-container">
-        <!-- <img src="<?php bloginfo('template_directory'); ?>/images/hero.jpg" alt="tech 1"> -->
       </div> <!-- .half-width.img-container -->
     </li>
 
     <li>
       <div class="half-width img-container">
-        <img src="<?php bloginfo('template_directory'); ?>/images/slider/slide-website2.png" alt="tech 2" class="slide-website-img">
+        <img src="<?php bloginfo('template_directory'); ?>/images/slider/slide-website2.jpg" alt="Advanced auto care and tire website" class="slide-website-img">
       </div> <!-- .half-width.img-container -->
 
       <div class="half-width">
         <h2>See our work</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In consequatur cumque natus!</p>
-        <a href="#0"><button class="button-red-solid">Visit site</button></a>
-        <a href="#0"><button class="button-red">Case study</button></a>
+        <a href="http://www.advancedautocareandtire.ca" target="_BLANK"><button class="button-red-solid">Visit site</button></a>
+        <a href="<?php echo esc_url( home_url( '/' ) ); ?>portfolio/advanced-auto-care-and-tire/"><button class="button-red">Case study</button></a>
       </div> <!-- .half-width -->
 
     </li>
