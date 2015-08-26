@@ -7,11 +7,11 @@ get_header(); ?>
 
 
 <section class="hero">
-  <ul class="hero-slider autoplay">
+  <ul class="hero-slider">
     <li class="selected">
       <div class="full-width">
         <h1>Vireo Productions</h1>
-        <p><strong>We make websites.</strong></p>
+        <p>We make websites.</p>
       </div> <!-- .full-width -->
     </li>
 
@@ -54,22 +54,6 @@ get_header(); ?>
     </nav>
   </div> <!-- .slider-nav -->
 </section> <!-- .hero -->
-
-<!-- <section class="home-hero">
-  <div class="container">
-    <h1 class="hero-title">Vireo Productions</h1>
-    <p class="hero-info"><strong>We make websites</strong>, and we fill those sites with professional, engaging content. Websites are made to share information and ideas online, and the best websites feature both great content and beautiful design.</p>
-    <a class="hero-button" href="<?php echo esc_url( home_url( '/' ) ); ?>portfolio/"><button class="button-red" type="button" name="button">See our work</button></a>
-    <div class="hero-social">
-      <ul>
-        <li><a href="https://www.facebook.com/VireoProductions" target="_BLANK"><img src="<?php bloginfo('template_directory'); ?>/images/icons/facebook.png" alt="Facebook"></a></li>
-        <li><a href="https://twitter.com/vireoproduction" target="_BLANK"><img src="<?php bloginfo('template_directory'); ?>/images/icons/twitter.png" alt="Twitter"></a></li>
-        <li><a href="https://plus.google.com/u/1/102692056654896730713" target="_BLANK"><img src="<?php bloginfo('template_directory'); ?>/images/icons/google-plus.png" alt="Google"></a></li>
-        <li><a href="https://instagram.com/vireoproductions/" target="_BLANK"><img src="<?php bloginfo('template_directory'); ?>/images/icons/instagram.png" alt="Instagram"></a></li>
-      </ul>
-    </div>
-  </div>
-</section> -->
 
 <section class="home-services">
   <div class="container">

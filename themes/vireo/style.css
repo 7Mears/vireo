@@ -1221,6 +1221,15 @@ main {
   padding: 300px 2em 100px 2em;
   text-shadow: 2px 2px 15px #000, -2px -2px 15px #000;
 }
+@media only screen and (max-width: 55em) {
+  .entry-header {
+    padding: 150px 2em 50px 2em;
+  }
+  .entry-header h1 {
+    font-size: 32px;
+    font-size: 2rem;
+  }
+}
 
 .entry-meta {
   color: white;
@@ -1306,6 +1315,10 @@ main {
   }
 }
 
+.page-template-page-process main {
+  padding: 0;
+}
+
 .process-page .entry-header {
   background: url("./images/process-bg.jpg") no-repeat center center;
   background-size: cover;
@@ -1328,7 +1341,7 @@ main {
   display: block;
   font-style: italic;
   padding-top: 1em;
-  color: #272F32;
+  color: #3d4a4f;
 }
 
 .timeline {
@@ -1355,11 +1368,10 @@ main {
 }
 .timeline li .tmlabel {
   margin: 0 0 15px 25%;
-  background: rgba(157, 189, 198, 0.4);
-  color: #54656b;
+  background: rgba(39, 47, 50, 0.2);
+  color: #272F32;
   padding: 2em;
   font-size: 1.2em;
-  font-weight: 300;
   line-height: 1.4;
   position: relative;
 }
@@ -1377,13 +1389,13 @@ main {
   top: 0;
   bottom: 0;
   width: 10px;
-  background: #DAEAEF;
+  background: #272F32;
   left: 20%;
   margin-left: -10px;
 }
 
 .timeline > li:nth-child(odd) .tmlabel {
-  background: rgba(157, 189, 198, 0.8);
+  background: rgba(61, 74, 79, 0.4);
 }
 
 /* The triangle */
@@ -1395,13 +1407,13 @@ main {
   width: 0;
   position: absolute;
   pointer-events: none;
-  border-right-color: rgba(157, 189, 198, 0.4);
+  border-right-color: rgba(39, 47, 50, 0.2);
   border-width: 10px;
   top: 10px;
 }
 
 .timeline > li:nth-child(odd) .tmlabel:after {
-  border-right-color: rgba(157, 189, 198, 0.8);
+  border-right-color: rgba(61, 74, 79, 0.4);
 }
 
 /* The icons */
@@ -1418,10 +1430,10 @@ main {
   line-height: 40px;
   -webkit-font-smoothing: antialiased;
   position: absolute;
-  color: #272F32;
-  background: #9DBDC6;
+  color: #DAEAEF;
+  background: #111415;
   border-radius: 50%;
-  box-shadow: 0 0 0 8px #DAEAEF;
+  box-shadow: 0 0 0 8px #272F32;
   text-align: center;
   left: 20%;
   top: 0;
@@ -1451,7 +1463,7 @@ main {
     right: auto;
     left: 20px;
     border-right-color: transparent;
-    border-bottom-color: rgba(157, 189, 198, 0.4);
+    border-bottom-color: rgba(39, 47, 50, 0.2);
     top: -20px;
   }
   .timeline li .phase {
@@ -1466,7 +1478,7 @@ main {
 
   .timeline > li:nth-child(odd) .tmlabel:after {
     border-right-color: transparent;
-    border-bottom-color: rgba(157, 189, 198, 0.8);
+    border-bottom-color: rgba(61, 74, 79, 0.4);
   }
 }
 .about-intro {
@@ -1690,7 +1702,7 @@ main {
 }
 
 .page-portfolio-archive {
-  background-color: #3d4a4f;
+  background-color: #323c40;
 }
 
 .portfolio-archive-container {
@@ -1703,8 +1715,8 @@ main {
   padding: 2em 0;
   position: relative;
 }
-.portfolio-archive-post:nth-child(2n + 2) {
-  background-color: rgba(0, 0, 0, 0.2);
+.portfolio-archive-post:nth-child(odd) {
+  background-color: #111415;
 }
 .portfolio-archive-post a {
   text-decoration: none;
@@ -1745,14 +1757,25 @@ main {
 
 .portfolio-post-header {
   background: #272F32;
-  padding: 150px 2em;
+  padding: 300px 2em 100px 2em;
   text-align: center;
+}
+@media only screen and (max-width: 55em) {
+  .portfolio-post-header {
+    padding: 150px 2em 50px 2em;
+  }
 }
 .portfolio-post-header h1 {
   color: #FFFFFF;
   padding: 0;
   margin-bottom: 0;
   text-shadow: 2px 2px 15px #000, -2px -2px 15px #000;
+}
+@media only screen and (max-width: 55em) {
+  .portfolio-post-header h1 {
+    font-size: 32px;
+    font-size: 2rem;
+  }
 }
 .portfolio-post-header button {
   margin-bottom: 50px;
@@ -1993,6 +2016,8 @@ Single slide style
 .hero-slider h1 {
   font-family: "Avenir", sans-serif;
   font-weight: 700;
+  font-size: 57.6px;
+  font-size: 3.6rem;
 }
 
 .hero-slider h2 {
@@ -2203,8 +2228,12 @@ Single slide animation
 Slider navigation
 
 -------------------------------- */
-.slider-nav nav, .slider-nav ul, .slider-nav li, .slider-nav a {
+.slider-nav nav,
+.slider-nav ul,
+.slider-nav li,
+.slider-nav a {
   height: 100%;
+  outline: none;
 }
 
 .slider-nav {
@@ -2318,6 +2347,6 @@ Slider navigation
   }
 
   .hero-slider h1 {
-    padding-top: 50px;
+    padding-top: 100px;
   }
 }

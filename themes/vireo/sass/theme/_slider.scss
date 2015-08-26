@@ -177,6 +177,7 @@ Single slide style
 .hero-slider h1 {
   font-family: $font__primary;
   font-weight: 700;
+  @include font-size(3.6);
 }
 .hero-slider h2 {
   font-family: $font__fancy;
@@ -363,8 +364,12 @@ Single slide animation
 Slider navigation
 
 -------------------------------- */
-.slider-nav nav, .slider-nav ul, .slider-nav li, .slider-nav a {
+.slider-nav nav,
+.slider-nav ul,
+.slider-nav li,
+.slider-nav a {
   height: 100%;
+  outline: none;
 }
 
 .slider-nav {
@@ -485,6 +490,6 @@ Slider navigation
   }
 
   .hero-slider h1 {
-    padding-top: 50px;
+    padding-top: 100px;
   }
 }

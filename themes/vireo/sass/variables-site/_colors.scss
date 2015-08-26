@@ -51,11 +51,11 @@ $color__button-focus: $color__button-hover;
 $color__background-hr: $color2;
 
 
-$process__box: rgba($color2 ,0.4);
-$process__box-alt: rgba($color2 ,0.8);
-$process__line: $color5;
-$process__text: lighten($color1, 20%);
+$process__box: rgba(lighten($color__background-secondary , 10%), 0.2);
+$process__box-alt: rgba(lighten($color__background-secondary , 20%), 0.4);
+$process__line: $color1;
+$process__text: $color1;
 $process__header: $color1;
 $process__date: $color1;
-$process__icon-bg: $color2;
-$process__icon: $color1;
+$process__icon-bg: $color__background-secondary;
+$process__icon: $color5;
