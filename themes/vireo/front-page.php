@@ -11,14 +11,14 @@ get_header(); ?>
     <li class="selected">
       <div class="full-width">
         <h1>Vireo Productions</h1>
-        <p>We make websites.</p>
+        <p>We make websites and create great content.</p>
       </div> <!-- .full-width -->
     </li>
 
     <li>
       <div class="half-width">
         <h2>Let's get started</h2>
-        <p>Websites are a dance between design, content, and marketing; take a look at our process for building a website.</p>
+        <p>Every website starts with an idea. Get in touch to tell us your vision, or take a look at our process for building a site.</p>
         <a href="<?php echo esc_url( home_url( '/' ) ); ?>process/"><button class="button-red-solid">The process</button></a>
         <a href="<?php echo esc_url( home_url( '/' ) ); ?>contact/"><button class="button-red">Contact us</button></a>
       </div> <!-- .half-width -->
@@ -34,7 +34,7 @@ get_header(); ?>
 
       <div class="half-width">
         <h2>See our work</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In consequatur cumque natus!</p>
+        <p>We built Advanced Auto Care and Tire a clean, bright, one-page site using original photos.</p>
         <a href="http://www.advancedautocareandtire.ca" target="_BLANK"><button class="button-red-solid">Visit site</button></a>
         <a href="<?php echo esc_url( home_url( '/' ) ); ?>portfolio/advanced-auto-care-and-tire/"><button class="button-red">Case study</button></a>
       </div> <!-- .half-width -->
@@ -69,7 +69,7 @@ get_header(); ?>
       <h3>Marketing</h3>
       <p>Everything your business puts out into the world is part of its <strong>brand</strong>. Whether you need a website, social media management, email marketing, or a press kit, we'll make sure it <strong>strengthens and enhances</strong> your business's unique image.</p>
     </div>
-    <h4>Websites are a dance between design, content, and marketing; <a href="<?php echo esc_url( home_url( '/' ) ); ?>process/">take a look at our process</a> for building a website. <a href="<?php echo esc_url( home_url( '/' ) ); ?>about/">Learn more about us</a> to see a full list of the services we provide.</h4>
+    <h4>Building a website requires design expertise, content development, marketing knowledge, and technical know-how.  <a href="<?php echo esc_url( home_url( '/' ) ); ?>about/">Learn more about us</a> to see a full list of the services we provide.</h4>
   </div><!-- /container -->
 </section><!-- /services -->
 

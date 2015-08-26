@@ -2026,7 +2026,8 @@ Single slide style
 
 .hero-slider .slide-website-img {
   max-height: 400px;
-  box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.8);
+  box-shadow: 5px 5px 25px #272F32;
+  border: 1px solid #272F32;
 }
 
 .hero-slider h1,
