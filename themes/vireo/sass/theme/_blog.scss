@@ -33,7 +33,7 @@
   @include clearfix();
 
   @include bp-medium {
-    margin-top: ($padding-main * 2);    
+    margin-top: ($padding-main * 2);
   }
 
   &:hover {

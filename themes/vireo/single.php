@@ -32,6 +32,19 @@ get_header(); ?>
 			<div class="container">
 
 				<?php
+				$next_post = get_next_post();
+				if ( is_a( $next_post , 'WP_Post' ) ) { ?>
+
+				<div class="call-to-action--right">
+					<h4>Next post</h4>
+  				<a href="<?php echo get_permalink( $next_post->ID ); ?>"><?php echo get_the_title( $next_post->ID ); ?></a>
+				</div>
+
+				<?php } else {  //opening single post div ?>
+					<div class="call-to-action--single-post">
+				<?php	} ?>
+
+				<?php
 				$prev_post = get_previous_post();
 				if (!empty( $prev_post )): ?>
 
@@ -41,17 +54,11 @@ get_header(); ?>
 				</div>
 				<?php endif; ?>
 
-
-				<?php
-				$next_post = get_next_post();
+				<?php // closing sing post div
 				if ( is_a( $next_post , 'WP_Post' ) ) { ?>
-
-				<div class="call-to-action--right">
-					<h4>Next post</h4>
-  				<a href="<?php echo get_permalink( $next_post->ID ); ?>"><?php echo get_the_title( $next_post->ID ); ?></a>
+				<?php } else { ?>
 				</div>
-				<?php } ?>
-
+				<?php	} ?>
 
 			</div><!-- /container -->
 			<div class="clear"></div>

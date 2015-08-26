@@ -71,6 +71,13 @@ main {
   }
 }
 
+.call-to-action--single-post {
+  text-align: center;
+  .call-to-action--left {
+    width: 100%;
+  }
+}
+
 .left { float: left; }
 .right { float: right; }
 

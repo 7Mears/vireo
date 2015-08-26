@@ -930,6 +930,13 @@ main {
   }
 }
 
+.call-to-action--single-post {
+  text-align: center;
+}
+.call-to-action--single-post .call-to-action--left {
+  width: 100%;
+}
+
 .left {
   float: left;
 }
@@ -1195,7 +1202,7 @@ main {
 }
 
 .entry-header {
-  padding: 250px 2em 200px 2em;
+  padding: 300px 2em 100px 2em;
   text-shadow: 2px 2px 15px #000, -2px -2px 15px #000;
 }
 
