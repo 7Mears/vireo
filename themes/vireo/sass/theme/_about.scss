@@ -1,4 +1,8 @@
-
+.page-template-page-about {
+  main {
+    padding: 0;
+  }
+}
 //about us
 .about-intro {
   @include font-size(1.2);
@@ -65,9 +69,12 @@
   width: 50%;
   z-index: 1;
   position: relative;
+  background: rgba(255,255,255,0.4);
+  padding: $padding-main;
 
   @include bp-medium {
     width: 100%;
+    padding: 0;
   }
 }
 
@@ -83,7 +90,11 @@
 }
 
 .ashleigh-image {
-  background: url('./images/ash.jpg') no-repeat top left;
+  background: url('./images/ash.jpg') no-repeat center left;
+
+  @include bp-large {
+    background-size: cover;
+  }
 
   @include bp-medium {
     display: none;
@@ -92,6 +103,10 @@
 
 .jordan-image {
   background: url('./images/jordan.jpg') no-repeat top right;
+
+  @include bp-large {
+    background-size: cover;
+  }
 
   @include bp-medium {
     display: none;

@@ -1481,6 +1481,10 @@ main {
     border-bottom-color: rgba(61, 74, 79, 0.4);
   }
 }
+.page-template-page-about main {
+  padding: 0;
+}
+
 .about-intro {
   font-size: 19.2px;
   font-size: 1.2rem;
@@ -1550,10 +1554,13 @@ main {
   width: 50%;
   z-index: 1;
   position: relative;
+  background: rgba(255, 255, 255, 0.4);
+  padding: 2em;
 }
 @media only screen and (max-width: 55em) {
   .person-content {
     width: 100%;
+    padding: 0;
   }
 }
 
@@ -1568,7 +1575,12 @@ main {
 }
 
 .ashleigh-image {
-  background: url("./images/ash.jpg") no-repeat top left;
+  background: url("./images/ash.jpg") no-repeat center left;
+}
+@media only screen and (max-width: 75em) {
+  .ashleigh-image {
+    background-size: cover;
+  }
 }
 @media only screen and (max-width: 55em) {
   .ashleigh-image {
@@ -1578,6 +1590,11 @@ main {
 
 .jordan-image {
   background: url("./images/jordan.jpg") no-repeat top right;
+}
+@media only screen and (max-width: 75em) {
+  .jordan-image {
+    background-size: cover;
+  }
 }
 @media only screen and (max-width: 55em) {
   .jordan-image {

@@ -79,7 +79,7 @@ get_header(); ?>
 			<div class="person-content left">
       	<h3 class="name">Jordan Mears</h3>
       	<h5 class="role">Owner and designer-developer</h5>
-      	<p>Jordan is a self-taught designer and front-end developer. He first started learning code as a kid, and has been making websites since Angelfire and Geocities were cool. As Vireo’s designer-developer, he helps you create the visual style for your site, then builds it from the ground up. His goal with all of his sites is to write clean code that any programmer can work with down the road.</p>
+      	<p>Jordan is a designer and developer. He first started learning code as a kid, and has been making websites since Angelfire and Geocities were cool. As Vireo’s designer-developer, he helps you create the visual style for your site, then builds it from the ground up. His goal with all of his sites is to write clean code that any programmer can work with down the road.</p>
 			</div>
 		</div><!-- /container -->
 	</div><!-- /person -->
