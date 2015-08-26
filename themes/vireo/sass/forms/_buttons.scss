@@ -8,16 +8,19 @@ input[type="submit"] {
 	color: $color1;
 	padding: 0.5em 1em;
 	@include transition(0.3s ease);
+	border-radius: 1em 0 1em 0;
 
 	&:hover {
 		background-color: $color__button-hover;
 		color: $color__button-text;
+		border-radius: 0 1em 0 1em;
 	}
 
 	&:active,
 	&:focus {
 		background-color: $color__button-focus;
 		color: $color__button-text;
+		outline: none;
 	}
 }
 
