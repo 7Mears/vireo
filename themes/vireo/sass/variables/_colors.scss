@@ -5,17 +5,12 @@ $color1: #272F32;
 $color2: #9DBDC6;
 $color3: #FFFFFF;
 $color4: #FF3D2E;
-$color5: #DAEAEF;
-$color6: #FFEB3B;
+$color5: #002F2F;
+$color6: #002A4A;
 
 // Backgrounds
 $c_bg_light: $color3;
-$c_bg_dark: #002A4A;
-
-$c_bg_alt_1: #348899;
-$c_bg_alt_2: #1D181F;
-$c_bg_alt_3: #36362C;
-$c_bg_alt_4: #40152A;
+$c_bg_dark: $color6;
 
 // Text and links
 $c_text_dark: $color1;
@@ -41,4 +36,4 @@ $process__text: $color1;
 $process__header: $color1;
 $process__date: $color1;
 $process__icon-bg: darken($c_bg_dark, 10%);
-$process__icon: $color5;
+$process__icon: $color3;
