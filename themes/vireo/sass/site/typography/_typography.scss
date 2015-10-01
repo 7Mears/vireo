@@ -21,7 +21,7 @@ $font__primary: 'Avenir', sans-serif;
 // Arvi: 400, 700
 $font__secondary: 'Arvo', serif;
 
-$font__fancy: 'Architects Daughter', cursive;
+$font__fancy: 'Arvo', serif;
 
 $font__line-height-body: 1.7;
 $font__line-height-pre: 1.7;
@@ -33,7 +33,7 @@ button,
 input,
 select,
 textarea {
-	color: $color__text-main-light;
+	color: lighten($c_text_dark, 10%);
 	font-family: $font__primary;
 	@include font-size(1);
 	line-height: $font__line-height-body;

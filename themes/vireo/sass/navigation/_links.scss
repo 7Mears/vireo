@@ -1,14 +1,14 @@
 a {
-	color: $color__link;
+	color: $c_link;
 	@include transition(0.3s ease);
 
 	&:visited {
-		color: $color__link-visited;
+		color: $c_link;
 	}
 	&:hover,
 	&:focus,
 	&:active {
-		color: $color__link-hover;
+		color: $c_link_hover;
 	}
 	&:focus {
 		outline: thin dotted;

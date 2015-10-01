@@ -1,46 +1,39 @@
 .site-footer {
   padding: ($padding-main * 2) 0 $padding-main 0;
-  background-color: $color__background-dark;
-  color: $color__text-alt;
+  background-color: $c_bg_dark;
+  color: $c_text_light;
 
+  .one-third {
+    text-align: center;
 
-}
+    .fa {
+      @include font-size(1.6);
+      display: block;
+    }
 
-.footer-card {
-  width: 33.3333%;
-  float: left;
-  text-align: center;
-
-  .fa {
-    @include font-size(1.6);
-    display: block;
+    a {
+      text-decoration: none;
+      display: block;
+    }
   }
 
-  a {
-    text-decoration: none;
-    display: block;
-  }
-
-  @include bp-medium {
-    width: 100%;
-  }
 }
 
 //bottom
 
 .footer-bottom {
-  border-top: 1px solid rgba(255,255,255, 0.1);
+  border-top: 2px solid rgba(255,255,255, 0.1);
   margin-top: $padding-main;
-  color: $color__text-alt-dark;
+  color: darken($c_text_light, 20%);
   @include font-size(0.9);
 
   a {
-    color: $color__text-alt-dark;
+    color: darken($c_text_light, 20%);
     text-decoration: none;
 
     &:hover,
     &:focus {
-      color: $color6;
+      color: $c_link;
     }
   }
 }

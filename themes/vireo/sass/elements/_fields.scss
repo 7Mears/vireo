@@ -22,14 +22,14 @@ textarea {
 	-moz-appearance: none;
 	// Styles
 	padding: 0.5em 1em;
-	border: 2px solid lighten($color__text-main, 10%);
-	background-color: $color3;
-	color: lighten($color__text-main, 10%);
+	border: 2px solid lighten($c_text_dark, 10%);
+	background-color: $c_bg_light;
+	color: lighten($c_text_dark, 10%);
 	transition: 0.4s ease;
 
 	&:focus {
 		border: 2px solid $color2;
-		background-color: $color5;
-		color: $color1;
+		background-color: darken($c_bg_light, 10%);
+		color: $c_text_dark;
 	}
 }

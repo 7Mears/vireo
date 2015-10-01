@@ -1,0 +1,44 @@
+$black:         #212121;
+$white:         #FAFAFA;
+
+$color1: #272F32;
+$color2: #9DBDC6;
+$color3: #FFFFFF;
+$color4: #FF3D2E;
+$color5: #DAEAEF;
+$color6: #FFEB3B;
+
+// Backgrounds
+$c_bg_light: $color3;
+$c_bg_dark: #002A4A;
+
+$c_bg_alt_1: #348899;
+$c_bg_alt_2: #1D181F;
+$c_bg_alt_3: #36362C;
+$c_bg_alt_4: #40152A;
+
+// Text and links
+$c_text_dark: $color1;
+$c_text_light: $color3;
+
+$c_link: #348899;
+$c_link_hover: lighten($c_link, 20%);
+
+// Buttons and elements
+$_c_btn_text_dark: $c_text_light;
+$c_btn_bg_dark: $color1;
+
+$c_btn_bg_light: $c_link;
+$_c_btn_text_light: $c_text_dark;
+
+$color__background-hr: $color2;
+
+// Proccess page
+$process__box: rgba(lighten(darken($c_bg_dark, 10%), 10%), 0.2);
+$process__box-alt: rgba(lighten(darken($c_bg_dark, 10%) , 20%), 0.4);
+$process__line: $color1;
+$process__text: $color1;
+$process__header: $color1;
+$process__date: $color1;
+$process__icon-bg: darken($c_bg_dark, 10%);
+$process__icon: $color5;

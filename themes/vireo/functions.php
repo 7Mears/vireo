@@ -86,7 +86,7 @@ function vireo_scripts() {
 	wp_enqueue_script( 'vireo-javascript', get_template_directory_uri() . '/js/app.js', array('jquery'), '20130115', true );
 	// Google Fonts
 
-	wp_register_style('googleFonts', 'http://fonts.googleapis.com/css?family=Arvo|Architects+Daughter');
+	wp_register_style('googleFonts', 'http://fonts.googleapis.com/css?family=Arvo');
 	wp_enqueue_style( 'googleFonts');
 	wp_enqueue_style( 'font-awesome', '//netdna.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css', array(), '4.0.3' );
 

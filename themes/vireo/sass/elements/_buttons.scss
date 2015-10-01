@@ -1,0 +1,44 @@
+.button,
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	border: $border-size solid;
+	padding: 0.5em 1em;
+	border-radius: 2em;
+	font-weight: 700;
+	@include transition(0.3s ease);
+
+	&:hover {
+		box-shadow: 0 5px 15px rgba($black, 0.2);
+	}
+
+	&:active,
+	&:focus {
+		outline: none;
+		box-shadow: 0 0 5px rgba($black, 0.2);
+	}
+}
+
+//
+.wpcf7-submit,
+.btn-dark {
+	border-color: $c_btn_bg_dark;
+	background: $c_btn_bg_dark;
+	color: $_c_btn_text_dark;
+
+	&:hover {
+		background-color: lighten($c_btn_bg_dark, 20%);
+	}
+}
+
+
+.btn-light {
+	border-color: $c_btn_bg_light;
+	background: $c_btn_bg_light;
+	color: $_c_btn_text_light;
+
+	&:hover {
+		background-color: lighten($c_btn_bg_light, 20%);
+	}
+}

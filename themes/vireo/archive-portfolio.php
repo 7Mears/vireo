@@ -29,7 +29,7 @@ get_header(); ?>
         <!-- excerpt -->
         <?php the_excerpt(); ?>
 
-        <a href="<?php the_permalink() ?>" title="<?php the_title(); ?>" class="portfolio-archive-post-more"><button class="button-alt">Show me</button></a>
+        <a href="<?php the_permalink() ?>" title="<?php the_title(); ?>" class="portfolio-archive-post-more"><button class="btn-light">Show me</button></a>
       </div><!-- /post content -->
     </div><!-- /archive post container -->
     </div><!-- /container -->

@@ -1,37 +1,23 @@
-.post-type-archive-portfolio {
-  main {
-    padding: 0;
-  }
-}
+.post-type-archive-portfolio main { padding: 0; }
 
 // archive
 .page-portfolio-archive {
-  background-color: lighten($color__background-secondary , 15%);
+  background-color: lighten(darken($c_bg_dark, 10%), 15%);
 }
 
-.portfolio-archive-container {
-  @include clearfix();
-}
 .portfolio-archive-post {
-  color: $color__text-alt-dark;
+  color: darken($c_text_light, 20%);
   padding: $padding-main 0;
   position: relative;
 
   &:nth-child(odd) {
-    background-color: $color__background-secondary;
+    background-color: darken($c_bg_dark, 10%);
   }
 
-  a {
-    text-decoration: none;
-  }
-
+  img,
   h4 {
-    margin: 0;
-  }
-
-  img {
-    border-radius: 2em 0 2em 0;
     padding: 0;
+    margin: 0;
   }
 }
 
@@ -56,16 +42,15 @@
   padding-left: 0;
 }
 
-
 .portfolio-archive-post--title {
-  color: $color__text-alt;
+  color: $c_text_light;
 }
 
 // post
 
 .portfolio-post-header {
-  background: $color__background-dark;
-  padding: 300px $padding-main 100px $padding-main;
+  background: $c_bg_dark;
+  padding: 275px $padding-main 200px $padding-main;
   text-align: center;
 
   @include bp-medium {
@@ -73,23 +58,13 @@
   }
 
   h1 {
-    color: $color__text-alt;
+    color: $c_text_light;
     padding: 0;
     margin-bottom: 0;
     text-shadow: 2px 2px 15px #000, -2px -2px 15px #000;
 
     @include bp-medium {
       @include font-size(2);
-    }
-  }
-
-  button {
-    margin-bottom: 50px;
-    font-weight: 700;
-
-    &:hover,
-    &:focus {
-      text-shadow: 2px 2px 15px #000, -2px -2px 15px #000;
     }
   }
 }
@@ -119,15 +94,10 @@
 
 .portfolio-post-excerpt {
   @include font-size(1.3);
-  background: $color3;
-  border-radius: $border-radius;
+  background: $c_bg_light;
   padding: $padding-main 0;
 
   @include bp-medium {
     padding-bottom: 0;
-  }
-
-  p {
-    margin: 0;
   }
 }

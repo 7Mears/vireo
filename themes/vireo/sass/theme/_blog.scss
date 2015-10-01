@@ -1,5 +1,5 @@
 .page-blog {
-  background-color: $color__background-secondary;
+  background-color: darken($c_bg_dark, 10%);
 
   .page-header {
     margin-bottom: $padding-main;
@@ -11,23 +11,38 @@
 
     a {
       text-decoration: none;
-      color: $color2;
+      color: $c_link;
 
       &:hover,
       &:active,
       &:focus {
-        color: $color4;
+        color: $c_link_hover;
       }
     }
   }
 }
 
+.entry-header {
+  padding: 275px $padding-main 200px $padding-main;
+  text-shadow: 2px 2px 15px #000, -2px -2px 15px #000;
+
+  @include bp-medium {
+    padding: 150px $padding-main 50px $padding-main;
+    h1 {
+      @include font-size(2);
+    }
+  }
+
+}
+
+.entry-meta {
+  color: $c_text_light;
+}
+
 .blog-post {
-  padding: ($padding-main / 2);
+  padding: $padding-main;
   margin-top: $padding-main;
-  background-color: $color1;
-  color: $color__text-alt-dark;
-  border-radius: 0 2em 0 2em;
+  color: darken($c_text_light, 20%);
   position: relative;
   @include transition(0.6s ease);
   @include clearfix();
@@ -36,27 +51,22 @@
     margin-top: ($padding-main * 2);
   }
 
-  &:hover {
-    box-shadow: 5px 5px 20px rgba(0,0,0,0.8);
-  }
-
   a,
   h4 {
-    color: $color3;
+    color: $c_text_light;
     text-decoration: none;
     transition: 0.4s ease;
 
     &:hover,
     &:active,
     &:focus {
-      color: $color4;
+      color: $c_link;
     }
   }
 }
 
 .blog-post--content {
-  width: 75%;
-  margin: 2%;
+  width: 77.5%;
   float: right;
 
   @include bp-medium {
@@ -67,15 +77,15 @@
 
 .blog-post--image {
   width: 15%;
-  margin: 2%;
+  margin-left: 2.5%;
+  margin-top: 1em;
   border-radius: 50%;
-  border: $border-size solid $color5;
+  border: $border-size solid $c_text_light;
   float: left;
-  shape-outside: circle();
   @include transition(0.4s ease);
 
   &:hover {
-    border-color: $color4;
+    border-color: $c_link;
   }
 
   @include bp-medium {
@@ -84,21 +94,8 @@
   }
 }
 
-.blog-post:nth-child(2n + 2) {
-  border-radius: 2em 0 2em 0;
-
-  .blog-post--image {
-    float: right;
-  }
-
-  .blog-post--content {
-    float: left;
-
-  }
-}
-
 .blog-post--title {
-  color: $color__text-alt;
+  color: $c_text_light;
   margin: 0;
   display: inline-block;
 }

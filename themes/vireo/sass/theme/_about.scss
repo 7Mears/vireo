@@ -1,8 +1,4 @@
-.page-template-page-about {
-  main {
-    padding: 0;
-  }
-}
+.page-template-page-about main { padding: 0; }
 //about us
 .about-intro {
   @include font-size(1.2);

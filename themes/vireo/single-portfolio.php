@@ -26,7 +26,7 @@
  	<header class="portfolio-post-header">
     <div class="parallax">
  		<?php the_title( sprintf( '<h1 class="entry-title">', esc_url( get_permalink() ) ), '</h1>' ); ?>
-     <a href="<?php the_field('website_link'); ?>"><button>Visit the site</button></a>
+     <a href="<?php the_field('website_link'); ?>"><button class="btn-light">Visit the site</button></a>
    </div>
  	</header><!-- .entry-header -->
 
@@ -116,8 +116,8 @@
 <div class="call-to-action">
   <div class="container">
     <div class="call-to-portfolio">
-      <a href="<?php the_field('website_link'); ?>"><button class="button-alt">Check out the site</button></a>
-      <a href="<?php echo esc_url( home_url( '/' ) ); ?>portfolio/"><button class="button-alt">Back to the portfolio</button></a>
+      <a href="<?php the_field('website_link'); ?>"><button class="btn-light">Check out the site</button></a>
+      <a href="<?php echo esc_url( home_url( '/' ) ); ?>portfolio/"><button class="btn-light">Back to the portfolio</button></a>
     </div>
   </div><!-- /container -->
   <div class="clear"></div>

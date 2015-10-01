@@ -11,10 +11,10 @@ a.menu-link {
     text-transform: uppercase;
     font-weight: 700;
     font-size: 1.7em;
-    color: $color3;
+    color: $c_text_light;
 
     &:hover {
-      color: $color4;
+      color: $c_link;
     }
 }
 

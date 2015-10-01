@@ -24,10 +24,10 @@
 			<a href="#" class="menu-link"><i class="fa fa-bars"></i></a>
 			<nav id="menu" class="main-navigation" role="navigation">
 				<ul >
-					<li><a href="<?php echo esc_url( home_url( '/' ) ); ?>about/">About <span>Services & info</span></a></li>
-					<li><a href="<?php echo esc_url( home_url( '/' ) ); ?>portfolio/">Portfolio <span>Our work</span></a></li>
-					<li><a href="<?php echo esc_url( home_url( '/' ) ); ?>blog/">Blog <span>Bird's Eye Review</span></a></li>
-					<li><a href="<?php echo esc_url( home_url( '/' ) ); ?>contact/">Contact <span>Get in touch</span></a></li>
+					<li><a href="<?php echo esc_url( home_url( '/' ) ); ?>about/">About</a></li>
+					<li><a href="<?php echo esc_url( home_url( '/' ) ); ?>portfolio/">Portfolio</a></li>
+					<li><a href="<?php echo esc_url( home_url( '/' ) ); ?>blog/">Blog</a></li>
+					<li><a href="<?php echo esc_url( home_url( '/' ) ); ?>contact/" class="highlight">Contact</a></li>
 				</ul>
 			</nav><!-- /site-navigation -->
 

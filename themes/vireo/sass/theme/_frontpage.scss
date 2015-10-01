@@ -5,92 +5,47 @@
 }
 
 .section-title {
-  color: rgba(255,255,255,0.4);
+  color: darken($c_text_light, 20%);
   @include font-size(1);
   font-family: $font__primary;
   margin: ($padding-main / 2) 0 0 0;
 }
 
 .section-sub-head {
-  color: rgba(255,255,255,0.8);
+  color: $c_text_light;
   margin: 0;
 
 }
 
 // hero
-.home-hero {
-  background-color: $color__background-dark;
-  background: url('./images/hero.jpg') no-repeat center center;
-  background-size: cover;
-  padding: 100px 0 100px 0;
+.hero {
+  padding: 250px 0 200px 0;
+  text-align: center;
+  background-color: $c_bg_dark;
+  background: url('images/hero.jpg') no-repeat center center;
 
-  @include bp-medium {
-    height: 100%;
-  }
+  h1 {
+    color: $c_text_light;
+    font-family: $font__primary;
+    font-weight: 700;
+    @include font-size(3.6);
+    text-shadow: 0 0 15px $c_bg_dark;
+    line-height: 0.9;
+    margin: 0;
 
-  .container {
-    position: relative;
-    height: 100%;
-  }
-
-  button {
-    margin-top: $padding-main;
-  }
-}
-
-.hero-title,
-.hero-info {
-  color: $color__text-alt;
-  text-shadow: 2px 2px 15px #000, -2px -2px 15px #000;
-}
-
-
-.hero-title {
-  font-family: $font__primary;
-  font-weight: 400;
-  padding-top: 100px;
-  margin: 0;
-
-  @include bp-medium {
-    padding-top: 0;
-  }
-}
-
-.hero-info {
-  @include font-size(1.2);
-  width: 500px;
-
-  @include bp-medium {
-    width: 100%;
-  }
-}
-
-.hero-social {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  @include bp-medium {
-    display: none;
-  }
-
-  img {
-    height: 30px;
-    width: 30px;
-    @include opacity(0.6);
-    transition: 0.4s ease;
-
-    &:hover {
-      @include opacity(1);
+    span {
+      font-weight: 400;
     }
   }
 
-  ul {
-    list-style-type: none;
-    margin-bottom: -50px;
-  }
-  li {
+  p {
+    color: darken($c_text_light, 20%);
+    @include font-size(1.2);
+    background: rgba($c_bg_dark,0.6);
     display: inline-block;
-    padding-left: 0.5em;
+    margin: 0;
+    padding: 0 0.5em;
+    letter-spacing: 1.8px;
   }
 
 }
@@ -98,14 +53,14 @@
 // services
 
 .home-services {
-  background: $color__background-dark;
-  color: $color__text-alt;
+  background: $c_bg_dark;
+  color: $c_text_light;
   padding: $padding-main 0;
 
   // bottom section with links
   h4 {
     padding: $padding-main 0;
-    color: $color__text-alt;
+    color: $c_text_light;
     text-align: center;
     margin: 0;
   }
@@ -113,38 +68,29 @@
   // 3 section titles
   h3 {
     @include font-size(2);
-    color: $color__text-alt;
+    color: $c_text_light;
 
     @include bp-medium {
       text-align: center;
     }
   }
-}
-
-.home-services-section {
-  width: 33.333%;
-  float: left;
-  padding: 0 $padding-main;
 
   strong {
-    color: $color__text-alt;
+    color: $c_text_light;
   }
 
   p {
-    color: $color__text-alt-dark;
-  }
-
-  @include bp-medium {
-    width: 100%;
-    padding: $padding-main 0;
+    color: darken($c_text_light, 20%);
   }
 }
+
+// portfolio
 
 
 // blog
 
 .home-blog {
-  background-color: $color__background-secondary;
+  background-color: darken($c_bg_dark, 10%);
   margin: 0;
   padding: $padding-main 0 ($padding-main * 2) 0;
 }
@@ -159,12 +105,12 @@
 
   a {
     text-decoration: none;
-    color: $color2;
+    color: $c_link;
 
     &:hover,
     &:active,
     &:focus {
-      color: $color4;
+      color: $c_link_hover;
     }
   }
 

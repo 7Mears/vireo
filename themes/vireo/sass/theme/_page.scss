@@ -1,19 +1,19 @@
 .page-header,
 .entry-header {
-  background: $color__background-dark;
-  padding: 200px 0 50px 0;
+  background: $c_bg_dark;
+  padding: 175px 0 100px 0;
   text-align: center;
 
   h1,
   h2 {
-    color: $color__text-alt;
+    color: $c_text_light;
     margin: 0;
     padding: 0;
   }
 
   h2 {
     margin-bottom: -0.7em;
-    color: $color__text-alt-dark;
+    color: darken($c_text_light, 20%);
   }
 
 }

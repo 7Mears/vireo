@@ -1,13 +1,12 @@
-
-
 .site-header {
-  background-color: rgba($color1, 1);
-  position: fixed;
+  background-color: rgba($color1, 0);
+  position: absolute;
   top: 0;
   transition: top 0.2s ease-in-out;
   width: 100%;
   height: 75px;
   z-index: 3;
+  // box-shadow: 0 0 10px rgba(0,0,0,0.8);
 }
 
 .nav-up {
@@ -24,12 +23,12 @@
   }
 
   a {
-    color: $color4;
+    color: $c_text_light;
     text-decoration: none;
 
     &:hover,
     &:focus {
-      color: $color3;
+      color: $c_link;
     }
   }
 }
@@ -47,28 +46,28 @@
 	ul {
 		list-style: none;
 		margin: 0;
-		padding: 0;
+		padding: 12px 0;
 	}
 
   li {
     display: inline-block;
-    padding-left: 2em;
+    padding-left: 25px;
     padding-top: 15px;
   }
 
   a {
-    text-decoration: none;
-    color: $color__text-alt;
+    color: $c_text_light;
     font-weight: 700;
+    border-bottom: 2px solid rgba(0,0,0,0);
+    padding-bottom: 0.1em;
 
     &:hover {
-      color: $color__link;
+      color: $c_link;
+      border-bottom: 2px solid $c_link;
     }
   }
+}
 
-  span {
-    display: block;
-    font-weight: 100;
-    @include font-size(0.8);
-  }
+a.highlight:link {
+
 }

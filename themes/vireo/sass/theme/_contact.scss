@@ -5,15 +5,6 @@
   @include bp-medium {
     width: 100%;
   }
-
-  input[type="submit"] {
-    &:hover,
-    &:active,
-    &:hover {
-      color: $color1;
-    }
-
-  }
 }
 
 .contact-links {
@@ -30,12 +21,12 @@
   }
 
   a {
-    color: $color1;
+    color: $c_text_dark;
     text-decoration: none;
 
     &:hover,
     &:focus {
-      color: $color4;
+      color: $c_link;
     }
   }
 }

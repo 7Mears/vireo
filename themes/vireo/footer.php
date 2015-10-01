@@ -6,21 +6,21 @@
 
 	<footer class="site-footer">
 		<div class="container">
-			<div class="footer-card">
+			<div class="one-third">
 				<i class="fa fa-phone"></i>
 				<p>Phone us anytime
 					<a href="tel:306-292-1819">(306) 292-1819</a>
 				</p>
 			</div>
 
-			<div class="footer-card">
+			<div class="one-third">
 				<i class="fa fa-paper-plane"></i>
 				<p>Email us at
 					<a href="mailto:info@vireoproductions.com">info@vireoproductions.com</a>
 				</p>
 			</div>
 
-			<div class="footer-card">
+			<div class="one-third">
 				<i class="fa fa-map-marker"></i>
 				<p>We are based in
 					<a href="https://www.google.ca/maps?q=,+Saskatoon,+SK,+,+ca" target="_BLANK">Saskatoon, Saskatchewan</a>

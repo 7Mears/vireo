@@ -1,36 +1,18 @@
-.container {
-  width: $L;
-  margin: 0 auto;
-
-  @include bp-large {
-    width: 90%;
-  }
-}
 
 main {
-  background-color: $color__background-body;
+  background-color: $c_bg_light;
   padding-bottom: 1em;
-}
-
-.container-sm {
-  width: 800px;
-  margin: 0 auto;
-  @include font-size(1.2);
-
-  @include bp-medium {
-    width: 90%;
-  }
 }
 
 //
 // call-to-action
 .call-to-action {
-  background-color: $color__background-secondary;
+  background-color: darken($c_bg_dark, 10%);
   padding: ($padding-main * 2) 0;
 
   h4,
   p {
-    color: $color3;
+    color: $c_text_light;
   }
 
   h4 {
@@ -96,3 +78,5 @@ main {
   font-family: $font__primary;
   @include font-size(1.4);
 }
+
+//
