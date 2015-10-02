@@ -7,11 +7,10 @@
 
 .portfolio-archive-post {
   color: darken($c_text_light, 20%);
-  padding: $padding-main 0;
-  position: relative;
+  text-align: center;
 
   &:nth-child(odd) {
-    background-color: darken($c_bg_dark, 10%);
+    background-color: darken($c_bg_dark, 5%);
   }
 
   img,
@@ -21,30 +20,20 @@
   }
 }
 
-
-.portfolio-archive-post--content,
-.portfolio-archive-post--image {
-  width: 50%;
-  padding: $padding-main;
-
-  @include bp-medium {
-    width: 100%;
-    float: none;
-  }
-}
-
-.portfolio-archive-post--content {
-  float: right;
-}
-
-.portfolio-archive-post--image {
-  float: left;
-  padding-left: 0;
-}
-
 .portfolio-archive-post--title {
   color: $c_text_light;
 }
+
+.portfolio-archive-post--content {
+  width: 70%;
+  margin: 0 auto;
+  padding: ($padding-main * 2) 0 $padding-main 0;
+
+  @include bp-medium {
+    width: 100%;
+  }
+}
+
 
 // post
 

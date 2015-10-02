@@ -21,7 +21,3 @@
 .site-footer:after {
 	@include clearfix-after;
 }
-
-.portfolio-archive-container {
-  @include clearfix();
-}

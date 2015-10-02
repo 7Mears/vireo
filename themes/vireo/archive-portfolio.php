@@ -15,13 +15,6 @@ get_header(); ?>
   <?php while (have_posts()) : the_post(); ?>
   <div class="portfolio-archive-post">
     <div class="container">
-      <div class="portfolio-archive-container">
-      <!-- featured image -->
-      <?php if ( has_post_thumbnail() ) : ?>
-	      <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
-	      <?php the_post_thumbnail( 'large', array( 'class' => 'post portfolio-archive-post--image' ) ); ?>
-	      </a>
-      <?php endif; ?>
 
       <div class="portfolio-archive-post--content">
         <!-- title -->
@@ -29,9 +22,15 @@ get_header(); ?>
         <!-- excerpt -->
         <?php the_excerpt(); ?>
 
-        <a href="<?php the_permalink() ?>" title="<?php the_title(); ?>" class="portfolio-archive-post-more"><button class="btn-light">Show me</button></a>
+        <a href="<?php the_permalink() ?>" title="<?php the_title(); ?>" class="portfolio-archive-post-more"><button class="btn-light">Case study</button></a>
+        <a href="<?php the_field('website_link'); ?>" title="<?php the_title(); ?>" class="portfolio-archive-post-more" target="_BLANK"><button class="btn-light">Visit the site</button></a>
       </div><!-- /post content -->
-    </div><!-- /archive post container -->
+
+      <!-- featured image -->
+      <?php if ( has_post_thumbnail() ) : ?>
+        <?php the_post_thumbnail( 'large', array( 'class' => 'portfolio-archive-post--image' ) ); ?>
+      <?php endif; ?>
+
     </div><!-- /container -->
   </div> <!-- /portfolio-archive post -->
   <?php endwhile; ?>
