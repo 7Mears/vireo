@@ -8,37 +8,49 @@ input[type="submit"] {
 	border-radius: 2em;
 	font-weight: 700;
 	@include transition(0.3s ease);
-
-	&:hover {
-		box-shadow: 0 5px 15px rgba($black, 0.2);
-	}
-
-	&:active,
-	&:focus {
-		outline: none;
-		box-shadow: 0 0 5px rgba($black, 0.2);
-	}
-}
-
-//
-.wpcf7-submit,
-.btn-dark {
-	border-color: $c_btn_bg_dark;
-	background: $c_btn_bg_dark;
-	color: $_c_btn_text_dark;
-
-	&:hover {
-		background-color: lighten($c_btn_bg_dark, 20%);
-	}
 }
 
 
-.btn-light {
+
+
+.btn-light,
+.wpcf7-submit, {
 	border-color: $c_btn_bg_light;
 	background: $c_btn_bg_light;
 	color: $_c_btn_text_light;
 
 	&:hover {
 		background-color: lighten($c_btn_bg_light, 20%);
+		color: $_c_btn_text_light;
+		box-shadow: 0 5px 15px rgba($black, 0.4),
+								0 2px 2px rgba($black, 0.4);
+	}
+
+	&:active,
+	&:focus {
+		outline: none;
+		box-shadow: 0 0 5px rgba($black, 0.8);
 	}
 }
+
+.wpcf7-submit { border-color: $c_btn_bg_light !important; }
+
+
+// below is not in use yet
+
+// .btn-dark {
+// 	border-color: $c_btn_bg_dark;
+// 	background: $c_btn_bg_dark;
+// 	color: $_c_btn_text_light;
+//
+// 	&:hover {
+// 		background-color: lighten($c_btn_bg_dark, 20%);
+// 		box-shadow: 0 5px 15px rgba($black, 0.2);
+// 	}
+//
+// 	&:active,
+// 	&:focus {
+// 		outline: none;
+// 		box-shadow: 0 0 5px rgba($black, 0.4);
+// 	}
+// }
