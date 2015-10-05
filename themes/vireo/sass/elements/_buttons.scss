@@ -17,13 +17,13 @@ input[type="submit"] {
 .wpcf7-submit, {
 	border-color: $c_btn_bg_light;
 	background: $c_btn_bg_light;
-	color: $_c_btn_text_light;
+	color: $_c_btn_text_dark;
+	box-shadow: 0 0 5px rgba($black, 0.2);
 
 	&:hover {
 		background-color: lighten($c_btn_bg_light, 20%);
-		color: $_c_btn_text_light;
-		box-shadow: 0 5px 15px rgba($black, 0.4),
-								0 2px 2px rgba($black, 0.4);
+		color: lighten($_c_btn_text_dark, 20%);
+		box-shadow: 0 5px 15px rgba($black, 0.2);
 	}
 
 	&:active,

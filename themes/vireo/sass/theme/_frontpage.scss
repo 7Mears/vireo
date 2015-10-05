@@ -84,6 +84,33 @@
   }
 }
 
+// portfolio
+.home-portfolio {
+  background-color: lighten($c_bg_dark, 5%);
+  color: darken($c_text_light, 20%);
+  padding: $padding-main;
+  text-align: center;
+
+  h3 {
+    color: $c_text_light;
+    margin-bottom: 0;
+  }
+
+  p {
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  button {
+    display: block;
+    margin: 25px auto;
+  }
+}
+
+.home-portfolio--image {
+  width: 50%;
+}
+
 // blog
 
 .home-blog {

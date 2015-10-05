@@ -31,6 +31,18 @@ get_header(); ?>
   </div><!-- /container -->
 </section><!-- /services -->
 
+<section class="home-portfolio">
+  <div class="container">
+    <h2 class="section-title">Portfolio</h2>
+
+    <h3>Global Exteriors</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    <button type="button" name="button" class="btn-light">Let's see this</button>
+
+    <img class="home-portfolio--image" src="http://localhost/vireo/wp-content/uploads/2015/05/global-featured.png" alt="Global Exteriors" />
+  </div>
+</section>
+
 <section class="home-blog">
   <div class="container">
       <h2 class="section-title">Blog</h2>

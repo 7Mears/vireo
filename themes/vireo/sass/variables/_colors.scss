@@ -1,12 +1,18 @@
+// black / yellow
+$c1: #F9C742;
+$c2: #2B2929;
+//
+
 $black:         #212121;
 $white:         #FAFAFA;
 
 $color1: #272F32;
-$color2: #9DBDC6;
-$color3: #FAFAFA;
 $color4: #FF3D2E;
 $color5: #002F2F;
-$color6: #002A4A;
+
+$color3: #FAFAFA;
+$color2: #F9C742;
+$color6: #222326;
 
 // Backgrounds
 $c_bg_light: $color3;
@@ -16,7 +22,7 @@ $c_bg_dark: $color6;
 $c_text_dark: $color1;
 $c_text_light: $color3;
 
-$c_link: #348899;
+$c_link: $color2;
 $c_link_hover: lighten($c_link, 20%);
 
 // Buttons and elements
