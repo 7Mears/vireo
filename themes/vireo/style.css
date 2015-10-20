@@ -525,6 +525,58 @@ textarea:focus {
   box-shadow: 0 5px 15px rgba(33, 33, 33, 0.2);
 }
 
+#slider {
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+#slider ul {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+#slider li {
+  position: relative;
+  display: block;
+  float: left;
+  margin: 0;
+  padding: 0;
+  width: auto;
+  text-align: center;
+}
+
+a.control_prev,
+a.control_next {
+  position: absolute;
+  top: 30%;
+  z-index: 10;
+  display: block;
+  padding: 4% 3%;
+  width: auto;
+  height: auto;
+  color: #FAFAFA !important;
+  text-decoration: none;
+  font-size: 3em;
+  opacity: 0.5;
+  cursor: pointer;
+  -webkit-transition: 0.4s ease;
+  -moz-transition: 0.4s ease;
+  -ms-transition: 0.4s ease;
+  -o-transition: 0.4s ease;
+  transition: 0.4s ease;
+}
+
+a.control_prev:hover,
+a.control_next:hover {
+  opacity: 1;
+}
+
+a.control_next {
+  right: 0;
+}
+
 /*--------------------------------------------------------------
 # Navigation
 --------------------------------------------------------------*/
@@ -943,10 +995,8 @@ main {
 }
 
 .site-header {
-  background-color: rgba(39, 47, 50, 0);
   position: absolute;
   top: 0;
-  transition: top 0.2s ease-in-out;
   width: 100%;
   height: 75px;
   z-index: 3;
@@ -1024,8 +1074,6 @@ main {
 .hero {
   padding: 250px 0 200px 0;
   text-align: center;
-  background-color: #222326;
-  background: url("images/hero.jpg") no-repeat center center;
 }
 .hero h1 {
   color: #FAFAFA;
@@ -1082,7 +1130,7 @@ main {
 .home-portfolio {
   background-color: #2e2f33;
   color: #c7c7c7;
-  padding: 2em;
+  padding: 2em 0;
   text-align: center;
 }
 .home-portfolio h3 {
@@ -1099,7 +1147,7 @@ main {
 }
 
 .home-portfolio--image {
-  width: 50%;
+  width: 600px;
 }
 
 .home-blog {
@@ -1118,6 +1166,18 @@ main {
 }
 .read-all-posts a:hover, .read-all-posts a:active, .read-all-posts a:focus {
   color: #fce4a5;
+}
+
+#video-background {
+  /*  making the video fullscreen  */
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
 }
 
 .page-header,

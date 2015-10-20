@@ -6,12 +6,25 @@
 get_header(); ?>
 
 
+<div class="header-unit">
+	<div id="video-container">
+
+	</div><!-- end video-container -->
+</div><!-- end .header-unit -->
+
+
 <section class="hero">
-  <div class="container parallax">
+
+<video autoplay loop id="video-background" muted>
+  <source src="<?php bloginfo('template_directory'); ?>/video/We-Work-We-Wait/We-Work-We-Wait.mp4" type="video/mp4">
+</video>
+
+  <div class="container">
     <h1>Vireo <span>Productions</span></h1>
     <p>We make websites and create great content.</p>
   </div>
 </section> <!-- .hero -->
+
 
 <section class="home-services">
   <div class="container">
@@ -32,15 +45,45 @@ get_header(); ?>
 </section><!-- /services -->
 
 <section class="home-portfolio">
-  <div class="container">
+  <!-- <div class="container"> -->
     <h2 class="section-title">Portfolio</h2>
 
-    <h3>Global Exteriors</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-    <button type="button" name="button" class="btn-light">Let's see this</button>
+    <div id="slider">
+      <a href="#0" class="control_next"> <i class="fa fa-chevron-right"></i> </a>
+      <a href="#0" class="control_prev"> <i class="fa fa-chevron-left"></i> </a>
+      <ul>
+        <li>
+          <h3>Saskatchewan Playwrights Centre</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <button type="button" name="button" class="btn-light">Let's see this</button>
+          <img class="home-portfolio--image" src="http://localhost/vireo/wp-content/uploads/2015/05/global-featured.png" alt="Global Exteriors" />
+        </li>
 
-    <img class="home-portfolio--image" src="http://localhost/vireo/wp-content/uploads/2015/05/global-featured.png" alt="Global Exteriors" />
-  </div>
+        <li>
+          <h3>Global Exteriors</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <button type="button" name="button" class="btn-light">Let's see this</button>
+          <img class="home-portfolio--image" src="http://localhost/vireo/wp-content/uploads/2015/05/global-featured.png" alt="Global Exteriors" />
+        </li>
+
+        <li>
+          <h3>Global Exteriors</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <button type="button" name="button" class="btn-light">Let's see this</button>
+          <img class="home-portfolio--image" src="http://localhost/vireo/wp-content/uploads/2015/05/global-featured.png" alt="Global Exteriors" />
+        </li>
+
+
+      </ul>
+    </div>
+
+    <!-- <div class="slider_option">
+      <input type="checkbox" id="checkbox">
+      <label for="checkbox">Autoplay Slider</label>
+    </div>  -->
+
+
+  <!-- </div> -->
 </section>
 
 <section class="home-blog">

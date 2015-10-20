@@ -21,8 +21,8 @@
 .hero {
   padding: 250px 0 200px 0;
   text-align: center;
-  background-color: $c_bg_dark;
-  background: url('images/hero.jpg') no-repeat center center;
+  // background-color: $c_bg_dark;
+  // background: url('images/hero.jpg') no-repeat center center;
 
   h1 {
     color: $c_text_light;
@@ -88,7 +88,7 @@
 .home-portfolio {
   background-color: lighten($c_bg_dark, 5%);
   color: darken($c_text_light, 20%);
-  padding: $padding-main;
+  padding: $padding-main 0;
   text-align: center;
 
   h3 {
@@ -108,7 +108,7 @@
 }
 
 .home-portfolio--image {
-  width: 50%;
+  width: 600px;
 }
 
 // blog
@@ -138,4 +138,24 @@
     }
   }
 
+}
+
+
+
+//
+//
+//
+//
+//
+
+#video-background {
+/*  making the video fullscreen  */
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
 }

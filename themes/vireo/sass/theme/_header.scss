@@ -1,12 +1,9 @@
 .site-header {
-  background-color: rgba($color1, 0);
   position: absolute;
   top: 0;
-  transition: top 0.2s ease-in-out;
   width: 100%;
   height: 75px;
   z-index: 3;
-  // box-shadow: 0 0 10px rgba(0,0,0,0.8);
 }
 
 .nav-up {
