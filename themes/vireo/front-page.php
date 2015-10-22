@@ -45,45 +45,36 @@ get_header(); ?>
 </section><!-- /services -->
 
 <section class="home-portfolio">
-  <!-- <div class="container"> -->
-    <h2 class="section-title">Portfolio</h2>
+	<div id="home-portfolio-bg"></div>
+	  <div class="container">
+	    <h2 class="section-title">Our work</h2>
 
-    <div id="slider">
-      <a href="#0" class="control_next"> <i class="fa fa-chevron-right"></i> </a>
-      <a href="#0" class="control_prev"> <i class="fa fa-chevron-left"></i> </a>
-      <ul>
-        <li>
-          <h3>Saskatchewan Playwrights Centre</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-          <button type="button" name="button" class="btn-light">Let's see this</button>
-          <img class="home-portfolio--image" src="http://localhost/vireo/wp-content/uploads/2015/05/global-featured.png" alt="Global Exteriors" />
-        </li>
+	    <figure data-panel="panel1" class="portfolio-panel">
+				<img class="portfolio-panel-img" src="http://localhost/vireo/wp-content/uploads/2015/05/globalexteriors-featured.jpg" alt="Global Exteriors" />
+				<figcaption class="portfolio-panel-text">
+	      	<h3 class="portfolio-panel-title">Global Exteriors</h3>
+	      	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+				</figcaption>
+	    </figure>
 
-        <li>
-          <h3>Global Exteriors</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-          <button type="button" name="button" class="btn-light">Let's see this</button>
-          <img class="home-portfolio--image" src="http://localhost/vireo/wp-content/uploads/2015/05/global-featured.png" alt="Global Exteriors" />
-        </li>
+			<figure data-panel="panel2" class="portfolio-panel">
+				<img class="portfolio-panel-img" src="http://localhost/vireo/wp-content/uploads/2015/05/aacat-4.jpg" alt="Global Exteriors" />
+				<figcaption class="portfolio-panel-text">
+	      	<h3 class="portfolio-panel-title">Advanced Auto Care and Tire</h3>
+	      	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+				</figcaption>
+	    </figure>
 
-        <li>
-          <h3>Global Exteriors</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-          <button type="button" name="button" class="btn-light">Let's see this</button>
-          <img class="home-portfolio--image" src="http://localhost/vireo/wp-content/uploads/2015/05/global-featured.png" alt="Global Exteriors" />
-        </li>
+			<figure data-panel="panel3" class="portfolio-panel">
+				<img class="portfolio-panel-img" src="http://localhost/vireo/wp-content/uploads/2015/05/platinum-featured.jpg" alt="Global Exteriors" />
+				<figcaption class="portfolio-panel-text">
+	      	<h3 class="portfolio-panel-title">Platinum Paint and Body</h3>
+	      	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+				</figcaption>
+	    </figure>
 
-
-      </ul>
-    </div>
-
-    <!-- <div class="slider_option">
-      <input type="checkbox" id="checkbox">
-      <label for="checkbox">Autoplay Slider</label>
-    </div>  -->
-
-
-  <!-- </div> -->
+			    <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit <a href="<?php echo esc_url( home_url( '/' ) ); ?>about/">see more</a>.</h4>
+		</div>
 </section>
 
 <section class="home-blog">

@@ -84,6 +84,7 @@ function vireo_scripts() {
 	wp_enqueue_style( 'vireo-style', get_stylesheet_uri() );
 	// Main javascript file with jquery
 	wp_enqueue_script( 'vireo-javascript', get_template_directory_uri() . '/js/app.js', array('jquery'), '20130115', true );
+
 	// Google Fonts
 
 	wp_register_style('googleFonts', 'http://fonts.googleapis.com/css?family=Arvo');

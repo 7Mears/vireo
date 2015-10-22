@@ -1,45 +1,22 @@
-jQuery(document).ready(function ($) {
+jQuery(document).ready(function($) {
+  (function() {
 
-    var slideCount = $('#slider ul li').length;
-    var slideWidth = $(window).width();
-    var slideHeight = $('#slider ul li').height();
-    var sliderUlWidth = slideCount * slideWidth;
+    var panel = {};
+    var bgArea = $('#home-portfolio-bg')
 
-    $('#slider').css({width: slideWidth, height: slideHeight});
+    $( ".portfolio-panel" ).hover(
+    // when mouse is over a panel
+    function panelEnter() {
+      panel.id = $(this).attr('data-panel'); // store which panel is selected
 
-    $('#slider ul').css({width: sliderUlWidth, marginLeft: -slideWidth});
+      bgArea.addClass(panel.id); // add background
+      bgArea.stop(true, true).animate({ opacity: 1 }, 500); // fade in
 
-    $('#slider ul li').css({width: slideWidth});
-
-    $('#slider ul li:last-child').prependTo('#slider ul');
-
-
-    function moveLeft() {
-        $('#slider ul').animate({
-            left: +slideWidth
-        }, 900, function () {
-            $('#slider ul li:last-child').prependTo('#slider ul');
-            $('#slider ul').css('left', '');
-        });
-    }
-    ;
-
-    function moveRight() {
-        $('#slider ul').animate({
-            left: -slideWidth
-        }, 900, function () {
-            $('#slider ul li:first-child').appendTo('#slider ul');
-            $('#slider ul').css('left', '');
-        });
-    }
-    ;
-
-    $('a.control_prev').click(function () {
-        moveLeft();
+    // when mouse leaves a panel
+    }, function panelLeave() {
+      bgArea.stop(true, true).animate({ opacity: 0 }, 500); // fade out
+      bgArea.removeClass(panel.id); // remove background
     });
 
-    $('a.control_next').click(function () {
-        moveRight();
-    });
-
+  }());
 });

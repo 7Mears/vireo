@@ -7,7 +7,7 @@ $black:         #212121;
 $white:         #FAFAFA;
 
 $color1: #272F32;
-$color4: #FF3D2E;
+$color4: #4374FA;
 $color5: #002F2F;
 
 $color3: #FAFAFA;
@@ -23,7 +23,7 @@ $c_text_dark: $color1;
 $c_text_light: $color3;
 
 $c_link: $color2;
-$c_link_hover: lighten($c_link, 20%);
+$c_link_hover: $color4;
 
 // Buttons and elements
 $_c_btn_text_dark: $c_text_dark;

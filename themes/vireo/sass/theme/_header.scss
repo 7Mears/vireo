@@ -20,12 +20,12 @@
   }
 
   a {
-    color: $c_text_light;
+    color: $c_link;
     text-decoration: none;
 
     &:hover,
     &:focus {
-      color: $c_link;
+      color: $c_text_light;
     }
   }
 }

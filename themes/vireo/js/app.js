@@ -58,32 +58,16 @@ $(window).on("scroll", function() {
         });
     });
 }), jQuery(document).ready(function($) {
-    function moveLeft() {
-        $("#slider ul").animate({
-            left: +slideWidth
-        }, 900, function() {
-            $("#slider ul li:last-child").prependTo("#slider ul"), $("#slider ul").css("left", "");
+    !function() {
+        var panel = {}, bgArea = $("#home-portfolio-bg");
+        $(".portfolio-panel").hover(function() {
+            panel.id = $(this).attr("data-panel"), bgArea.addClass(panel.id), bgArea.stop(!0, !0).animate({
+                opacity: 1
+            }, 500);
+        }, function() {
+            bgArea.stop(!0, !0).animate({
+                opacity: 0
+            }, 500), bgArea.removeClass(panel.id);
         });
-    }
-    function moveRight() {
-        $("#slider ul").animate({
-            left: -slideWidth
-        }, 900, function() {
-            $("#slider ul li:first-child").appendTo("#slider ul"), $("#slider ul").css("left", "");
-        });
-    }
-    var slideCount = $("#slider ul li").length, slideWidth = $(window).width(), slideHeight = $("#slider ul li").height(), sliderUlWidth = slideCount * slideWidth;
-    $("#slider").css({
-        width: slideWidth,
-        height: slideHeight
-    }), $("#slider ul").css({
-        width: sliderUlWidth,
-        marginLeft: -slideWidth
-    }), $("#slider ul li").css({
-        width: slideWidth
-    }), $("#slider ul li:last-child").prependTo("#slider ul"), $("a.control_prev").click(function() {
-        moveLeft();
-    }), $("a.control_next").click(function() {
-        moveRight();
-    });
+    }();
 });
