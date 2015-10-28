@@ -13,7 +13,7 @@ jQuery(document).ready(function($) {
       bgArea.stop(true, true).animate({ opacity: 1 }, 500); // fade in
 
     // when mouse leaves a panel
-    }, function panelLeave() {
+  }, function panelLeave() {
       bgArea.stop(true, true).animate({ opacity: 0 }, 500); // fade out
       bgArea.removeClass(panel.id); // remove background
     });
